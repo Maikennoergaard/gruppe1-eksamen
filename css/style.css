@@ -1,20 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+/*Farve definationer*/
+:root { 
+    --red: #c7352a;
+    --gul: #f3ec86;
+    --lilla: #ded7ff;
+    --background: #f3f5dd;
+    --contrastbackground:#DDDFC7;
+    --dark: #3d0200;
+}
+
+/*Body styling*/
+body{
+    background-color: var(--background);
+}
+
 /*Font styling*/
 /*Rød stor font u. serifer*/
 .alefstor{
-
+    color: var(--red);
+    font-size: 3em;
 }
 
+
 /*Rød mindre font  u. serifer*/
-.aleflille{}
+.aleflille{
+    color: var(--red);
+}
 
 /*Sort font  u. serifer*/
-.alefblack{}
+.alefdark{
+    color: var(--dark);
+}
 
 /*Serif font stor*/
-.pratastor{}
+.pratastor{
+    color: var(--dark);
+}
 
 /*Serif font lille*/
-.pratalille{}
+.pratalille{
+    color: var(--dark);
+}
 
 /*Burgermenu*/
 
