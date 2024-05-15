@@ -20,42 +20,45 @@
 
 /*Body styling*/
 body{
-    background-color: var(--background);
+  background-color: var(--background);
 }
+
 
 /*Font styling*/
-/*Rød stor font u. serifer*/
-.alefstor{
-    color: var(--red);
-    font-size: 3em;
+
+/*Rød stor font - bliver brugt x4*/
+.alefred{
+color: var(--red);
+font-size: 3em;
+font-family: "Alef", sans-serif;
 }
 
 
-/*Rød mindre font  u. serifer*/
-.aleflille{
-    color: var(--red);
-}
-
-/*Sort font  u. serifer*/
+/*Almindelig font mørk*/
 .alefdark{
-    color: var(--dark);
+color: var(--dark);
+font-family: "Alef", sans-serif;
 }
 
-/*Serif font stor*/
-.pratastor{
-    color: var(--dark);
+/*Håndskrevet font - citater*/
+.annielille{
+color: var(--dark);
+font-size: 1em;
+font-family: "Annie Use Your Telescope", cursive;
 }
 
-/*Serif font lille*/
-.pratalille{
-    color: var(--dark);
+/*Håndskrevet font - overskrifter*/
+.anniestor{
+color: var(--dark);
+font-size: 1em;
+font-family: "Annie Use Your Telescope", cursive;
 }
 
 /* Navbar */
 
-.logo img {
-    width: 150px;
-    height: auto;
+  .logo img {
+  width: 150px;
+  height: auto;
   }
   
 
@@ -121,38 +124,70 @@ body{
 
 
 /* Vis dropdown-menuen, når musen er over "Praktisk" */
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
 
-  @media(max-width: 800px){
-    .hideOnMobile{
-      display: none;
+    @media(max-width: 800px){
+      .hideOnMobile{
+        display: none;
+      }
+      .menu-button{
+        display: block;
+        size: 2rem;
+      }
     }
-    .menu-button{
-      display: block;
-      size: 2rem;
+    @media(max-width: 800px){
+      .sidebar{
+        width: 100%;
+      }
     }
-  }
-  @media(max-width: 800px){
-    .sidebar{
-      width: 100%;
-    }
-  }
 
 /*Burgermenu*/
 
 /*Menukort*/
+  #menucard{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+  #andimg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
 
+  #andimg img{
+    position: absolute;
+    width: 70%;
+    top: 5%;
+    right: 0;
+  }
+
+  #lodretskrift{
+    transform: rotate(-90deg);   
+  }
+  #lodretskrift2{
+    transform: rotate(-90deg);   
+  }
+  #lodretskrift3{
+    transform: rotate(-90deg);   
+  }
+
+  #menusandwich{
+    display: grid;
+    grid-template-columns: 50px 340px;
+  }
 /*Forside*/
 /* video forside */
 
-/* multiwords(dingse) */
-  .multiwords {
-    display: flex;
-    flex-direction: column;
-    margin-left: 30%;
-    margin-top: 5%;
+/* multiwords(dingse)*/
+.multiwords {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
 }
 
 /*Kontakt os*/ 
