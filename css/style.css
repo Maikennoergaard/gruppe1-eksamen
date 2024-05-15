@@ -208,6 +208,11 @@ font-family: "Annie Use Your Telescope", cursive;
 
 /*Kontakt os*/ 
 
+.kontakt-main {
+  background-color: var(--background);
+}
+
+
 /*Bag om Dingse*/
 
 
