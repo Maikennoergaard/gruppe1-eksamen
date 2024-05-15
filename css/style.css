@@ -54,6 +54,8 @@ body{
 
 /*Menukort*/
 
+
+
 /*Footer*/
 footer {
     background-color: #DDDFC7; 
@@ -80,8 +82,23 @@ footer {
 
 /*Forside*/
 
+/* dingse sektion */
+.multiwords {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+#big4 {
+justify-content: left;
+}
+
 /*Kontakt os*/ 
 
 /*Bag om Dingse*/
 
 /*Media Quarey Computer*/
+
+
+
