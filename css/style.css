@@ -146,6 +146,10 @@ body{
 
 /*Forside*/
 /* video forside */
+.forside-video{
+  width: 100%;
+  margin-bottom: -6.5%;
+}
 
 /* multiwords(dingse) */
   .multiwords {
