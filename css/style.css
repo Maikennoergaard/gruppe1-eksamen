@@ -182,12 +182,28 @@ font-family: "Annie Use Your Telescope", cursive;
   }
 /*Forside*/
 /* video forside */
+.forside-video{
+  width: 100%;
+  margin-bottom: -6.5%;
+}
 
 /* multiwords(dingse)*/
 .multiwords {
   display: flex;
   flex-direction: column;
   margin-top: 5%;
+}
+
+/* dingsedame */
+.dingseukop {
+  width: 60%;
+  margin-top: 8%;
+}
+
+/* brød på forside */
+.brødforside {
+  width: 150%;
+  height: 100%;
 }
 
 /*Kontakt os*/ 
