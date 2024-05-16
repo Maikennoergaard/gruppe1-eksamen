@@ -27,6 +27,9 @@ body{
 /*Font styling*/
 
 /*Rød stor font - bliver brugt x4*/
+h3{
+  display: flex;
+}
 .alefred{
 color: var(--red);
 font-size: 3em;
@@ -57,7 +60,7 @@ font-family: "Annie Use Your Telescope", cursive;
 /* Navbar */
 
   .logo img {
-  width: 150px;
+  width: 100px;
   height: auto;
   }
   
@@ -67,7 +70,7 @@ font-family: "Annie Use Your Telescope", cursive;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 100;
   }
 
   nav ul{
@@ -79,7 +82,7 @@ font-family: "Annie Use Your Telescope", cursive;
     padding: 10px 0;
   }
   nav li{
-    height: 100px;
+    height: 50px;
   }
   nav a{
     height: 100%;
@@ -87,9 +90,28 @@ font-family: "Annie Use Your Telescope", cursive;
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: var(--dark);
-    font-size: 1.4rem;
+    justify-content: center;
+    color: var(--red);
+    font-family: "Alef", sans-serif;
+    font-size: 2rem;
   }
+
+  .buetekst{
+    font-family: "Annie Use Your Telescope", cursive;
+    /* position: absolute; */
+    top: 50%; /* Placer tekstens top i midten af containeren */
+    left: 50%; /* Placer tekstens venstre kant i midten af containeren */
+    transform: translate(-50%, -50%) rotate(-90deg); /* Rotér teksten med -90 grader (mod uret) */
+    text-align: center; /* Centrer teksten */
+    font-size: 30px; /* Juster skriftstørrelsen efter behov */
+    white-space: nowrap; /* Forhindre linjeskift for lang tekst */
+
+  }
+
+  .hideOnMobile nav a{
+    color: var(--red);
+  }
+
   nav a:hover{
     background-color: var(--lightblue);
     border-radius: 10px;
@@ -109,24 +131,38 @@ font-family: "Annie Use Your Telescope", cursive;
     list-style: none;
     display: none;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
+    padding-top: 170px;
+    gap: 20px;
   }
+
   .sidebar li{
     width: 100%;
   }
+
   .sidebar a{
     width: 100%;
   }
+
   .menu-button{
     display: none;
   }
 
-
-/* Vis dropdown-menuen, når musen er over "Praktisk" */
-  .dropdown:hover .dropdown-menu {
-    display: block;
+  .krys{
+    position: absolute;
+    left: 140px;
+    top: 40px;
   }
+
+  .kigop{
+    position: absolute;
+    bottom: 0;
+    width: 250px;
+    right: 10px;
+  }
+
+/* Media */
 
     @media(max-width: 800px){
       .hideOnMobile{
@@ -151,6 +187,7 @@ font-family: "Annie Use Your Telescope", cursive;
     flex-direction: column;
     gap: 100px;
   }
+
   #andimg {
     display: flex;
     flex-direction: column;
@@ -180,6 +217,121 @@ font-family: "Annie Use Your Telescope", cursive;
     display: grid;
     grid-template-columns: 50px 340px;
   }
+
+  /* popud menu */
+  .menu-container {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    z-index: 20000;
+}
+
+.btn {
+    /* Gør indholdet af .btn til en inline-blok for at anvende stilarter */
+    display: inline-block;
+    /* Tilpas afstand omkring knappen */
+    margin: 10px;
+    /* Stil knapteksten */
+    color: var(--dark);
+    /* Baggrundsfarve */
+    padding: 10px 20px;
+    /* Juster tekststørrelsen */
+    font-size: 16px;
+    /* Fjern standard knapstil */
+    border: none;
+    cursor: pointer;
+    transform: rotate(-90deg); 
+    position: fixed;
+    top: 400px; /* Juster toppositionen efter behov */
+    right: -80px; /* Juster højre positionen efter behov */
+    z-index: 9; /* Sørg for at knappen er overalt på siden */
+}
+
+.btn:hover {
+    /* Ændre baggrundsfarven ved hover */
+}
+
+.open-btn {
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 1rem 2.5rem;
+	cursor: pointer;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.219);
+  z-index: 1000; /* Juster z-indekset efter behov for at sikre, at popup er foran andre elementer */
+}
+  
+.popup-overlay {
+	background-color: rgba(0, 0, 0, 0.575);
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+}
+.main-popup {
+  position: absolute;
+  right: 0; /* Start position fra højre side af skærmen */
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  background: var(--background);
+  padding: 30px 20px;
+  line-height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100%); /* Start med at skjule til højre for skærmen */
+}
+  
+  
+.close-btn {
+	border: .6px solid white;
+	padding: 10px;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 2rem;
+	cursor: pointer;
+	transition: .5s ease all;
+}
+.close-btn:hover {
+	background: white;
+}
+.popup-content p {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+@keyframes slide-in {
+    0% {
+      transform: translateX(100%); /* Startposition til højre for skærmen */
+    }
+    100% {
+      transform: translateX(0); /* Slutposition, normal position */
+    }
+  }
+  
+  @keyframes slide-out {
+    0% {
+      transform: translateX(0); /* Startposition, normal position */
+    }
+    100% {
+      transform: translateX(100%); /* Slutposition, skjult til højre for skærmen */
+    }
+  }
+  
+
 /*Forside*/
 /* video forside */
 .forside-video{
