@@ -11,17 +11,16 @@ function hideSidebar() {
   sidebar.style.display = 'none';
 }
 
-// Popud menu
 // Select the required elements
 const menuButton = document.querySelector('.open-btn');
 const popup = document.querySelector('.popup');
 const mainPopup = document.querySelector('.main-popup');
 const popupOverlay = document.querySelector('.popup-overlay');
-const closeBtn = document.querySelector('.close-btn');
+const closeButton = document.querySelector('.close-btn');
 
 // Function to show the popup
 function showPopup() {
-  popup.style.display = 'flex'; // Ensure the popup is displayed
+  popup.style.display = 'flex'; // Display the popup
   mainPopup.classList.add('slide-in'); // Add slide-in animation class
   mainPopup.classList.remove('slide-out'); // Ensure slide-out class is removed
   menuButton.style.display = 'none'; // Hide the menu button
@@ -46,14 +45,6 @@ menuButton.addEventListener('click', showPopup);
 popupOverlay.addEventListener('click', (e) => {
   if (e.target === popupOverlay) {
     hidePopup();
-  }
-});
-
-document.querySelector('.popup-overlay').addEventListener('click', (e) => {
-  if (e.target === document.querySelector('.popup-overlay')) {
-    mainPopup.style.animation = 'slide-out .5s ease';
-    popup.style.display = 'none';
-    menuButton.style.display = 'block'; // Vis menukortknappen igen
   }
 });
 
