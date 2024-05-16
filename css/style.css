@@ -188,6 +188,12 @@ font-family: "Annie Use Your Telescope", cursive;
     gap: 100px;
   }
 
+  #menusandwich{
+    display: grid;
+    grid-template-columns: 15% 2% 70% 10%;
+    grid-row-gap: 30px;
+  }
+
   #andimg {
     display: flex;
     flex-direction: column;
@@ -202,24 +208,41 @@ font-family: "Annie Use Your Telescope", cursive;
     top: 5%;
     right: 0;
   }
+  /*Styling af tekst lodret tekst*/
+  aside{
+    grid-column: 1;
+  }
 
   #lodretskrift{
-    transform: rotate(-90deg);   
+    transform: rotate(-90deg);
   }
+
   #lodretskrift2{
-    transform: rotate(-90deg);   
+    transform: rotate(-90deg); 
+    grid-row: 2;
   }
+
   #lodretskrift3{
-    transform: rotate(-90deg);   
+    transform: rotate(-90deg); 
+    grid-row: 3;
   }
 
-  #menusandwich{
-    display: grid;
-    grid-template-columns: 50px 340px;
+  
+
+  #sandwichul{
+    grid-column: 3; 
   }
 
-  /* popud menu */
-  /* popud menu */
+  #sodtul{
+    grid-column: 3;
+  }
+
+  #drikkeul{
+    grid-column: 3;
+  }
+  
+
+/* popud menu */
 .menu-container {
     height: 100vh;
     width: 100%;
@@ -433,6 +456,10 @@ footer {
 
 .iconer {
   margin: 3rem;
+}
+
+.smutpomfrit{
+  max-width: 100%;
 }
 
 /*Media Quarey Computer*/
