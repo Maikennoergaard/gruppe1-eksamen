@@ -27,6 +27,9 @@ body{
 /*Font styling*/
 
 /*Rød stor font - bliver brugt x4*/
+h3{
+  display: flex;
+}
 .alefred{
 color: var(--red);
 font-size: 3em;
@@ -132,15 +135,16 @@ font-family: "Annie Use Your Telescope", cursive;
     justify-content: flex-start;
     padding-top: 170px;
     gap: 20px;
-
-
   }
+
   .sidebar li{
     width: 100%;
   }
+
   .sidebar a{
     width: 100%;
   }
+
   .menu-button{
     display: none;
   }
@@ -183,6 +187,7 @@ font-family: "Annie Use Your Telescope", cursive;
     flex-direction: column;
     gap: 100px;
   }
+
   #andimg {
     display: flex;
     flex-direction: column;
@@ -257,17 +262,17 @@ font-family: "Annie Use Your Telescope", cursive;
 	cursor: pointer;
 }
 .popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.219);
-    z-index: 1000; /* Juster z-indekset efter behov for at sikre, at popup er foran andre elementer */
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.219);
+  z-index: 1000; /* Juster z-indekset efter behov for at sikre, at popup er foran andre elementer */
+}
   
 .popup-overlay {
 	background-color: rgba(0, 0, 0, 0.575);
@@ -276,19 +281,19 @@ font-family: "Annie Use Your Telescope", cursive;
 	position: absolute;
 }
 .main-popup {
-    position: absolute;
-    right: 0; /* Start position fra højre side af skærmen */
-    height: 100vh;
-    width: 100%;
-    z-index: 1;
-    background: var(--background);
-    padding: 30px 20px;
-    line-height: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateX(100%); /* Start med at skjule til højre for skærmen */
-  }
+  position: absolute;
+  right: 0; /* Start position fra højre side af skærmen */
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  background: var(--background);
+  padding: 30px 20px;
+  line-height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100%); /* Start med at skjule til højre for skærmen */
+}
   
   
 .close-btn {
