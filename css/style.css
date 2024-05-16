@@ -219,117 +219,125 @@ font-family: "Annie Use Your Telescope", cursive;
   }
 
   /* popud menu */
-  .menu-container {
-	height: 100vh;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  /* popud menu */
+.menu-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     z-index: 20000;
-}
-
-.btn {
-    /* Gør indholdet af .btn til en inline-blok for at anvende stilarter */
+  }
+  
+  .btn {
     display: inline-block;
-    /* Tilpas afstand omkring knappen */
     margin: 10px;
-    /* Stil knapteksten */
     color: var(--dark);
-    /* Baggrundsfarve */
     padding: 10px 20px;
-    /* Juster tekststørrelsen */
     font-size: 16px;
-    /* Fjern standard knapstil */
     border: none;
     cursor: pointer;
-    transform: rotate(-90deg); 
+    transform: rotate(-90deg);
     position: fixed;
-    top: 400px; /* Juster toppositionen efter behov */
-    right: -80px; /* Juster højre positionen efter behov */
-    z-index: 9; /* Sørg for at knappen er overalt på siden */
-}
-
-.btn:hover {
+    top: 400px;
+    right: -80px;
+    z-index: 9;
+  }
+  
+  .btn:hover {
     /* Ændre baggrundsfarven ved hover */
-}
-
-.open-btn {
-	font-size: 1rem;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	padding: 1rem 2.5rem;
-	cursor: pointer;
-}
-.popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.219);
-  z-index: 1000; /* Juster z-indekset efter behov for at sikre, at popup er foran andre elementer */
-}
+  }
   
-.popup-overlay {
-	background-color: rgba(0, 0, 0, 0.575);
-	height: 100vh;
-	width: 100%;
-	position: absolute;
-}
-.main-popup {
-  position: absolute;
-  right: 0; /* Start position fra højre side af skærmen */
-  height: 100vh;
-  width: 100%;
-  z-index: 1;
-  background: var(--background);
-  padding: 30px 20px;
-  line-height: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translateX(100%); /* Start med at skjule til højre for skærmen */
-}
+  .open-btn {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+  }
   
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.219);
+    z-index: 1000;
+  }
   
-.close-btn {
-	border: .6px solid white;
-	padding: 10px;
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
-	font-size: 2rem;
-	cursor: pointer;
-	transition: .5s ease all;
-}
-.close-btn:hover {
-	background: white;
-}
-.popup-content p {
-	font-size: 1.5rem;
-	line-height: 2rem;
-}
-@keyframes slide-in {
+  .popup-overlay {
+    background-color: rgba(0, 0, 0, 0.575);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .main-popup {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background: var(--background);
+    padding: 30px 20px;
+    line-height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+  }
+  
+  .main-popup.slide-in {
+    animation: slide-in 0.5s ease forwards;
+  }
+  
+  .main-popup.slide-out {
+    animation: slide-out 0.5s ease forwards;
+  }
+  
+  .close-btn {
+    border: .6px solid white;
+    padding: 10px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .5s ease all;
+  }
+  
+  .close-btn:hover {
+    background: white;
+  }
+  
+  .popup-content p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  
+  @keyframes slide-in {
     0% {
-      transform: translateX(100%); /* Startposition til højre for skærmen */
+      transform: translateX(100%);
     }
     100% {
-      transform: translateX(0); /* Slutposition, normal position */
+      transform: translateX(0);
     }
   }
   
   @keyframes slide-out {
     0% {
-      transform: translateX(0); /* Startposition, normal position */
+      transform: translateX(0);
     }
     100% {
-      transform: translateX(100%); /* Slutposition, skjult til højre for skærmen */
+      transform: translateX(100%);
     }
   }
+  
   
 
 /*Forside*/
