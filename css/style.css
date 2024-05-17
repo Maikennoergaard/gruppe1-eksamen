@@ -560,27 +560,37 @@ button.collapsible {
 /*Footer*/
 footer {
   background-color: #DDDFC7; 
-  padding: 1.5rem 0;
-  margin: 0 auto;
+  padding: 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   line-height: 1.8rem;
   color: #3d0200;
+  width: 110%;
+  box-sizing: border-box;
   bottom: 0;
+  left: 0;
 }
 
 .info-container1,
 .info-container2 {
   list-style-type: none;
   text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
-.iconer {
-  margin: 3rem;
+.besøg {
+  margin-bottom: 5%;
 }
 
-
+.icon {
+  width: 3rem;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  margin-left: 1rem; 
+  margin-right: 1rem; 
+}
 
 /*Media Quarey Computer*/
 
