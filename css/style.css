@@ -80,7 +80,7 @@ font-family: "Annie Use Your Telescope", cursive;
   nav{
     background-color: var(--background);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    position: sticky;
+    position: relative;
     top: 0;
     z-index: 100;
     overflow-x: auto;
@@ -418,24 +418,33 @@ font-family: "Annie Use Your Telescope", cursive;
 
 /*Forside*/
 /* video forside */
-.forside-video{
+.forside1 {
+  height: 93vh;
+  position: relative; /* Tilføjer position: relative; til forældreelementet */
+}
+
+.forside-video {
   width: 100%;
+  height: 100%; /* Sætter videoens højde til 100% af forældreelementets højde */
   position: absolute;
   top: 0;
   left: 0;
+  object-fit: cover; /* Sikrer, at videoen fylder hele forældreelementet uden at miste proportioner */
 }
 
-@media(max-width: 800px){
-  .forside-video{
-    transform: rotate(90deg);
-    width: 60rem;
-    position: absolute; 
+@media (max-width: 800px) {
+  .forside-video {
+    width: 100vw;
+    height: auto;
+    position: relative;
     top: 50%;
-    left: 37%; 
-    transform-origin: center center; 
-    transform: translate(-50%, -50%) rotate(90deg); 
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
   }
 }
+
+
+
 
 /* multiwords(dingse)*/
 .multiwords {
