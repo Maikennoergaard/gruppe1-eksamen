@@ -297,9 +297,6 @@ font-family: "Annie Use Your Telescope", cursive;
     z-index: 9;
   }
   
-  .btn:hover {
-    /* Ændre baggrundsfarven ved hover */
-  }
   
   .open-btn {
     font-size: 1rem;
@@ -463,6 +460,38 @@ font-family: "Annie Use Your Telescope", cursive;
 
 /*Bag om Dingse*/
 
+/* foldud */
+.collapsible {
+  color: black;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+button.collapsible {
+  background-color: transparent;
+}
+
+.read-more{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.read-more section{
+  justify-content: center;
+}
 
 /*Footer*/
 footer {
