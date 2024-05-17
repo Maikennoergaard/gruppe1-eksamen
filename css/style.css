@@ -431,25 +431,55 @@ font-family: "Annie Use Your Telescope", cursive;
   height: 100%;
 }
 
-/* midtersection */
 .midtersection {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 8%;
 }
 
 /* tekst til midtersection */
-
+.bestilher {
+  border-bottom: 2px solid #c7352a; 
+  padding-bottom: 2px; 
+}
 
 /* billeder på midtersection */
 .udefraillustration {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+
+/* instagram sektion */
+
+.instagram {
+  margin-top: 8%;
+}
+
+.foelgtekst {
+  margin-left: 5%;
 }
 
 #billedeserie {
-  width: 10%;
-  height: 10%;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 50%;
+height: 50%;
+flex-direction: column;
+margin-top: 8%;
 }
+
+.foelgos {
+  border-bottom: 2px solid #c7352a; 
+  padding-bottom: 2px; 
+}
+
+
 
 /*Kontakt os*/ 
 
