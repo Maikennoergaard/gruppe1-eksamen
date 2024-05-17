@@ -220,6 +220,7 @@ font-family: "Annie Use Your Telescope", cursive;
 
   #andimg{
     margin-top: 400px;
+    position: relative;
   }
 
   #andimg h3 {
@@ -234,9 +235,9 @@ font-family: "Annie Use Your Telescope", cursive;
 
   #andimg img{
     position: absolute;
-    width: 240px;
-    top: 5%;
-    right: 0;
+    width: 250px;
+    top: 7%;
+    right: 12%;
   }
   /*Styling af tekst lodret tekst*/
   aside{
@@ -385,6 +386,7 @@ font-family: "Annie Use Your Telescope", cursive;
     font-size: 2rem;
     cursor: pointer;
     transition: .5s ease all;
+    z-index: 100;
   }
   
   .popup-content p {
@@ -415,7 +417,7 @@ font-family: "Annie Use Your Telescope", cursive;
 /*Forside*/
 /* video forside */
 .forside-video{
-  width: 102%;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -713,7 +715,7 @@ footer {
 
   .popup-overlay {
     background-color: var(--gul);
-    height: 150vh;
+    height: 100vh;
     width: 100%;
     position: absolute;
     z-index: -1;
