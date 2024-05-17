@@ -270,6 +270,24 @@ font-family: "Annie Use Your Telescope", cursive;
   .menuitemname{
     font-weight: 400;
   }
+
+  /*Styling af menukort animation*/
+  .hidden{
+    opacity: 0;
+    transform: translateX(+100%);
+    transition: all 1.5s;
+  }
+
+  .show{
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* @media(prefers-reduced-motion){
+    .hidden{
+      transition: none;
+    }
+  } */
   
 
 /* popud menu */
