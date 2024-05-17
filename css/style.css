@@ -527,7 +527,6 @@ flex-direction: column;
 
 /*Kontakt os*/ 
 #andimg2{
-  margin-top: 400px;
   position: relative;
 }
 
@@ -536,16 +535,14 @@ flex-direction: column;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
   font-size: 3.7em;
 }
 
-#andimg2 img{
+.dingsetelefon{
   position: absolute;
   width: 250px;
   top: 7%;
-  right: 12%;
+  margin-left: 0px;
 }
 
 .kontakt-main {
@@ -556,6 +553,9 @@ flex-direction: column;
   font-size: 2em;
 }
 
+#vibor, #adressekontakt{
+  font-size: 2em;
+}
 
 /*Bag om Dingse*/
 
