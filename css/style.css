@@ -525,37 +525,10 @@ flex-direction: column;
   margin-top: 10%; 
 }
 
+
+
 /*Kontakt os*/ 
-#andimg2{
-  position: relative;
-}
 
-#andimg2 h3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 3.7em;
-}
-
-.dingsetelefon{
-  position: absolute;
-  width: 250px;
-  top: 7%;
-  margin-left: 0px;
-}
-
-.kontakt-main {
-  background-color: var(--background);
-}
-
-#openhours{
-  font-size: 2em;
-}
-
-#vibor, #adressekontakt{
-  font-size: 2em;
-}
 
 /* OBS IKKE SLET DEN LANGE KOMMENTAR. DET ER EN TEST MED GRID */
 
@@ -620,25 +593,41 @@ padding: 2%;
   grid-row: 7;
 } */
 
-/* Styling af ring tekst + dingsedame med telefon. Da dette er en lidt anden styling end en colum bruges inline grid */
 
-/* .ringx4container {
-  display: inline-grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: 1fr;
-}
-
-.ringx4container {
-  justify-self: center;
-  align-self: center;
-}
-
-.ringx4 {
-  text-align: center;
-  padding: 20%;
-} */
 
 /* STYLING UDEN GRID */
+
+
+#andimg2{
+  position: relative;
+}
+
+#andimg2 h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.7em;
+}
+
+.dingsetelefon{
+  position: absolute;
+  width: 250px;
+  top: 7%;
+  margin-left: 0px;
+}
+
+/* Styling af font med ID for at størrelserne passer */
+
+#openhours{
+  font-size: 2em;
+}
+
+#vibor, #adressekontakt{
+  font-size: 2em;
+}
+
+/* Styling af tekst + padding */
 
 .kontakt-main {
   display: flex;
@@ -647,6 +636,8 @@ padding: 2%;
   text-align: center;
   padding: 5%;
 }
+
+/* Styling af billeder på kontakt siden */
 
 .coverkontakt {
   display: flex;
@@ -659,9 +650,25 @@ padding: 2%;
   height: auto;
 }
 
+/* Tilføjet padding for at give luft mellem teksten på siden. Tilføjet i % for at være responsiv */
+.kontakt-sektion {
+  padding: 5%;
+}
+
+.adresse-kontakt {
+  padding: 5%;
+}
+
+.telefon-nummer-kontakt {
+  padding: 5%;
+}
+.telefon-nummer-kontakt h2 {
+  margin-bottom: 3%;
+}
+
 /* Styling af ring tekst + dingsedame med telefon. Da dette er en lidt anden styling end en colum bruges inline grid */
 
-.ringx4container {
+/* .ringx4container {
   display: inline-grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: 1fr;
@@ -677,7 +684,7 @@ padding: 2%;
   text-align: center;
   padding: 20%;
   background-color: var(--background);
-}
+} */
 
 /*Bag om Dingse*/
 
