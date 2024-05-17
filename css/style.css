@@ -29,13 +29,27 @@ body{
 /*Rød stor font - bliver brugt x4*/
 h3{
   display: flex;
+  color: var(--dark);
+  font-family: "Alef", sans-serif;
 }
+
+h4{
+  display: flex;
+  color: var(--dark);
+  font-family: "Alef", sans-serif;
+}
+
+p{
+  color: var(--dark);
+  font-family: "Alef", sans-serif;
+  font-size: 0.8em;
+}
+
 .alefred{
 color: var(--red);
 font-size: 3em;
 font-family: "Alef", sans-serif;
 }
-
 
 /*Almindelig font mørk*/
 .alefdark{
@@ -58,10 +72,9 @@ font-family: "Annie Use Your Telescope", cursive;
 }
 
 /* Navbar */
-
   .logo img {
-  width: 100px;
-  height: auto;
+    width: 100px;
+    height: auto;
   }
   
 
@@ -81,9 +94,11 @@ font-family: "Annie Use Your Telescope", cursive;
     align-items: center;
     padding: 10px 0;
   }
+
   nav li{
     height: 50px;
   }
+
   nav a{
     height: 100%;
     padding: 0 30px;
@@ -105,7 +120,6 @@ font-family: "Annie Use Your Telescope", cursive;
     text-align: center; /* Centrer teksten */
     font-size: 30px; /* Juster skriftstørrelsen efter behov */
     white-space: nowrap; /* Forhindre linjeskift for lang tekst */
-
   }
 
   .hideOnMobile nav a{
@@ -190,8 +204,20 @@ font-family: "Annie Use Your Telescope", cursive;
 
   #menusandwich{
     display: grid;
-    grid-template-columns: 15% 2% 70% 10%;
-    grid-row-gap: 30px;
+    grid-template-columns: 10% 1% 67% 20%;
+    grid-row-gap: 50px;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  #menusandwich li{
+    gap: 50px;
+  }
+
+  #prismenu{
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: "Annie Use Your Telescope", cursive;
   }
 
   #andimg {
@@ -213,32 +239,35 @@ font-family: "Annie Use Your Telescope", cursive;
     grid-column: 1;
   }
 
-  #lodretskrift{
-    transform: rotate(-90deg);
+  #lodretskrift, #lodretskrift2, #lodretskrift3{
+    transform: rotate(90deg);
+    font-size: 2em;
+    font-weight: 100;
   }
-
-  #lodretskrift2{
-    transform: rotate(-90deg); 
-    grid-row: 2;
-  }
-
-  #lodretskrift3{
-    transform: rotate(-90deg); 
-    grid-row: 3;
-  }
-
   
-
-  #sandwichul{
-    grid-column: 3; 
+  /*lodret linje*/
+  hr{
+    grid-column: 2;
+    background-color: var(--red);
+    width: 40%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    border-width: 0;
   }
 
-  #sodtul{
-    grid-column: 3;
+  /*Menu elementer styling*/
+  #sandwichul, #sodtul, #drikkeul{
+    grid-column-start: 3;
+    grid-column-end: 5; 
   }
 
-  #drikkeul{
-    grid-column: 3;
+  #sandwichul li, #sodtul li, #drikkeul li{
+    margin-block-end: 1.5em;
+    margin-block-start: 0em;
+  }
+
+  .menuitemname{
+    font-weight: 400;
   }
   
 
