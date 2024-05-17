@@ -83,6 +83,7 @@ font-family: "Annie Use Your Telescope", cursive;
     position: sticky;
     top: 0;
     z-index: 100;
+    overflow-x: auto;
   }
 
   nav ul{
@@ -440,8 +441,8 @@ font-family: "Annie Use Your Telescope", cursive;
 .multiwords {
   display: flex;
   flex-direction: column;
-  margin-top: 10%;
-  margin-left: 30%;
+  /* margin-top: 10%;
+  margin-left: 30%; */
 }
 
 /* dingsedame */
@@ -549,6 +550,19 @@ flex-direction: column;
 
 /*Bag om Dingse*/
 
+.bagom1{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bagom1 img{
+  width: 100%;
+}
+
+.read-more img{
+  width: 100%;
+}
+
 /* foldud */
 .collapsible {
   color: black;
@@ -591,7 +605,7 @@ footer {
   align-items: center;
   line-height: 1.8rem;
   color: #3d0200;
-  width: 108%;
+  width: 100%;
   box-sizing: border-box;
   bottom: 0;
   left: 0;
@@ -636,7 +650,9 @@ footer {
     width: 100%;
     position: absolute;
     z-index: -1;
+    overflow-x: auto; /* Ændret fra "hidden" til "auto" */
   }
+  
 
   #andimg img{
     position: absolute;
