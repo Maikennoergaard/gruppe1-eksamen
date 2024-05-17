@@ -59,25 +59,28 @@
         <img src="img/farver/broed-paa-stak.png" alt="brødforside" class="brødforside">
 
         <section class="midtersection">
-            <h2 class="anniestor">
+            <h2 class="anniestor" id="kursivtekst">
                 “Vi bager friskbagt surdejsbrød hver dag. Kom forbi og se os tage de friske brød ud af ovnen”
             </h2>
-            <a href="undersider/kontaktos.html" class="alefdark">BESTIL HER</a>
+            <a href="undersider/kontaktos.html" class="alefdark bestilher">BESTIL HER</a>
             <img src="img/familystyle/butikken.webp" alt="udefraillustration" class="udefraillustration">
             <h2 class="alefdark">Badestuegade 15, 8000 Aarhus C</h2>
-            <h2 class="anniestor">“Der kommer nyheder fra dag til dag. Vi deler altid vores spontane ideer eller tilføjelser til menuen på instagram.”</h2>
+            <h2 class="anniestor" id="kursivtekst">“Der kommer nyheder fra dag til dag. Vi deler altid vores spontane ideer eller tilføjelser til menuen på instagram.”</h2>
         </section>
 
         <section class="instagram">
+            <div class="foelgtekst">
             <h1 class="alefred">FØLG MED PÅ INSTAGRAM</h1>
-            <h2 class="alefdark">"dingsefriskbagt"</h2>
-            <div id="billedeserie">
-                <img src="img/farver/bank.webp" alt="bank" class="smutpomfrit">
-                <img src="img/farver/brodstrak.webp" alt="broed" class="smutpomfrit">
-                <img src="img/farver/" alt="skildt" class="smutpomfrit">
+            <h2>"dingsefriskbagt"</h2>
             </div>
-            <a href="https://www.instagram.com/dingsefriskbagt/">FØLG OS</a>
-        </section>
+            <div class="billedeserie1">
+                <img src="img/farver/bank.webp" alt="bank" class="foelgbilleder">
+                <img src="img/farver/brodstrak.webp" alt="broed" class="foelgbilleder">
+                <img src="img/farver/plakat.webp" alt="plakat" class="foelgbilleder">
+            
+            <a href="https://www.instagram.com/dingsefriskbagt/" class="alefdark foelgos">FØLG OS</a>
+        </div>
+         </section>
 
         <!-- Menukort -->
        <!-- Menukort -->
@@ -86,7 +89,7 @@
     <div class="popup" id="popup">
       <div class="popup-overlay"></div>
       <div class="main-popup" id="mainPopup">
-        <section id="menucard">
+        <section  id="menucard">
           <span class="close-btn">&times;</span>
             <section id="andimg">
                 <div class="morewords">
@@ -99,13 +102,13 @@
                 <p class="anniestor">"Vi servere restaurantkvalitet - i en sandwich"</p>
             </section>
             <section id="menusandwich">
-                <aside>
+                <aside class="hidden1">
                     <h3 class="alefred" id="lodretskrift"> SANDWICH</h3>
                 </aside>
-                <hr>
+                <hr class="hidden2">
     
     
-                <ul id="sandwichul">
+                <ul class="hidden" id="sandwichul">
                     <h4 class="alefred" id="prismenu"> Alle sandwich 89kr</h4>
     
                     <li>
@@ -136,14 +139,14 @@
                 </ul>
     
     
-                <aside>
+                <aside class="hidden1">
                     <h3 class="alefred" id="lodretskrift2">SØDT</h3>
                 </aside>
     
                 <!-- lodret linje -->
-                <hr>
+                <hr class="hidden2">
     
-                <ul id="sodtul">
+                <ul class="hidden" id="sodtul">
                     <li>
                         <h4 class="menuitemname">PETIT FOUR / / 15 KR</h4>
                         <p class="menuitemtxt">millionaire shortbread, sprød mørdej, chewy karamel & mørk chokolade</p>
@@ -156,13 +159,13 @@
                     
                 </ul>
     
-                <aside>
+                <aside class="hidden1">
                     <h3 class="alefred" id="lodretskrift3">DRIKKEVARE</h3>
                 </aside>
                 <!-- lodret linje -->
-                <hr>
+                <hr class="hidden2">
     
-                <ul id="drikkeul">
+                <ul class="hidden" id="drikkeul">
                     <li>
                         <h4 class="menuitemname">VAND</h4>
                         <p class="menuitemtxt">fra 'Monte Nevado' (23 mdr.), basilikum, mozarella, pinjekerner & rucola</p>

@@ -51,5 +51,19 @@ popupOverlay.addEventListener('click', (e) => {
 // Add event listener to the close button to hide the popup
 closeButton.addEventListener('click', hidePopup);
 
+//Oprettelse af entri styling
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry)=> {
+  console.log(entry)
+  if(entry.isIntersecting){
+    entry.target.classList.add('show');
+  } else {
+    entry.target.classList.remove('show');
 
+  }
+  });
+});
+
+const hiddenElemnts = document.querySelectorAll('.hidden');
+hiddenElemnts.forEach((el)=> observer.observe(el));
   
