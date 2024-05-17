@@ -416,8 +416,7 @@ font-family: "Annie Use Your Telescope", cursive;
 /*Forside*/
 /* video forside */
 .forside-video{
-  width: 100%;
-  margin-bottom: -6.5%;
+  width: 102%;
   position: absolute;
   top: 0;
   left: 0;
@@ -427,7 +426,7 @@ font-family: "Annie Use Your Telescope", cursive;
 @media(max-width: 800px){
   .forside-video{
     transform: rotate(90deg);
-    width: 55rem;
+    width: 60rem;
     margin: -5%; 
     position: absolute; 
     top: 50%; 
