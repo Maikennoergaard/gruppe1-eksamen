@@ -28,13 +28,11 @@ body{
 
 /*Rød stor font - bliver brugt x4*/
 h3{
-  display: flex;
   color: var(--dark);
   font-family: "Alef", sans-serif;
 }
 
 h4{
-  display: flex;
   color: var(--dark);
   font-family: "Alef", sans-serif;
 }
@@ -517,8 +515,126 @@ flex-direction: column;
 
 /*Kontakt os*/ 
 
+
+/* OBS IKKE SLET DEN LANGE KOMMENTAR. DET ER EN TEST MED GRID */
+
+/* Siden styles med grid for at gøre den responsiv. I kontakt-main inddeles siden i 1 colum med 7 rows, da der er 
+7 "rækker" på siden der giver en naturlig opdeling */
+
+/* .kontakt-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat (7, 1fr);
+}
+
+.kontakt-sektion {
+  padding: 5%;
+} */
+
+/* Alle grid containers fordeles korrekt til deres rows */
+
+/* .coverkontakt {
+  grid-row: 1;
+  margin-bottom: 2%;
+}
+
+.coverkontakt img{
+  width: 100%;
+  height: auto;
+}
+
+.openhours {
+  grid-row: 2;
+}
+
+.openhours h1, h2 {
+  text-align: center;
+  text-align: center;
+}
+
+.telefon-nummer-kontakt {
+grid-row: 4;
+text-align: center;
+padding: 2%;
+}
+
+.telefon-nummer-kontakt p {
+  text-align: center;
+}
+
+.adresse-kontakt {
+  grid-row: 5;
+  text-align: center;
+}
+
+.kort-kontakt {
+  grid-row: 6;
+}
+.kort-kontakt {
+  justify-self: center;
+  align-self: center;
+}
+
+.instagram {
+  grid-row: 7;
+} */
+
+/* Styling af ring tekst + dingsedame med telefon. Da dette er en lidt anden styling end en colum bruges inline grid */
+
+/* .ringx4container {
+  display: inline-grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+}
+
+.ringx4container {
+  justify-self: center;
+  align-self: center;
+}
+
+.ringx4 {
+  text-align: center;
+  padding: 20%;
+} */
+
+/* STYLING UDEN GRID */
+
 .kontakt-main {
-  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  text-align: center;
+  padding: 5%;
+}
+
+.coverkontakt {
+  display: flex;
+  width: 100%;
+  height: auto; 
+}
+
+.kort-kontakt {
+  width: 100%;
+  height: auto;
+}
+
+/* Styling af ring tekst + dingsedame med telefon. Da dette er en lidt anden styling end en colum bruges inline grid */
+
+.ringx4container {
+  display: inline-grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+  width: fit-content;
+}
+
+.ringx4container {
+  justify-self: center;
+  align-self: center;
+}
+
+.ringx4 {
+  text-align: center;
+  padding: 20%;
 }
 
 
