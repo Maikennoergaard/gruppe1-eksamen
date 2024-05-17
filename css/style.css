@@ -45,7 +45,7 @@ p{
 
 .alefred{
 color: var(--red);
-font-size: 3em;
+font-size: 2em;
 font-family: "Alef", sans-serif;
 }
 
@@ -604,9 +604,30 @@ padding: 2%;
   flex-direction: column;
   gap: 2%;
   text-align: center;
+}
+
+/* Tilføjet padding for at give luft mellem teksten på siden. Tilføjet i % for at være responsiv */
+.kontakt-sektion {
   padding: 5%;
 }
 
+.adresse-kontakt {
+  padding: 5%;
+}
+
+.telefon-nummer-kontakt {
+  padding: 5%;
+}
+.telefon-nummer-kontakt h2 {
+  margin-bottom: 3%;
+}
+
+/*  Ekstra styling af font til telefon */
+#openhours {
+  font-size: 1.5em;
+}
+
+/* Styling af coverbillede. 100% width */
 .coverkontakt {
   display: flex;
   width: 100%;
@@ -624,7 +645,12 @@ padding: 2%;
   display: inline-grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: 1fr;
-  width: fit-content;
+  max-width: 800px;
+}
+
+.dingsetelefon {
+  height: 20em;
+  width: auto;
 }
 
 .ringx4container {
