@@ -465,22 +465,29 @@ font-family: "Annie Use Your Telescope", cursive;
   margin-left: 5%;
 }
 
-#billedeserie {
+.foelgbilleder {
 display: flex;
 justify-content: center;
 align-items: center;
-width: 50%;
-height: 50%;
+width: 70%;
+height: 70%;
 flex-direction: column;
 margin-top: 8%;
 }
 
-.foelgos {
-  border-bottom: 2px solid #c7352a; 
-  padding-bottom: 2px; 
+.billedeserie1 {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+flex-direction: column;
 }
 
-
+.foelgos {
+  border-bottom: 2px solid #c7352a; 
+  padding-bottom: 2px;
+  margin-top: 10%; 
+}
 
 /*Kontakt os*/ 
 
@@ -547,8 +554,6 @@ footer {
   margin: 3rem;
 }
 
-.smutpomfrit{
-  max-width: 100%;
-}
+
 
 /*Media Quarey Computer*/
