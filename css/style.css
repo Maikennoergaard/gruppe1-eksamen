@@ -653,6 +653,9 @@ padding: 2%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 5%;
+  margin: auto;
+  box-sizing: border-box;
+  width: fit-content;
 }
 
 .ringx4 {
@@ -663,7 +666,7 @@ padding: 2%;
 
 .dingsetelefon {
   width: auto;
-  height: 40vh;
+  height: 35vh;
 }
 
 /*Bag om Dingse*/
