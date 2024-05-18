@@ -598,25 +598,6 @@ padding: 2%;
 /* STYLING UDEN GRID */
 
 
-#andimg2{
-  position: relative;
-}
-
-#andimg2 h3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 3.7em;
-}
-
-.dingsetelefon{
-  position: absolute;
-  width: 250px;
-  top: 7%;
-  margin-left: 0px;
-}
-
 /* Styling af font med ID for at størrelserne passer */
 
 #openhours{
@@ -634,7 +615,6 @@ padding: 2%;
   flex-direction: column;
   gap: 2%;
   text-align: center;
-  padding: 5%;
 }
 
 /* Styling af billeder på kontakt siden */
@@ -657,6 +637,7 @@ padding: 2%;
 
 .adresse-kontakt {
   padding: 5%;
+  text-align: center;
 }
 
 .telefon-nummer-kontakt {
@@ -668,23 +649,22 @@ padding: 2%;
 
 /* Styling af ring tekst + dingsedame med telefon. Da dette er en lidt anden styling end en colum bruges inline grid */
 
-/* .ringx4container {
-  display: inline-grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: 1fr;
-  width: fit-content;
-}
-
 .ringx4container {
-  justify-self: center;
-  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5%;
 }
 
 .ringx4 {
   text-align: center;
-  padding: 20%;
+  padding: 5%;
   background-color: var(--background);
-} */
+}
+
+.dingsetelefon {
+  width: auto;
+  height: 40vh;
+}
 
 /*Bag om Dingse*/
 
