@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,24 +11,28 @@
     <title>Kontakt</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
 
-    
-
     <!-- video forside -->
     <div class="forside1">
-    <video class="forside-video" loop autoplay muted controlsList="nodownload">
-        <source src="video/dingse-forside.mp4" type="video/mp4">
-    </video>
+        <video class="forside-video" loop autoplay muted controlsList="nodownload">
+            <source src="video/dingse-forside.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Pile -->
+    <div class="pil">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
 
     <header>
-         <nav>
+        <nav>
             <ul class="sidebar">
-                <li class="krys" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 96 960 960" width="50"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                <li class="krys" onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 96 960 960" width="50"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" /></svg></a></li>
                 <img src="img/icon/bue1.png" alt="">
                 <li><a href="#">MENU</a></li>
                 <img src="img/icon/bue2.png" alt="">
@@ -42,177 +47,19 @@
                 <li class="hideOnMobile"><a href="undersider/menukort.html">MENU</a></li>
                 <li class="hideOnMobile"><a href="undersider/kontaktos.html">KONTAKT</a></li>
                 <li class="hideOnMobile"><a href="undersider/bagom.html">BAG OM DINGSE</a></li>
-                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 96 960 960" width="50"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 96 960 960" width="50"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" /></svg></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="multiwords">
-            <h3 class="alefred" id="big1">DINGSE</h3>
-            <h3 class="alefred" id="big2">DINGSE</h3>
-            <h3 class="alefred" id="big3">DINGSE</h3>
-            <h3 class="alefred" id="big4">DING.</h3>
+            <h3 class="alefred" id="bigtext">Your Text Here</h3>
         </section>
-
-        <img src="img/dingsedamer/ukop.png" alt="dingsedame" class="dingseukop">
-
-        <img src="img/farver/broed-paa-stak.png" alt="brødforside" class="brødforside">
-
-        <section class="midtersection">
-            <h2 class="annielille" id="kursivtekst">
-                “Vi bager friskbagt surdejsbrød hver dag. Kom forbi og se os tage de friske brød ud af ovnen”
-            </h2>
-            <a href="undersider/kontaktos.html" class="alefdark bestilher">BESTIL HER</a>
-            <img src="img/familystyle/butikken.webp" alt="udefraillustration" class="udefraillustration">
-            <h2 class="alefdark">Badestuegade 15, 8000 Aarhus C</h2>
-            <h2 class="anniestor" id="kursivtekst">“Der kommer nyheder fra dag til dag. Vi deler altid vores spontane ideer eller tilføjelser til menuen på instagram.”</h2>
-        </section>
-
-        <section class="instagram">
-            <div class="foelgtekst">
-            <h1 class="alefred">FØLG MED PÅ INSTAGRAM</h1>
-            <h2>"dingsefriskbagt"</h2>
-            </div>
-            <div class="billedeserie1">
-                <img src="img/farver/bank.webp" alt="bank" class="foelgbilleder">
-                <img src="img/farver/brodstrak.webp" alt="broed" class="foelgbilleder">
-                <img src="img/farver/plakat.webp" alt="plakat" class="foelgbilleder">
-            
-            <a href="https://www.instagram.com/dingsefriskbagt/" class="alefdark foelgos">FØLG OS</a>
-        </div>
-         </section>
-
-       <!-- Menukort -->
-<div class="menu-container">
-    <div class="btn open-btn" id="menuButton">MENUKORT ^</div>
-    <div class="popup" id="popup">
-      <div class="popup-overlay"></div>
-      <div class="main-popup" id="mainPopup">
-        <section  id="menucard">
-          <span class="close-btn">&times;</span>
-            <section id="andimg">
-                <div class="morewords">
-                <h3 class="alefred" id="big1">SANDWICH</h3>
-                <h3 class="alefred" id="big2">SANDWICH</h3>
-                <h3 class="alefred" id="big3">SANDWICH</h3>
-                <h3 class="alefred" id="big4">SANDWICH</h3>
-                </div>
-                <img src="/img/dingsedamer/uarm.png" alt="">
-                <p class="anniestor">"Vi servere restaurantkvalitet - i en sandwich"</p>
-            </section>
-            <section id="menusandwich">
-                <aside class="hidden1">
-                    <h3 class="alefred" id="lodretskrift"> SANDWICH</h3>
-                </aside>
-                <hr class="hidden2">
-    
-    
-                <ul class="hidden" id="sandwichul">
-                    <h4 class="alefred" id="prismenu"> Alle sandwich 89kr</h4>
-    
-                    <li>
-                        <h4 class="menuitemname">SERRANO</h4>
-                        <p class="menuitemtxt">fra 'Monte Nevado' (23 mdr.), basilikum, mozarella, pinjekerner & rucola</p>
-                    </li>
-    
-                    <li>
-                        <h4 class="menuitemname">KYLLING</h4>
-                        <p class="menuitemtxt">jalapenosvinaigrette, padrons, skalotteløg & rucola</p>
-                    </li>
-                    <li>
-                        <h4 class="menuitemname">FOCACCIA</h4>
-                        <p class="menuitemtxt">mortadella, ricottacreme & ristede mandler</p>
-                    </li>
-                    <li>
-                        <h4 class="menuitemname">'JAMBON BEURRE'</h4>
-                        <p class="menuitemtxt">dobbelt fermenteret smør, kogt italiensk skinke & conté (12 mdr.)</p>
-                    </li>
-                    <li>
-                        <h4 class="menuitemname">ROSÉ REJER</h4>
-                        <p class="menuitemtxt">rød peber, chili & tomatiseret mayonaise, frisk agurk & rucola</p>
-                    </li>
-                    <li>
-                        <h4 class="menuitemname">SALAD À LA PROVENCAL</h4>
-                        <p class="menuitemtxt">nye kartofler, modne tomater, oliven, skalotteløg, estragon, ramsløg & dijon vinaigrette</p>
-                    </li>
-                </ul>
-    
-    
-                <aside class="hidden1">
-                    <h3 class="alefred" id="lodretskrift2">SØDT</h3>
-                </aside>
-    
-                <!-- lodret linje -->
-                <hr class="hidden2">
-    
-                <ul class="hidden" id="sodtul">
-                    <li>
-                        <h4 class="menuitemname">PETIT FOUR / / 15 KR</h4>
-                        <p class="menuitemtxt">millionaire shortbread, sprød mørdej, chewy karamel & mørk chokolade</p>
-                    </li>
-    
-                    <li>
-                        <h4 class="menuitemname">TIRAMISU / / 20 KR</h4>
-                        <p class="menuitemtxt">espresso, marsala & cognac</p>
-                    </li>
-                    
-                </ul>
-    
-                <aside class="hidden1">
-                    <h3 class="alefred" id="lodretskrift3">DRIKKEVARE</h3>
-                </aside>
-                <!-- lodret linje -->
-                <hr class="hidden2">
-    
-                <ul class="hidden" id="drikkeul">
-                    <li>
-                        <h4 class="menuitemname">VAND</h4>
-                        <p class="menuitemtxt">fra 'Monte Nevado' (23 mdr.), basilikum, mozarella, pinjekerner & rucola</p>
-                    </li>
-    
-                    <li>
-                        <h4 class="menuitemname">DINGSEVAND</h4>
-                        <p class="menuitemtxt">jalapenosvinaigrette, padrons, skalotteløg & rucola</p>
-                    </li>
-                    <li>
-                        <h4 class="menuitemname">KAFFE</h4>
-                        <p class="menuitemtxt">ESPRESSO</p>
-                        <p class="menuitemtxt">CORTADO</p>
-                        <p class="menuitemtxt">LATTE</p>
-                        <p class="menuitemtxt">STOR LATTE</p>
-                        <p class="menuitemtxt">CAPPUCHINO</p>
-                    </li>
-                </ul>
-            </section>
-        </section>
-        </div>
-      </div>
-    </div>
-  </div>
-  
     </main>
 
-    
-    <!-- Footer -->
     <footer>
-        <h1 class="besøg">BESØG OS PÅ</h1>
         <ul class="info-container1">
-            <li>Badestuegade 15, 8000 Aarhus C</li>
-            <li>Åbent tirsdag til lørdag  fra 10.00-17.30</li>
-            <li class="iconer">
-                <img src="img/icon/instagram.png" alt="instagram" class="icon">
-                <img src="img/icon/facebook.png" alt="facebook" class="icon">
-                <img src="img/icon/mail.png" alt="mail" class="icon">
-            </li>
-        </ul>
-
-        <ul class="info-container2">
-        <li>Telefon: +45 93 96 87 84 </li>
-        <li>Mail: soren@dingsefriskbagt.dk</li>
-        <li>CVR-nummer: 44117746</li>
+            <li class="besøg">Your Info Here</li>
         </ul>
     </footer>
-
-    <script src="/js/script.js"></script>
-</body>
