@@ -199,7 +199,17 @@ font-family: "Annie Use Your Telescope", cursive;
   #menucard{
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 50px;
+  }
+
+  #morewordsmenu{
+    margin-block-start: 0;
+    margin-block-end: 1em;
+    margin-top: 70%;
+  }
+
+  #tekstmenu{
+    line-height: 110%;
   }
 
   #menusandwich{
@@ -215,7 +225,8 @@ font-family: "Annie Use Your Telescope", cursive;
   }
 
   #prismenu{
-    font-size: 1.5em;
+    font-size: 2em;
+    margin-bottom: 5%;
     font-weight: 600;
     font-family: "Annie Use Your Telescope", cursive;
   }
@@ -238,7 +249,7 @@ font-family: "Annie Use Your Telescope", cursive;
   #andimg img{
     position: absolute;
     width: 250px;
-    top: 7%;
+    top: 40%;
     right: 12%;
   }
   /*Styling af tekst lodret tekst*/
@@ -266,6 +277,7 @@ font-family: "Annie Use Your Telescope", cursive;
   #sandwichul, #sodtul, #drikkeul{
     grid-column-start: 3;
     grid-column-end: 5; 
+    margin-left: 5%;
   }
 
   #sandwichul li, #sodtul li, #drikkeul li{
@@ -758,9 +770,10 @@ footer {
 
   #andimg img{
     position: absolute;
-    width: 300px;
+    float: right;
+    width: 80%;
     top: 5%;
-    right: 0;
+
   }
 
   #andimg h3 {
