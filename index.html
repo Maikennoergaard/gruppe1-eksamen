@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,24 +11,28 @@
     <title>Kontakt</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
 
-    
-
     <!-- video forside -->
     <div class="forside1">
-    <video class="forside-video" loop autoplay muted controlsList="nodownload">
-        <source src="video/dingse-forside.mp4" type="video/mp4">
-    </video>
+        <video class="forside-video" loop autoplay muted controlsList="nodownload">
+            <source src="video/dingse-forside.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Pile -->
+    <div class="pil">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
 
     <header>
-         <nav>
+        <nav>
             <ul class="sidebar">
-                <li class="krys" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 96 960 960" width="50"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                <li class="krys" onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 96 960 960" width="50"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" /></svg></a></li>
                 <img src="img/icon/bue1.png" alt="">
                 <li><a href="#">MENU</a></li>
                 <img src="img/icon/bue2.png" alt="">
@@ -42,17 +47,14 @@
                 <li class="hideOnMobile"><a href="undersider/menukort.html">MENU</a></li>
                 <li class="hideOnMobile"><a href="undersider/kontaktos.html">KONTAKT</a></li>
                 <li class="hideOnMobile"><a href="undersider/bagom.html">BAG OM DINGSE</a></li>
-                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 96 960 960" width="50"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 96 960 960" width="50"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" /></svg></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="multiwords">
-            <h3 class="alefred" id="big1">DINGSE</h3>
-            <h3 class="alefred" id="big2">DINGSE</h3>
-            <h3 class="alefred" id="big3">DINGSE</h3>
-            <h3 class="alefred" id="big4">DING.</h3>
+            <h3 class="alefred" id="bigtext">Your Text Here</h3>
         </section>
 
         <img src="img/dingsedamer/ukop.png" alt="dingsedame" class="dingseukop">
@@ -192,26 +194,8 @@
   
     </main>
 
-    
-    <!-- Footer -->
     <footer>
-        <h1 class="besøg">BESØG OS PÅ</h1>
         <ul class="info-container1">
-            <li>Badestuegade 15, 8000 Aarhus C</li>
-            <li>Åbent tirsdag til lørdag  fra 10.00-17.30</li>
-            <li class="iconer">
-                <img src="img/icon/instagram.png" alt="instagram" class="icon">
-                <img src="img/icon/facebook.png" alt="facebook" class="icon">
-                <img src="img/icon/mail.png" alt="mail" class="icon">
-            </li>
-        </ul>
-
-        <ul class="info-container2">
-        <li>Telefon: +45 93 96 87 84 </li>
-        <li>Mail: soren@dingsefriskbagt.dk</li>
-        <li>CVR-nummer: 44117746</li>
+            <li class="besøg">Your Info Here</li>
         </ul>
     </footer>
-
-    <script src="/js/script.js"></script>
-</body>

@@ -334,7 +334,12 @@ font-family: "Annie Use Your Telescope", cursive;
     right: -80px;
     z-index: 9;
   }
-  
+
+  .sticky {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
   
   .open-btn {
     font-size: 1rem;
@@ -456,8 +461,47 @@ font-family: "Annie Use Your Telescope", cursive;
   }
 }
 
+/* scrool pil */
 
+.pil{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+.pil span{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 3px solid var(--gul);
+  border-right: 3px solid var(--gul);
+  transform: rotate(45deg);
+  margin: -5px;
+  animation: animate 2s infinite;
+}
+
+.pil span:nth-child(2){
+  animation-delay: -0.2s;
+}
+
+.pil span:nth-child(3){
+  animation-delay: -0.4s;
+}
+
+@keyframes animate{
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
 
 /* multiwords(dingse)*/
 .multiwords {
