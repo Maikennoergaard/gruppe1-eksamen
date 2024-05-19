@@ -261,13 +261,14 @@ font-family: "Annie Use Your Telescope", cursive;
     transform: rotate(90deg);
     font-size: 2em;
     font-weight: 100;
+    margin-top: 20%;
   }
   
   /*lodret linje*/
   hr{
     grid-column: 2;
     background-color: var(--red);
-    width: 40%;
+    width: 60%;
     margin-block-start: 0;
     margin-block-end: 0;
     border-width: 0;
@@ -723,6 +724,9 @@ footer {
     overflow-x: auto; /* Ændret fra "hidden" til "auto" */
   }
   
+  .menuimg{
+    max-width: 10px;
+  }
 
   #andimg img{
     position: absolute;
