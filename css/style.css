@@ -216,7 +216,7 @@ font-family: "Annie Use Your Telescope", cursive;
   #morewordsmenu{
     margin-block-start: 0;
     margin-block-end: 1em;
-    margin-top: 120%;
+    margin-top: 210%;
   }
 
   #tekstmenu{
@@ -243,7 +243,7 @@ font-family: "Annie Use Your Telescope", cursive;
   }
 
   #menukortsandwichimg{
-    width:80%;
+    width:100%;
     align-items: center;
     grid-column-start: 2;
     grid-column-end: 7;
@@ -273,8 +273,8 @@ font-family: "Annie Use Your Telescope", cursive;
 
   #andimg img{
     position: absolute;
-    width: 250px;
-    top: 50%;
+    width: 240px;
+    top: 67%;
     right: 12%;
   }
   /*Styling af tekst lodret tekst*/
