@@ -213,6 +213,11 @@ font-family: "Annie Use Your Telescope", cursive;
     gap: 50px;
   }
 
+  #bestilknapmenu{
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
   #morewordsmenu{
     margin-block-start: 0;
     margin-block-end: 1em;
@@ -243,14 +248,14 @@ font-family: "Annie Use Your Telescope", cursive;
   }
 
   #menukortsandwichimg{
-    width:100%;
+    width:80%;
     align-items: center;
     grid-column-start: 2;
     grid-column-end: 7;
   }
 
   #menukortkaffeimg{
-    width:100%;
+    width:80%;
     align-items: center;
     grid-column-start: 1;
     grid-column-end: 7;
