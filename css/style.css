@@ -280,9 +280,11 @@ font-family: "Annie Use Your Telescope", cursive;
 
   #andimg img{
     position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 240px;
-    top: 67%;
-    right: 12%;
   }
   /*Styling af tekst lodret tekst*/
   aside{
@@ -565,13 +567,10 @@ font-family: "Annie Use Your Telescope", cursive;
   margin-top: 8%;
 }
 
-<<<<<<< Updated upstream
 .kursivtekst {
  margin-left: 5%;
 }
 
-=======
->>>>>>> Stashed changes
 /* tekst til midtersection */
 .knap {
   border: 2px solid #c7352a; 
@@ -714,9 +713,6 @@ flex-direction: column;
   padding: 5%;
 }
 
-.bagom-ordx4 {
-
-}
 
 /* Styler så billedet er 100% på telefon */
 .bagom1 img{
@@ -882,10 +878,7 @@ footer {
     margin-block-end: 1em;
     font-size: 5em;
   }
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
 
 
   /* forside */
