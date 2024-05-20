@@ -65,6 +65,8 @@ font-family: "Alef", sans-serif;
   padding-top: 5px;
   padding-bottom: 5px;
   border: 2px solid var(--red);
+  margin-top: 7%;
+  margin-bottom: 7%;
 }
 
 /*Håndskrevet font - citater*/
@@ -563,6 +565,14 @@ font-family: "Annie Use Your Telescope", cursive;
   margin-top: 10%;
 }
 
+<<<<<<< Updated upstream
+=======
+.kursivtekst {
+ margin-left: 5%;
+}
+
+
+>>>>>>> Stashed changes
 /* tekst til midtersection */
 .knap {
   border: 2px solid #c7352a; 
@@ -689,7 +699,6 @@ flex-direction: column;
 }
 
 /*Bag om Dingse*/
-
 .bagom1{
   display: flex;
   flex-wrap: wrap;
@@ -796,10 +805,13 @@ footer {
     z-index: -1;
     overflow-x: auto; /* Ændret fra "hidden" til "auto" */
   }
+<<<<<<< Updated upstream
   
   .menuimg{
     max-width: 10px;
   }
+=======
+>>>>>>> Stashed changes
 
   #andimg img{
     position: absolute;
@@ -807,6 +819,18 @@ footer {
     width: 80%;
     top: 5%;
 
+  }
+
+}
+
+@media (min-width: 750px) {
+  #andimg{
+    margin-top: 0;
+  }
+ 
+  #andimg img{
+    width: 40%;
+    margin-top: 30%;
   }
 
   #andimg h3 {
@@ -818,6 +842,7 @@ footer {
     margin-block-end: 1em;
     font-size: 5em;
   }
+<<<<<<< Updated upstream
 
   #andimg2 img{
     position: absolute;
@@ -914,6 +939,8 @@ margin-right: 10%;
   /******************' Font styling *********************/
 
 
+=======
+>>>>>>> Stashed changes
 }
 
 
