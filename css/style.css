@@ -913,12 +913,7 @@ footer {
     font-size: 3em;
   }
 
-<<<<<<< Updated upstream
-
-=======
-}
->>>>>>> Stashed changes
-  /* forside */
+/* forside */
 .multiwords{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1028,7 +1023,7 @@ margin-right: 10%;
   margin-left: 0%;
 }
 
-  /******************' Font styling *********************/
+/******************' Font styling *********************/
 
 /*Font styling*/
 h3{
@@ -1062,4 +1057,4 @@ color: var(--dark);
 font-family: "Alef", sans-serif;
 font-size: 2em;
 }
-
+}
