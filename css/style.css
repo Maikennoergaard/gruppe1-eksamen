@@ -1210,7 +1210,6 @@ footer {
     display: flex;
     color: var(--dark);
     font-family: "Alef", sans-serif;
-<<<<<<< HEAD
   }
 
   h4{
@@ -1325,21 +1324,116 @@ height: 70%;
 
 /******** Bag Om *******/
 
-@media (min-width: 700px) 
+@media (min-width: 700px) {
+
+  .bagom1 {
+    display: grid;
+  }
+  
+  .bagom-ordx4 {
+    justify-self: center;
+    align-self: center;
+  }
+
+/* Styling af første del af bagom */
+.bagom1-desktop{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bagom1 h1 {
+  justify-self: center;
+  align-self: center;
+  padding: 2%; 
+}
+
+/* Styler så billedet croppes til desktop*/
+.bagom1 img{
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  object-position: top;
+}
+
+.read-more img{
+  width: 50%;
+}
 
 
+/* Styler søren og olivia teksten til mobil */
+.bagom-ordx4 {
+  padding-left: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
 
-/******************' Font styling *********************/
-
-/*Font styling*/
-h3{
+/* Styling af button */
+.collapsible{
   display: flex;
+  cursor: pointer;
   color: var(--dark);
   font-family: "Alef", sans-serif;
-  font-size: 2em;
-  }
-=======
-    font-size: 2em;
-    }
->>>>>>> cdd4d79d82b4d3c21cd5808e6a3118d89b28bcf2
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 2px solid var(--red);
+}
+
+/* Bag om undersider */
+
+.content {
+  display: none;
+  overflow: hidden;
+}
+
+/* Styler alle p i "content" fold ud sektionerne */
+.content p {
+  margin: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.content h4 {
+  margin: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+button.collapsible {
+  background-color: transparent;
+}
+
+/* Styling af "read more" er styling af hele indholdet under "bagom1" på bag om dingse siden */
+
+.read-more{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.read-more img {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tilføjet padding for afstand til kant */
+.read-more h3{
+  padding-left: 5%;
+}
+
+.read-more h2{
+  padding-left: 5%;
+}
+.read-more p{
+  padding-left: 5%;
+}
+
+.read-more section button{
+  justify-content: center;
+}
+
+
+
 }
