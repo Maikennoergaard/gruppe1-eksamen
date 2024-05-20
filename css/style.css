@@ -81,13 +81,12 @@ font-size: 2em;
 font-family: "Annie Use Your Telescope", cursive;
 }
 
-/* Navbar */
+/********* Navbar ********/
   .logo img {
     width: 100px;
     height: auto;
   }
   
-
   nav{
     background-color: var(--background);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -122,17 +121,6 @@ font-family: "Annie Use Your Telescope", cursive;
     font-size: 2rem;
   }
 
-  .buetekst{
-    font-family: "Annie Use Your Telescope", cursive;
-    /* position: absolute; */
-    top: 50%; /* Placer tekstens top i midten af containeren */
-    left: 50%; /* Placer tekstens venstre kant i midten af containeren */
-    transform: translate(-50%, -50%) rotate(-90deg); /* Rotér teksten med -90 grader (mod uret) */
-    text-align: center; /* Centrer teksten */
-    font-size: 30px; /* Juster skriftstørrelsen efter behov */
-    white-space: nowrap; /* Forhindre linjeskift for lang tekst */
-  }
-
   .hideOnMobile nav a{
     color: var(--red);
   }
@@ -151,7 +139,6 @@ font-family: "Annie Use Your Telescope", cursive;
     height: 100vh;
     width: 250px;
     background-color: var(--gultransperent);
-    /* backdrop-filter: blur(10px); */
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     list-style: none;
     display: none;
@@ -187,7 +174,7 @@ font-family: "Annie Use Your Telescope", cursive;
     right: 10px;
   }
 
-/* Media */
+/* burgermenu Media */
 
     @media(max-width: 800px){
       .hideOnMobile{
@@ -204,9 +191,8 @@ font-family: "Annie Use Your Telescope", cursive;
       }
     }
 
-/*Burgermenu*/
+/********* Menukort *********/
 
-/*Menukort*/
   #menucard{
     display: flex;
     flex-direction: column;
@@ -282,6 +268,7 @@ font-family: "Annie Use Your Telescope", cursive;
     top: 67%;
     right: 12%;
   }
+
   /*Styling af tekst lodret tekst*/
   aside{
     grid-column: 1;
@@ -339,7 +326,7 @@ font-family: "Annie Use Your Telescope", cursive;
   } */
   
 
-/* popud menu */
+/******** popud menukort *******/
 .menu-container {
     width: 100%;
     display: flex;
@@ -359,7 +346,7 @@ font-family: "Annie Use Your Telescope", cursive;
     cursor: pointer;
     transform: rotate(-90deg);
     position: fixed;
-    top: 280px;
+    top: 200px;
     right: -80px;
     z-index: 9;
   }
@@ -385,16 +372,16 @@ font-family: "Annie Use Your Telescope", cursive;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--background); /* Semi-transparent overlay */
+    background-color: var(--background);
     z-index: 999;
-    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-y: auto;
   }
   
   .main-popup {
     position: absolute;
-    height: 100vh; /* Juster højden efter behov */
-    width: 100%; /* Juster bredden efter behov */
-    z-index: 999; /* Juster z-indekset efter behov */
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
     padding-top: 300pc;
     background: var(--background);
     padding: 30px 20px;
@@ -402,22 +389,20 @@ font-family: "Annie Use Your Telescope", cursive;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: none; /* Fjerner fast maksimal bredde */
-    overflow-x: hidden; /* Forhindrer vandret rulning */
+    max-width: none;
+    overflow-x: hidden;
     transform: translateX(100%);
 }
-
   
   .popup-overlay {
     background-color: var(--gul);
     height: 100vh;
     width: 100%;
     right: 0;
-    position: relative; /* Ændrer position til relativ */
-    overflow-x: hidden; /* Forhindrer vandret rulning på overlay */
+    position: relative;
+    overflow-x: hidden;
     max-width: 100%;
   }
-  
 
   .main-popup.slide-in {
     animation: slide-in 0.5s ease forwards;
@@ -460,37 +445,38 @@ font-family: "Annie Use Your Telescope", cursive;
       transform: translateX(100%);
     }
   }
-  
-  
 
-/*Forside*/
+/***********Forside***********/
+
 /* video forside */
 .forside1 {
   height: 92vh;
-  position: relative; /* Tilføjer position: relative; til forældreelementet */
+  position: relative;
 }
 
 .forside-video {
   width: 100%;
-  height: 100%; /* Sætter videoens højde til 100% af forældreelementets højde */
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  object-fit: cover; /* Sikrer, at videoen fylder hele forældreelementet uden at miste proportioner */
+  object-fit: cover; 
 }
+
+/* forsidevideo media */
 
 @media (max-width: 800px) {
   .forside-video {
-    width: 100vh; /* Brug viewportets højde */
-    height: 100vw; /* Brug viewportets bredde */
+    width: 100vh;
+    height: 100vw;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(90deg); /* Ret roteringsværdien */
+    transform: translate(-50%, -50%) rotate(90deg);
   }
 }
 
-/* scrool pil */
+/***** scrool pil *****/
 
 .pil{
   position: absolute;
@@ -499,7 +485,7 @@ font-family: "Annie Use Your Telescope", cursive;
   transform: translate(-50%, -50%);
 }
 
-.pil span{
+.pil div{
   display: block;
   width: 20px;
   height: 20px;
@@ -510,11 +496,11 @@ font-family: "Annie Use Your Telescope", cursive;
   animation: animate 2s infinite;
 }
 
-.pil span:nth-child(2){
+.pil div:nth-child(2){
   animation-delay: -0.2s;
 }
 
-.pil span:nth-child(3){
+.pil div:nth-child(3){
   animation-delay: -0.4s;
 }
 
@@ -532,7 +518,7 @@ font-family: "Annie Use Your Telescope", cursive;
   }
 }
 
-/* multiwords(dingse)*/
+/*multiwords(dingse)*/
 .multiwords {
   display: flex;
   flex-direction: column;
