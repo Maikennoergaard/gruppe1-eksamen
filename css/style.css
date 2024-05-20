@@ -209,83 +209,88 @@ font-family: "Annie Use Your Telescope", cursive;
 /*Burgermenu*/
 
 /*Menukort*/
-  #menucard{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-  }
+  /* Menukort */
+#menucard {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 
-  #bestilknapmenu{
-    grid-column-start: 3;
-    grid-column-end: 5;
-  }
+#bestilknapmenu {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
 
-  #morewordsmenu{
-    margin-block-start: 0;
-    margin-block-end: 1em;
-    margin-top: 210%;
-  }
+#morewordsmenu {
+  margin-block-start: 0;
+  margin-block-end: 1em;
+  margin-top: 190%;
+}
 
-  #tekstmenu{
-    line-height: 110%;
-  }
+#tekstmenu {
+  line-height: 110%;
+}
 
-  #menusandwich{
-    display: grid;
-    grid-template-columns: 10% 1% 67% 20%;
-    grid-row-gap: 50px;
-    margin-left: 2%;
-    margin-right: 2%;
-  }
+#menusandwich {
+  display: grid;
+  grid-template-columns: 10% 1% 67% 20%;
+  grid-row-gap: 50px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
 
-  #menusandwich li{
-    gap: 50px;
-  }
+#menusandwich li {
+  gap: 50px;
+}
 
-  #prismenu{
-    font-size: 2em;
-    margin-bottom: 5%;
-    font-weight: 600;
-    font-family: "Annie Use Your Telescope", cursive;
-  }
+#prismenu {
+  font-size: 2em;
+  margin-bottom: 5%;
+  font-weight: 600;
+  font-family: "Annie Use Your Telescope", cursive;
+}
 
-  #menukortsandwichimg{
-    width:80%;
-    align-items: center;
-    grid-column-start: 2;
-    grid-column-end: 7;
-  }
+#menukortsandwichimg {
+  width: 80%;
+  align-items: center;
+  grid-column-start: 2;
+  grid-column-end: 7;
+}
 
-  #menukortkaffeimg{
-    width:80%;
-    align-items: center;
-    grid-column-start: 1;
-    grid-column-end: 7;
-  }
+#menukortkaffeimg {
+  width: 80%;
+  align-items: center;
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
 
-  #andimg{
-    margin-top: 400px;
-    position: relative;
-  }
+#andimg {
+  position: relative;
+  margin-top: 600px;
+  
+}
 
-  #andimg h3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    font-size: 3.7em;
-  }
+#andimg h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  font-size: 3.7em;
+  z-index: 0;
 
-  #andimg img{
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 240px;
-  }
+}
+
+#andimg img {
+  position: absolute;
+  width: 250px;
+  z-index: 1;
+  top: 62%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
   /*Styling af tekst lodret tekst*/
   aside{
     grid-column: 1;
@@ -839,6 +844,40 @@ footer {
 /*Media Quarey Computer*/
 
 /* Menukort */
+@media (min-width: 400px) {
+  #andimg{
+    margin-top: 40%;
+  }
+
+  #andimg img{
+    margin-top: 30%;
+  }
+}
+
+
+@media (min-width: 700px) {
+  #andimg{
+    margin-top: 0;
+  }
+ 
+  #andimg img{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+  }
+
+  #andimg h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    font-size: 5em;
+  }
+}
+
 @media(min-width: 800px) {
   .main-popup {
       /* Dine stilarter for computere */
@@ -860,39 +899,25 @@ footer {
   
   .menuimg{
     max-width: 10px;
+    margin-top: 100%;
   }
-
+  
   #andimg img{
     position: absolute;
-    float: right;
-    width: 80%;
-    top: 5%;
-
-  }
-
-}
-
-@media (min-width: 750px) {
-  #andimg{
-    margin-top: 0;
-  }
- 
-  #andimg img{
-    width: 40%;
-    margin-top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
   }
 
   #andimg h3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    font-size: 5em;
+    font-size: 3em;
   }
 
+<<<<<<< Updated upstream
 
+=======
+}
+>>>>>>> Stashed changes
   /* forside */
 .multiwords{
   display: grid;
@@ -1037,7 +1062,4 @@ color: var(--dark);
 font-family: "Alef", sans-serif;
 font-size: 2em;
 }
-
-}
-
 
