@@ -565,10 +565,13 @@ font-family: "Annie Use Your Telescope", cursive;
   margin-top: 8%;
 }
 
+<<<<<<< Updated upstream
 .kursivtekst {
  margin-left: 5%;
 }
 
+=======
+>>>>>>> Stashed changes
 /* tekst til midtersection */
 .knap {
   border: 2px solid #c7352a; 
@@ -879,30 +882,14 @@ footer {
     margin-block-end: 1em;
     font-size: 5em;
   }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 
-  #andimg2 img{
-    position: absolute;
-    width: 300px;
-    top: 5%;
-    right: 0;
-  }
-
-  #andimg2 h3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    font-size: 5em;
-  }
 
   /* forside */
 /* multiwords(dingse)*/
-.multiwords {
- 
-}
 
 /* dingsedame */
 .dingseukop {
