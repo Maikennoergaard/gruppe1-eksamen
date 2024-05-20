@@ -950,6 +950,15 @@ footer {
   #tekstmenu {
     font-size: 2.2em;
   }
+
+ 
+ h3{
+    display: flex;
+    color: var(--dark);
+    font-family: "Alef", sans-serif;
+    font-size: 2em;
+  }
+    
 }
 
 @media(min-width: 800px) {
@@ -1224,7 +1233,6 @@ footer {
     display: flex;
     color: var(--dark);
     font-family: "Alef", sans-serif;
-<<<<<<< HEAD
   }
 
   h4{
@@ -1339,21 +1347,4 @@ height: 70%;
 
 /******** Bag Om *******/
 
-@media (min-width: 700px) 
-
-
-
-/******************' Font styling *********************/
-
-/*Font styling*/
-h3{
-  display: flex;
-  color: var(--dark);
-  font-family: "Alef", sans-serif;
-  font-size: 2em;
-  }
-=======
-    font-size: 2em;
-    }
->>>>>>> cdd4d79d82b4d3c21cd5808e6a3118d89b28bcf2
 }
