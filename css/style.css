@@ -10,8 +10,8 @@
 /*Farve definationer*/
 :root { 
     --red: #c7352a;
-    --gul: rgba(243, 236, 134, 0.847);
-    /* --gul: #f3ec86; */
+    --gultransperent: rgba(243, 236, 134, 0.847);
+    --gul: #f3ec86;
     --lilla: #ded7ff;
     --background: #f3f5dd;
     --contrastbackground:#DDDFC7;
@@ -150,7 +150,7 @@ font-family: "Annie Use Your Telescope", cursive;
     right: 0;
     height: 100vh;
     width: 250px;
-    background-color: var(--gul);
+    background-color: var(--gultransperent);
     /* backdrop-filter: blur(10px); */
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     list-style: none;
@@ -353,14 +353,14 @@ font-family: "Annie Use Your Telescope", cursive;
   .btn {
     display: inline-block;
     margin: 10px;
-    color: var(--dark);
+    color: var(--gul);
     padding: 10px 20px;
     font-size: 16px;
     border: none;
     cursor: pointer;
     transform: rotate(-90deg);
     position: fixed;
-    top: 400px;
+    top: 280px;
     right: -80px;
     z-index: 9;
   }

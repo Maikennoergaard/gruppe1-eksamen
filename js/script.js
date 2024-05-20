@@ -69,14 +69,19 @@ hiddenElemnts.forEach((el) => observer.observe(el));
 
 // sticky nav
 
-window.onscroll = function () { makeSticky() };
+window.onscroll = function () { changeTextColor() };
 var button = document.querySelector(".btn");
-var stickyPoint = 400; // The scroll position after which the button becomes sticky
+var stickyPoint = 400; // The scroll position after which the button text color changes
 
-function makeSticky() {
+function changeTextColor() {
+   var rootStyles = getComputedStyle(document.documentElement);
+   var darkColor = rootStyles.getPropertyValue('--dark').trim();
+   
    if (window.pageYOffset >= stickyPoint) {
-      button.classList.add("sticky");
-      } else {
-        button.classList.remove("sticky");
-         }
+      button.style.color = darkColor;
+   } else {
+      button.style.color = "";
+   }
 }
+
+
