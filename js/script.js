@@ -86,6 +86,21 @@ function changeTextColor() {
    }
 }
 
+var mainnav = document.querySelector('.mainnav');
+var nav = document.querySelector('.nav');
+
+var offset = mainnav.offsetTop;
+
+window.onscroll = function() {
+  if(window.pageYOffset > offset) {
+    nav.classList.add('nav-top');
+    mainnav.style.marginBottom = nav.offsetHeight + 'px'; // Adjusting margin to avoid content jumping
+  } else {
+    nav.classList.remove('nav-top');
+    mainnav.style.marginBottom = '0'; // Resetting margin
+  }
+}
+
 // forside video
 document.addEventListener("DOMContentLoaded", function() {
   var video = document.getElementById("forsideVideo");

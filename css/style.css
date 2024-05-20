@@ -89,16 +89,27 @@ font-family: "Annie Use Your Telescope", cursive;
     height: auto;
   }
   
-
   nav{
     background-color: var(--contrastbackground);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
     top: 0;
-    z-index: 100;
+    z-index: 1;
     overflow-x: auto;
   }
 
+  .nav-bottom{
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    background-color: var(--background);
+  }
+
+  .nav-top{
+    position: fixed;
+    top: 0;
+    background-color: var(--contrastbackground);
+  }
+  
   nav ul{
     width: 100%;
     list-style: none;
@@ -161,6 +172,7 @@ font-family: "Annie Use Your Telescope", cursive;
     justify-content: flex-start;
     padding-top: 170px;
     gap: 20px;
+    z-index: 110;
   }
 
   .sidebar li{
@@ -225,6 +237,7 @@ font-family: "Annie Use Your Telescope", cursive;
     justify-content: center;
     align-items: center;
     margin-top: 10%;
+    font-size: 1.7em;
   }
 
   #menusandwich {
@@ -541,7 +554,7 @@ font-family: "Annie Use Your Telescope", cursive;
 
 /* multiwords(dingse)*/
 .firexdingse {
-  margin-top: 10%;
+  margin-top: 15%;
   margin-left: 35%;
 }
 
@@ -937,6 +950,15 @@ footer {
   #tekstmenu {
     font-size: 2.2em;
   }
+
+ 
+ h3{
+    display: flex;
+    color: var(--dark);
+    font-family: "Alef", sans-serif;
+    font-size: 2em;
+  }
+    
 }
 
 @media(min-width: 800px) {
@@ -975,6 +997,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   box-sizing: border-box;
+  margin-top: 5%;
 }
 
   #lodretskrift, #lodretskrift2, #lodretskrift3{
@@ -1210,7 +1233,6 @@ footer {
     display: flex;
     color: var(--dark);
     font-family: "Alef", sans-serif;
-<<<<<<< HEAD
   }
 
   h4{
@@ -1325,21 +1347,4 @@ height: 70%;
 
 /******** Bag Om *******/
 
-@media (min-width: 700px) 
-
-
-
-/******************' Font styling *********************/
-
-/*Font styling*/
-h3{
-  display: flex;
-  color: var(--dark);
-  font-family: "Alef", sans-serif;
-  font-size: 2em;
-  }
-=======
-    font-size: 2em;
-    }
->>>>>>> cdd4d79d82b4d3c21cd5808e6a3118d89b28bcf2
 }
