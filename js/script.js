@@ -59,16 +59,18 @@ function hideSidebar() {
             entry.target.classList.add('show');
         } else {
              entry.target.classList.remove('show');
-
          }
     });
-   });
+  });
 
 const hiddenElemnts = document.querySelectorAll('.hidden');
 hiddenElemnts.forEach((el) => observer.observe(el));
 
-// Farveskift på menukort knap
+const hidden2Elemnts = document.querySelectorAll('.hidden2');
+hidden2Elemnts.forEach((el) => observer.observe(el));
 
+
+// Farveskift på menukort knap
 window.onscroll = function () { changeTextColor() };
 var button = document.querySelector(".btn");
 var stickyPoint = 500; // The scroll posi
