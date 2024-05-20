@@ -95,18 +95,20 @@ font-family: "Annie Use Your Telescope", cursive;
     top: 0;
     z-index: 1;
     overflow-x: auto;
+
   }
 
   .nav-bottom{
     position: absolute;
     bottom: 0;
-    height: 50px;
+    height: 100px;
     background-color: var(--background);
   }
 
   .nav-top{
     position: fixed;
     top: 0;
+    height: 100px;
     background-color: var(--contrastbackground);
   }
   
