@@ -781,69 +781,64 @@ margin-bottom: 10%;
 
 /* Bag om undersider */
 
-.content {
-  display: none;
-  overflow: hidden;
+
+.read-more-start{
+  padding: 50px 0;
 }
 
-/* Styler alle p i "content" fold ud sektionerne */
-.content p {
-  margin: 10px;
-  padding-left: 5%;
-  padding-right: 5%;
+.read-more {
+  margin: 60px 0;
 }
 
-.content h4 {
-  margin: 10px;
-  padding-left: 5%;
-  padding-right: 5%;
+.faqer {
+  margin-bottom: 20px;
 }
 
-
-button.collapsible {
-  background-color: transparent;
-}
-
-/* Styling af "read more" er styling af hele indholdet under "bagom1" på bag om dingse siden */
-
-.read-more{
+.read-more-content {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
-.read-more img {
-  justify-content: center;
-  align-items: center;
+.text {
+  background-color: #007BFF;
+  width: 50%;
+  color: #FFFFFF;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-/* Tilføjet padding for afstand til kant */
-.read-more h3, h2, p{
-  padding: 5%;
+.img {
+  background-color: aqua;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-/* bag om - surdej */
-
-.surdej5 {
-  object-fit: cover;
-  height: 30vh;
-  width: 35vh;
+.fold_reply {
+  cursor: pointer; /* Change cursor to pointer to indicate interactivity */
+  text-align: center;
 }
 
-/* bag om - dingsevand */
-
-.smagsvarianter {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  object-fit: cover;
-  height: 40vh;
-  width: 35vh;
+.fold_btn {
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #007BFF;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-#hjemmelavet {
-  font-size: 2em;
+.reply {
+  display: none; /* Hide the reply content initially */
+  margin-top: 10px; /* Example margin */
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
 }
+
 
 /*Footer*/
 footer {
@@ -1281,41 +1276,4 @@ height: 70%;
   object-fit: cover;
   object-position: top;
 }
-
-
-/* Styling af read more sektionen på Bag om */
-.read-more img{
-  width: 50%;
-}
-
-.read-more section {
-  align-items: center;
-  justify-content: center;
-}
-
-/* Bag om undersider */
-
-/* Styler alt tekst i "content" fold ud sektionerne */
-.content p, h4 {
-  margin: 10px;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-/* Styling af "read more" er styling af hele indholdet under "bagom1" på bag om dingse siden */
-
-.read-more{
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-
-.read-more img {
-  justify-content: center;
-  align-items: center;
-}
-
-/* Tilføjet padding for afstand til kant */
-.read-more h3, h2, p{
-  padding: 1%;
 }
