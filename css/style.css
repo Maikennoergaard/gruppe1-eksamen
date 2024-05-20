@@ -482,6 +482,8 @@ font-family: "Annie Use Your Telescope", cursive;
     }
   }
   
+  
+
 /*Forside*/
 /* video forside */
 .forside1 {
@@ -865,7 +867,7 @@ button.collapsible {
 } */
 
 /* Tilføjet padding for afstand til kant */
-.read-more h3, .read-more h2, .read-more p{
+/* .read-more h3, h2, p{
   padding: 5%;
 } */
 
@@ -966,10 +968,10 @@ footer {
     }
 
     .anniestor {
-      color: var(--dark);
-      font-size: 2.3em;
-      font-family: "Annie Use Your Telescope", cursive;
-    }
+        color: var(--dark);
+        font-size: 2.3em;
+        font-family: "Annie Use Your Telescope", cursive;
+        }
   }
 
 /* Menukort */
@@ -1343,7 +1345,7 @@ height: 70%;
 /* Bag om undersider */
 
 /* Styler alt tekst i "content" fold ud sektionerne */
-.content p, .content h4 {
+.content p, h4 {
   margin: 10px;
   padding-left: 5%;
   padding-right: 5%;
@@ -1363,7 +1365,6 @@ height: 70%;
 }
 
 /* Tilføjet padding for afstand til kant */
-.read-more h3,.read-more h2,.read-more p{
+.read-more h3, h2, p{
   padding: 1%;
-}
 }
