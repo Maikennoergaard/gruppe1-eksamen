@@ -950,6 +950,38 @@ margin-right: 10%;
 
   /******************' Font styling *********************/
 
+/*Font styling*/
+h3{
+  display: flex;
+  color: var(--dark);
+  font-family: "Alef", sans-serif;
+}
+
+h4{
+  display: flex;
+  color: var(--dark);
+  font-family: "Alef", sans-serif;
+}
+
+p{
+  color: var(--dark);
+  font-family: "Alef", sans-serif;
+  font-size: 0.8em;
+}
+
+/*Rød stor font - bliver brugt x4*/
+.alefred{
+  color: var(--red);
+  font-size: 4em;
+  font-family: "Alef", sans-serif;
+}
+
+/*Almindelig font mørk*/
+.alefdark{
+color: var(--dark);
+font-family: "Alef", sans-serif;
+font-size: 2em;
+}
 
 }
 
