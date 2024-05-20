@@ -246,19 +246,13 @@ font-family: "Annie Use Your Telescope", cursive;
     font-family: "Annie Use Your Telescope", cursive;
   }
 
-  #menukortsandwichimg {
-    width: 80%;
-    align-items: center;
-    grid-column-start: 2;
-    grid-column-end: 7;
-  }
-
-  #menukortkaffeimg {
-    width: 80%;
-    align-items: center;
+  #menukortsandwichimg, #menukortkaffeimg {
+    width: 70%;
     grid-column-start: 1;
     grid-column-end: 7;
+    justify-self: center;
   }
+
 
   #bestilknapmenu{
     width: 40%;
@@ -341,17 +335,16 @@ font-family: "Annie Use Your Telescope", cursive;
     transition: all 1.5s;
   }
 
+  .hidden2{
+    opacity: 0;
+    transform: translateX(+100%);
+    transition: all 1.5s;
+  }
+
   .show{
     opacity: 1;
     transform: translateX(0);
   }
-
-  /* @media(prefers-reduced-motion){
-    .hidden{
-      transition: none;
-    }
-  } */
-  
 
 /* popud menu */
 .menu-container {
@@ -1045,12 +1038,19 @@ footer {
   .foelgbilleder {
   display: flex;
   object-fit: cover;
-  height: 600px;
-  width: 100%;
-  margin-top: 10%;
-}
+  width: 380px;
+  height: 380px;
+  }
 
-.billedeserie1{
+  #kursivtekst{
+    margin-left: 23%;
+    margin-right: 21%;
+    text-align: center;
+  }
+
+
+
+  .billedeserie1{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1067,116 +1067,116 @@ footer {
 
   /******************' Font styling *********************/
 
+    /*Font styling*/
+    h3{
+      display: flex;
+      color: var(--dark);
+      font-family: "Alef", sans-serif;
+    }
+
+    h4{
+      display: flex;
+      color: var(--dark);
+      font-family: "Alef", sans-serif;
+    }
+
+    p{
+      color: var(--dark);
+      font-family: "Alef", sans-serif;
+      font-size: 0.8em;
+    }
+
+    /*Rød stor font - bliver brugt x4*/
+    .alefred{
+      color: var(--red);
+      font-size: 4em;
+      font-family: "Alef", sans-serif;
+    }
+
+
+  /* instagram sektion */
+
+  .instagram {
+    margin-top: 10%;
+  }
+
+  .foelgtekst {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .foelgbilleder {
+  display: flex;
+  object-fit: cover;
+  width: 380px;
+  height: 380px;
+  }
+
+  #kursivtekst{
+    margin-left: 23%;
+    margin-right: 21%;
+    text-align: center;
+  }
+
+  .billedeserie1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  }
+
+  .foelgknap {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-left: 0%;
+  }
+
+  /******** kontakt os *******/
+  #openhours {
+    font-size: 3rem;
+  }
+
+  .dingsetelefon {
+    width: 130%;
+    height: 100%;
+  }
+
+  .ringx4 {
+    margin-top: 35%;
+  }
+
+  .ringx4container {
+  width: 70%;
+  height: 70%;
+  }
+
+  .adresse-kontakt {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kort-kontakt {
+    width: 55%;
+  }
+
+  .telefon-nummer-kontakt {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  /******************' Font styling *********************/
+
   /*Font styling*/
   h3{
     display: flex;
     color: var(--dark);
     font-family: "Alef", sans-serif;
-  }
-
-  h4{
-    display: flex;
-    color: var(--dark);
-    font-family: "Alef", sans-serif;
-  }
-
-  p{
-    color: var(--dark);
-    font-family: "Alef", sans-serif;
-    font-size: 0.8em;
-  }
-
-  /*Rød stor font - bliver brugt x4*/
-  .alefred{
-    color: var(--red);
-    font-size: 4em;
-    font-family: "Alef", sans-serif;
-  }
-
-
-/* instagram sektion */
-
-.instagram {
-  margin-top: 10%;
-}
-
-.foelgtekst {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.foelgbilleder {
-display: flex;
-object-fit: cover;
-width: 380px;
-height: 380px;
-}
-
-#kursivtekst{
-  margin-left: 23%;
-  margin-right: 21%;
-  text-align: center;
-}
-
-.billedeserie1 {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-margin-left: 10%;
-margin-right: 10%;
-}
-
-.foelgknap {
-  display: flex;
-  justify-content: center;
-  margin-top: 3%;
-  margin-left: 0%;
-}
-
-/******** kontakt os *******/
-#openhours {
-  font-size: 3rem;
-}
-
-.dingsetelefon {
-  width: 130%;
-  height: 100%;
-}
-
-.ringx4 {
-  margin-top: 35%;
-}
-
-.ringx4container {
-width: 70%;
-height: 70%;
-}
-
-.adresse-kontakt {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.kort-kontakt {
-  width: 55%;
-}
-
-.telefon-nummer-kontakt {
-  margin-left: 15%;
-  margin-right: 15%;
-}
-
-/******************' Font styling *********************/
-
-/*Font styling*/
-h3{
-  display: flex;
-  color: var(--dark);
-  font-family: "Alef", sans-serif;
-  font-size: 2em;
-  }
+    font-size: 2em;
+    }
 }
