@@ -762,8 +762,6 @@ margin-bottom: 10%;
   padding-top: 5px;
   padding-bottom: 5px;
   border: 2px solid var(--red);
-  align-items: center;
-  justify-content: center;
 }
 
 /* Bag om undersider */
@@ -772,6 +770,20 @@ margin-bottom: 10%;
   display: none;
   overflow: hidden;
 }
+
+/* Styler alle p i "content" fold ud sektionerne */
+.content p {
+  margin: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.content h4 {
+  margin: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 
 button.collapsible {
   background-color: transparent;
@@ -783,15 +795,36 @@ button.collapsible {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5%;
+}
+
+.read-more img {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tilføjet padding for afstand til kant */
+.read-more h3{
+  padding-left: 5%;
+}
+
+.read-more h2{
+  padding-left: 5%;
+}
+.read-more p{
+  padding-left: 5%;
 }
 
 .read-more section button{
   justify-content: center;
 }
 
-/* Bag om - surdej */
+/* bag om - surdej */
 
+.surdej5 {
+  object-fit: cover;
+  height: 30vh;
+  width: 35vh;
+}
 
 /* bag om - dingsevand */
 
@@ -1289,6 +1322,12 @@ height: 70%;
   margin-left: 15%;
   margin-right: 15%;
 }
+
+/******** Bag Om *******/
+
+@media (min-width: 700px) 
+
+
 
 /******************' Font styling *********************/
 
