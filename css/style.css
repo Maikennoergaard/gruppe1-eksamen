@@ -760,6 +760,8 @@ margin-top: 10%;
   text-decoration-color: red;
 } */
 
+/* Bag om undersider */
+
 .content {
   padding: 0 18px;
   display: none;
@@ -781,6 +783,21 @@ button.collapsible {
 
 .read-more section{
   justify-content: center;
+}
+
+/* bag om - dingsevand */
+
+.smagsvarianter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  object-fit: cover;
+  height: 40vh;
+  width: 35vh;
+}
+
+#hjemmelavet {
+  font-size: 2em;
 }
 
 /*Footer*/
