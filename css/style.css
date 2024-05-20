@@ -250,8 +250,10 @@ font-family: "Annie Use Your Telescope", cursive;
   #menukortsandwichimg{
     width:80%;
     align-items: center;
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end: 7;
+    justify-self: center;
+    align-self: center;
   }
 
   #menukortkaffeimg{
@@ -259,6 +261,8 @@ font-family: "Annie Use Your Telescope", cursive;
     align-items: center;
     grid-column-start: 1;
     grid-column-end: 7;
+    justify-self: center;
+    align-self: center;
   }
 
   #andimg{
@@ -804,15 +808,13 @@ footer {
     overflow-x: auto; /* Ændret fra "hidden" til "auto" */
   }
   
-  .menuimg{
-    max-width: 10px;
-  }
+  
 
   #andimg img{
     position: absolute;
     float: right;
-    width: 80%;
-    top: 5%;
+    width: 50%;
+    top: 0%;
 
   }
 
