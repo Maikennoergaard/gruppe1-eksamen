@@ -108,8 +108,8 @@ font-family: "Annie Use Your Telescope", cursive;
   .nav-top{
     position: fixed;
     top: 0;
-    height: 100px;
-    background-color: var(--contrastbackground);
+    height: 75px;
+    background-color: var(--background);
   }
   
   nav ul{
@@ -136,6 +136,7 @@ font-family: "Annie Use Your Telescope", cursive;
     font-family: "Alef", sans-serif;
     font-size: 1.1rem;
   }
+
 
   .buetekst{
     font-family: "Annie Use Your Telescope", cursive;
@@ -1346,7 +1347,7 @@ height: 70%;
   margin-left: 15%;
   margin-right: 15%;
 }
-
+}
 /******** Bag Om *******/
 
 @media (min-width: 700px) {
