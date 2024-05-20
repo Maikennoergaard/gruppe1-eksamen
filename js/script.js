@@ -67,11 +67,11 @@ function hideSidebar() {
 const hiddenElemnts = document.querySelectorAll('.hidden');
 hiddenElemnts.forEach((el) => observer.observe(el));
 
-// sticky nav
+// Farveskift på menukort knap
 
 window.onscroll = function () { changeTextColor() };
 var button = document.querySelector(".btn");
-var stickyPoint = 400; // The scroll position after which the button text color changes
+var stickyPoint = 500; // The scroll posi
 
 function changeTextColor() {
    var rootStyles = getComputedStyle(document.documentElement);
