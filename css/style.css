@@ -207,86 +207,94 @@ font-family: "Annie Use Your Telescope", cursive;
 
 /*Menukort*/
   /* Menukort */
-#menucard {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
+  #menucard {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
 
-#bestilknapmenu {
-  grid-column-start: 3;
-  grid-column-end: 5;
-}
+  #morewordsmenu {
+    margin-block-start: 0;
+    margin-block-end: 1em;
+    margin-top: 190%;
+  }
 
-#morewordsmenu {
-  margin-block-start: 0;
-  margin-block-end: 1em;
-  margin-top: 190%;
-}
+  #tekstmenu {
+    line-height: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+  }
 
-#tekstmenu {
-  line-height: 110%;
-}
+  #menusandwich {
+    display: grid;
+    grid-template-columns: 10% 1% 67% 20%;
+    grid-row-gap: 50px;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 
-#menusandwich {
-  display: grid;
-  grid-template-columns: 10% 1% 67% 20%;
-  grid-row-gap: 50px;
-  margin-left: 2%;
-  margin-right: 2%;
-}
+  #menusandwich li {
+    gap: 50px;
+  }
 
-#menusandwich li {
-  gap: 50px;
-}
+  #prismenu {
+    font-size: 2em;
+    margin-bottom: 5%;
+    font-weight: 600;
+    font-family: "Annie Use Your Telescope", cursive;
+  }
 
-#prismenu {
-  font-size: 2em;
-  margin-bottom: 5%;
-  font-weight: 600;
-  font-family: "Annie Use Your Telescope", cursive;
-}
+  #menukortsandwichimg {
+    width: 80%;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 7;
+  }
 
-#menukortsandwichimg {
-  width: 80%;
-  align-items: center;
-  grid-column-start: 2;
-  grid-column-end: 7;
-}
+  #menukortkaffeimg {
+    width: 80%;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
 
-#menukortkaffeimg {
-  width: 80%;
-  align-items: center;
-  grid-column-start: 1;
-  grid-column-end: 7;
-}
+  #bestilknapmenu{
+    width: 40%;
+   padding-top: 2%;
+   padding-bottom: 2%;
+   font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
 
-#andimg {
-  position: relative;
-  margin-top: 600px;
-  
-}
+  #andimg {
+    position: relative;
+    margin-top: 600px;
+  }
 
-#andimg h3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  font-size: 3.7em;
-  z-index: 0;
+  #andimg h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    font-size: 3.7em;
+    z-index: 0;
+  }
 
-}
-
-#andimg img {
-  position: absolute;
-  width: 250px;
-  z-index: 1;
-  top: 62%;
-  left: 50%;
-  transform: translateX(-50%);
-}
+  #andimg img {
+    position: absolute;
+    width: 250px;
+    z-index: 1;
+    top: 62%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   /*Styling af tekst lodret tekst*/
   aside{
@@ -848,28 +856,41 @@ footer {
 /* Menukort */
 @media (min-width: 400px) {
   #andimg{
-    margin-top: 40%;
+    margin-top: 230%;
+  }
+
+}
+
+@media (min-width: 525px) {
+ 
+  #morewordsmenu{
+    margin-top: 100%;
+    font-size: 130%;
   }
 
   #andimg img{
-    margin-top: 30%;
+    width: 300px;
+    top: 50%;
+  }
+
+  #sandwichul, #sodtul, #drikkeul{
+    font-size: 150%;
+    line-height: 130%;
+  }
+
+  #lodretskrift, #lodretskrift2, #lodretskrift3{
+    font-size: 300%;
   }
 }
 
-
 @media (min-width: 700px) {
-  #andimg{
-    margin-top: 0;
-  }
- 
   #andimg img{
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    width: 320px;
+    top: 60%;
+    width: 400px;
   }
 
   #andimg h3 {
+    margin-top: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -878,16 +899,30 @@ footer {
     margin-block-end: 1em;
     font-size: 5em;
   }
+
+  #morewordsmenu{
+    margin-top: 130%;
+    font-size: 150%;
+  }
+
+  #lodretskrift, #lodretskrift2, #lodretskrift3{
+    margin-top: 36%;
+  }
+
+  #tekstmenu {
+    font-size: 2.2em;
+  }
 }
 
 @media(min-width: 800px) {
+  
   .main-popup {
-      /* Dine stilarter for computere */
-      max-width: 50%; /* Begræns popupens bredde til halvdelen af skærmen */
-      width: 100%; /* Juster bredden efter behov */
-      height: 100vh; /* Juster højden efter behov */
-      left: 50%;
-      transform: translate(-50%, -50%);
+    /* Dine stilarter for computere */
+    max-width: 50%; /* Begræns popupens bredde til halvdelen af skærmen */
+    width: 100%; /* Juster bredden efter behov */
+    height: 100vh; /* Juster højden efter behov */
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .popup-overlay {
@@ -899,164 +934,178 @@ footer {
     overflow-x: auto; /* Ændret fra "hidden" til "auto" */
   }
   
-  .menuimg{
-    max-width: 10px;
-    margin-top: 100%;
-  }
-  
   #andimg img{
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    width: 250px;
+    width: 320px;
   }
 
   #andimg h3 {
-    font-size: 3em;
+    font-size: 4em;
   }
 
-/* forside */
-.multiwords{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  box-sizing: border-box;
-}
+  #bestilknapmenu{
+    font-size: 130%;
+  }
 
-.firexdingse {
-  margin-top: 25%;
-}
+  #lodretskrift, #lodretskrift2, #lodretskrift3{
+    font-size: 300%;
+  }
 
-.baggrunddingse {
-  background-color: #c7352a;
-}
+  #sandwichul, #sodtul, #drikkeul{
+    font-size: 150%;
+    line-height: 130%;
+  }
+  
+  /* forside */
+  .multiwords{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+  }
 
-/* dingsedame */
-.dingseukop {
-  width: 60%;
-}
+  .firexdingse {
+    margin-top: 25%;
+  }
 
-.brødforside {
+  .baggrunddingse {
+    background-color: #c7352a;
+  }
+
+  /* dingsedame */
+  .dingseukop {
+    width: 60%;
+  }
+
+  .brødforside {
+    object-fit: cover;
+    height: 600px;
+    width: 100%;
+  }
+
+  /* midtersection */
+  #responsivetekst {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 22%;
+    margin-right: 20%;
+    text-align: center;
+  }
+
+  #responsivetekst1 {
+  display: none;
+  }
+
+  .midtersection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 5%;
+  }
+
+  .alefdarkknap {
+    margin-top: 5%;
+  }
+
+  /* tekst til midtersection */
+  .knap {
+    border: 2px solid #c7352a; 
+    padding-bottom: 2px; 
+  }
+
+  /* billeder på midtersection */
+  .udefraillustration {
+    width: 50%;
+    height: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+
+  /* instagram sektion */
+
+  .instagram {
+    margin-top: 10%;
+  }
+
+  .foelgtekst {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .foelgbilleder {
+  display: flex;
   object-fit: cover;
+<<<<<<< Updated upstream
   height: 600px;
   width: 100%;
-}
-
-/* midtersection */
-#responsivetekst {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 22%;
-  margin-right: 20%;
-  text-align: center;
-}
-
-#responsivetekst1 {
-display: none;
-}
-
-
-.midtersection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; 
-  margin-top: 5%;
-}
-
-.alefdarkknap {
-  margin-top: 5%;
-}
-
-/* tekst til midtersection */
-.knap {
-  border: 2px solid #c7352a; 
-  padding-bottom: 2px; 
-}
-
-/* billeder på midtersection */
-.udefraillustration {
-  width: 50%;
-  height: 50%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-
-/* instagram sektion */
-
-.instagram {
   margin-top: 10%;
 }
+=======
+  width: 380px;
+  height: 380px;
+  }
 
-.foelgtekst {
+  #kursivtekst{
+    margin-left: 23%;
+    margin-right: 21%;
+    text-align: center;
+  }
+
+  .billedeserie1 {
+>>>>>>> Stashed changes
+
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  }
 
-.foelgbilleder {
-display: flex;
-object-fit: cover;
-width: 380px;
-height: 380px;
-}
+  .foelgknap {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-left: 0%;
+  }
 
-#kursivtekst{
-  margin-left: 23%;
-  margin-right: 21%;
-  text-align: center;
-}
+  /******************' Font styling *********************/
 
-.billedeserie1 {
+  /*Font styling*/
+  h3{
+    display: flex;
+    color: var(--dark);
+    font-family: "Alef", sans-serif;
+  }
 
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-margin-left: 10%;
-margin-right: 10%;
-}
+  h4{
+    display: flex;
+    color: var(--dark);
+    font-family: "Alef", sans-serif;
+  }
 
-.foelgknap {
-  display: flex;
-  justify-content: center;
-  margin-top: 3%;
-  margin-left: 0%;
-}
+  p{
+    color: var(--dark);
+    font-family: "Alef", sans-serif;
+    font-size: 0.8em;
+  }
 
-/******************' Font styling *********************/
+  /*Rød stor font - bliver brugt x4*/
+  .alefred{
+    color: var(--red);
+    font-size: 4em;
+    font-family: "Alef", sans-serif;
+  }
 
-/*Font styling*/
-h3{
-  display: flex;
+  /*Almindelig font mørk*/
+  .alefdark{
   color: var(--dark);
   font-family: "Alef", sans-serif;
-}
-
-h4{
-  display: flex;
-  color: var(--dark);
-  font-family: "Alef", sans-serif;
-}
-
-p{
-  color: var(--dark);
-  font-family: "Alef", sans-serif;
-  font-size: 0.8em;
-}
-
-/*Rød stor font - bliver brugt x4*/
-.alefred{
-  color: var(--red);
-  font-size: 4em;
-  font-family: "Alef", sans-serif;
-}
-
-/*Almindelig font mørk*/
-.alefdark{
-color: var(--dark);
-font-family: "Alef", sans-serif;
-font-size: 2em;
-}
+  font-size: 2em;
+  }
 }
