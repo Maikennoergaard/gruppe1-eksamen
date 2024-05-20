@@ -557,7 +557,7 @@ font-family: "Annie Use Your Telescope", cursive;
 .brødforside {
   width: 100%;
   height: 100%;
-  margin-top: 5%;
+  margin-top: 0;
 }
 
 /* midtersection */
@@ -580,6 +580,11 @@ font-family: "Annie Use Your Telescope", cursive;
   margin-left: 20px;
   margin-right: 20px;
   padding-bottom: 2px; 
+}
+#kursivtekst {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
 }
 
 /* billeder på midtersection */
