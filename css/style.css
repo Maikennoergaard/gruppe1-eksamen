@@ -557,16 +557,17 @@ font-family: "Annie Use Your Telescope", cursive;
 }
 
 /* midtersection */
+
+#responsivetekst {
+  display: none;
+}
+
 .midtersection {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; 
   margin-top: 8%;
-}
-
-.kursivtekst {
- margin-left: 5%;
 }
 
 /* tekst til midtersection */
@@ -614,10 +615,9 @@ text-align: center;
 flex-direction: column;
 }
 
-.foelgos {
-  border-bottom: 2px solid #c7352a; 
-  padding-bottom: 2px;
-  margin-top: 10%; 
+.foelgknap {
+margin-left: 40%;
+margin-top: 10%;
 }
 
 
@@ -876,6 +876,23 @@ footer {
     font-size: 5em;
   }
 
+  #andimg2 img{
+    position: absolute;
+    width: 300px;
+    top: 5%;
+    right: 0;
+  }
+
+  #andimg2 h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    font-size: 5em;
+  }
+
   /* forside */
 /* multiwords(dingse)*/
 
@@ -888,6 +905,15 @@ footer {
 }
 
 /* midtersection */
+#responsivetekst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#responsivetekst1 {
+display: none;
+}
 .midtersection {
   display: flex;
   flex-direction: column;
@@ -942,10 +968,10 @@ margin-left: 10%;
 margin-right: 10%;
 }
 
-
-.alefdarkknap {
+.foelgknap {
   display: flex;
-  justify-content: center ;
+  justify-content: center;
+  margin-top: 3%;
 }
 
   /******************' Font styling *********************/
