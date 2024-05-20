@@ -536,11 +536,9 @@ font-family: "Annie Use Your Telescope", cursive;
 }
 
 /* multiwords(dingse)*/
-.multiwords {
-  display: flex;
-  flex-direction: column;
-  /* margin-top: 10%;
-  margin-left: 30%; */
+.firexdingse {
+  margin-top: 10%;
+  margin-left: 35%;
 }
 
 /* dingsedame */
@@ -553,7 +551,7 @@ font-family: "Annie Use Your Telescope", cursive;
 .brødforside {
   width: 100%;
   height: 100%;
-  margin-top: 50%;
+  margin-top: 5%;
 }
 
 /* midtersection */
@@ -590,7 +588,7 @@ font-family: "Annie Use Your Telescope", cursive;
 /* instagram sektion */
 
 .instagram {
-  margin-top: 8%;
+  margin-top: 20%;
 }
 
 .foelgtekst {
@@ -894,14 +892,23 @@ footer {
   }
 
   /* forside */
-/* multiwords(dingse)*/
+.multiwords{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+}
+
+.firexdingse {
+  margin-top: 25%;
+}
+
+.baggrunddingse {
+  background-color: #c7352a;
+}
 
 /* dingsedame */
 .dingseukop {
-  width: 25%;
-  margin-top: 10%;
-  background-color:#c7352a;
-
+  width: 60%;
 }
 
 /* midtersection */
@@ -972,6 +979,7 @@ margin-right: 10%;
   display: flex;
   justify-content: center;
   margin-top: 3%;
+  margin-left: 0%;
 }
 
   /******************' Font styling *********************/
