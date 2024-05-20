@@ -557,6 +557,11 @@ font-family: "Annie Use Your Telescope", cursive;
 }
 
 /* midtersection */
+
+#responsivetekst {
+  display: none;
+}
+
 .midtersection {
   display: flex;
   flex-direction: column;
@@ -565,14 +570,6 @@ font-family: "Annie Use Your Telescope", cursive;
   margin-top: 10%;
 }
 
-<<<<<<< Updated upstream
-=======
-.kursivtekst {
- margin-left: 5%;
-}
-
-
->>>>>>> Stashed changes
 /* tekst til midtersection */
 .knap {
   border: 2px solid #c7352a; 
@@ -805,13 +802,10 @@ footer {
     z-index: -1;
     overflow-x: auto; /* Ændret fra "hidden" til "auto" */
   }
-<<<<<<< Updated upstream
   
   .menuimg{
     max-width: 10px;
   }
-=======
->>>>>>> Stashed changes
 
   #andimg img{
     position: absolute;
@@ -842,7 +836,6 @@ footer {
     margin-block-end: 1em;
     font-size: 5em;
   }
-<<<<<<< Updated upstream
 
   #andimg2 img{
     position: absolute;
@@ -876,6 +869,15 @@ footer {
 }
 
 /* midtersection */
+#responsivetekst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#responsivetekst1 {
+display: none;
+}
 .midtersection {
   display: flex;
   flex-direction: column;
@@ -930,17 +932,15 @@ margin-left: 10%;
 margin-right: 10%;
 }
 
-
-.alefdarkknap {
+.foelgknap {
   display: flex;
-  justify-content: center ;
+  justify-content: center;
+  margin-top: 3%;
 }
 
   /******************' Font styling *********************/
 
 
-=======
->>>>>>> Stashed changes
 }
 
 
