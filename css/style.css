@@ -46,7 +46,7 @@ p{
 /*Rød stor font - bliver brugt x4*/
 .alefred{
   color: var(--red);
-  font-size: 3em;
+  font-size: 2.5em;
   font-family: "Alef", sans-serif;
 }
 
@@ -54,6 +54,17 @@ p{
 .alefdark{
 color: var(--dark);
 font-family: "Alef", sans-serif;
+}
+
+/*gennemgående knapper*/
+.alefdarkknap{
+  color: var(--dark);
+  font-family: "Alef", sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 2px solid var(--red);
 }
 
 /*Håndskrevet font - citater*/
@@ -202,10 +213,15 @@ font-family: "Annie Use Your Telescope", cursive;
     gap: 50px;
   }
 
+  #bestilknapmenu{
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
   #morewordsmenu{
     margin-block-start: 0;
     margin-block-end: 1em;
-    margin-top: 70%;
+    margin-top: 210%;
   }
 
   #tekstmenu{
@@ -231,6 +247,20 @@ font-family: "Annie Use Your Telescope", cursive;
     font-family: "Annie Use Your Telescope", cursive;
   }
 
+  #menukortsandwichimg{
+    width:80%;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 7;
+  }
+
+  #menukortkaffeimg{
+    width:80%;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+
   #andimg{
     margin-top: 400px;
     position: relative;
@@ -248,8 +278,8 @@ font-family: "Annie Use Your Telescope", cursive;
 
   #andimg img{
     position: absolute;
-    width: 250px;
-    top: 40%;
+    width: 240px;
+    top: 67%;
     right: 12%;
   }
   /*Styling af tekst lodret tekst*/
@@ -534,8 +564,10 @@ font-family: "Annie Use Your Telescope", cursive;
 }
 
 /* tekst til midtersection */
-.bestilher {
-  border-bottom: 2px solid #c7352a; 
+.knap {
+  border: 2px solid #c7352a; 
+  margin-left: 20px;
+  margin-right: 20px;
   padding-bottom: 2px; 
 }
 
@@ -670,7 +702,6 @@ flex-direction: column;
 }
 
 #big1 {
-  font-size: 0.8em;
   padding: 3%;
 }
 
