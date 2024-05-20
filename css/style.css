@@ -91,7 +91,7 @@ font-family: "Annie Use Your Telescope", cursive;
   
 
   nav{
-    background-color: var(--background);
+    background-color: var(--contrastbackground);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     position: relative;
     top: 0;
@@ -105,7 +105,7 @@ font-family: "Annie Use Your Telescope", cursive;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px 0;
+    padding: 5px 10px;
   }
 
   nav li{
@@ -114,14 +114,14 @@ font-family: "Annie Use Your Telescope", cursive;
 
   nav a{
     height: 100%;
-    padding: 0 30px;
+    padding: 0 20px;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--red);
+    color: var(--dark);
     font-family: "Alef", sans-serif;
-    font-size: 2rem;
+    font-size: 1.1rem;
   }
 
   .buetekst{
@@ -153,7 +153,6 @@ font-family: "Annie Use Your Telescope", cursive;
     height: 100vh;
     width: 250px;
     background-color: var(--gul);
-    /* backdrop-filter: blur(10px); */
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     list-style: none;
     display: none;
@@ -205,8 +204,6 @@ font-family: "Annie Use Your Telescope", cursive;
         width: 100%;
       }
     }
-
-/*Burgermenu*/
 
 /*Menukort*/
   /* Menukort */
@@ -361,14 +358,14 @@ font-family: "Annie Use Your Telescope", cursive;
   .btn {
     display: inline-block;
     margin: 10px;
-    color: var(--dark);
+    color: var(--gul);
     padding: 10px 20px;
     font-size: 16px;
     border: none;
     cursor: pointer;
     transform: rotate(-90deg);
     position: fixed;
-    top: 400px;
+    top: 200px;
     right: -80px;
     z-index: 9;
   }
@@ -475,7 +472,7 @@ font-family: "Annie Use Your Telescope", cursive;
 /*Forside*/
 /* video forside */
 .forside1 {
-  height: 92vh;
+  height: 93vh;
   position: relative; /* Tilføjer position: relative; til forældreelementet */
 }
 
@@ -508,7 +505,7 @@ font-family: "Annie Use Your Telescope", cursive;
   transform: translate(-50%, -50%);
 }
 
-.pil span{
+.pil div{
   display: block;
   width: 20px;
   height: 20px;
@@ -519,11 +516,11 @@ font-family: "Annie Use Your Telescope", cursive;
   animation: animate 2s infinite;
 }
 
-.pil span:nth-child(2){
+.pil div:nth-child(2){
   animation-delay: -0.2s;
 }
 
-.pil span:nth-child(3){
+.pil div:nth-child(3){
   animation-delay: -0.4s;
 }
 
