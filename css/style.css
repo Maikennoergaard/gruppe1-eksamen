@@ -26,11 +26,13 @@ body{
 
 /*Font styling*/
 h3{
+  display: flex;
   color: var(--dark);
   font-family: "Alef", sans-serif;
 }
 
 h4{
+  display: flex;
   color: var(--dark);
   font-family: "Alef", sans-serif;
 }
@@ -733,7 +735,7 @@ margin-bottom: 10%;
  
 /*Bag om Dingse*/
 
-/* Styling af første del af bagom Søren og olivia foto + tekst*/
+/* Styling af første del af bagom */
 .bagom1{
   display: grid;
 }
@@ -746,10 +748,16 @@ margin-bottom: 10%;
   padding: 5%;
 }
 
+
 /* Styler så billedet er 100% på telefon */
 .bagom1 img{
   width: 100%;
 }
+
+.read-more img{
+  width: 100%;
+}
+
 
 /* Styler søren og olivia teksten til mobil */
 .bagom-ordx4 {
@@ -758,85 +766,28 @@ margin-bottom: 10%;
   padding-bottom: 2%;
 }
 
-
-/* Styling af Read more */
-
-.read-more img{
-  width: 100%;
+/* Styling af button */
+.collapsible{
+  display: flex;
+  cursor: pointer;
+  color: var(--dark);
+  font-family: "Alef", sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 2px solid var(--red);
 }
+
+/* Bag om undersider */
 
 .content {
   display: none;
   overflow: hidden;
 }
 
-/* Styling af button */
-.collapsible{
-  display: inline grid;
-  cursor: pointer;
-  color: var(--dark);
-  font-family: "Alef", sans-serif;
-  padding: 2px 2px;
-  border: 2px solid var(--red);
-}
-
-/* Styler knappen læs mere til midten */
-
-button.collapsible {
-  background-color: transparent;
-  justify-self: center;
-  align-self: center;
-}
-
-/* Styling af alle undersider. Styles med grid */
-
-.read-more {
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: auto;
-}
-
-.read-more-surdej {
-  display: inline grid;
-  grid-template-columns: 1fr;
-  justify-self: center;
-  align-self: center;
-}
-
-.read-more-dingsevand {
-  display: inline grid;
-  grid-template-columns: 1fr;
-  justify-self: center;
-  align-self: center;
-}
-
-.read-more-raavarer {
-  display: inline grid;
-  grid-template-columns: 1fr;
-  justify-self: center;
-  align-self: center;
-}
-
-.content {
-  display: inline grid;
-  grid-template-columns: 1fr;
-}
-
-.read-more img {
-  height: 20vh;
-  width: auto;
-  padding: 3%;
-  justify-self: center;
-  align-self: center;
-}
-
-.read-more1 {
-  justify-self: center;
-  align-self: center;
-}
-
 /* Styler alle p i "content" fold ud sektionerne */
-/* .content p {
+.content p {
   margin: 10px;
   padding-left: 5%;
   padding-right: 5%;
@@ -851,11 +802,11 @@ button.collapsible {
 
 button.collapsible {
   background-color: transparent;
-} */
+}
 
 /* Styling af "read more" er styling af hele indholdet under "bagom1" på bag om dingse siden */
 
-/* .read-more{
+.read-more{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -864,24 +815,24 @@ button.collapsible {
 .read-more img {
   justify-content: center;
   align-items: center;
-} */
+}
 
 /* Tilføjet padding for afstand til kant */
-/* .read-more h3, h2, p{
+.read-more h3, h2, p{
   padding: 5%;
-} */
+}
 
 /* bag om - surdej */
 
-/* .surdej5 {
+.surdej5 {
   object-fit: cover;
   height: 30vh;
   width: 35vh;
-} */
+}
 
 /* bag om - dingsevand */
 
-/* .smagsvarianter {
+.smagsvarianter {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -892,7 +843,7 @@ button.collapsible {
 
 #hjemmelavet {
   font-size: 2em;
-} */
+}
 
 /*Footer*/
 footer {
