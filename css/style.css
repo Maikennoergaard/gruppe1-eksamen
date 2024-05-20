@@ -65,6 +65,8 @@ font-family: "Alef", sans-serif;
   padding-top: 5px;
   padding-bottom: 5px;
   border: 2px solid var(--red);
+  margin-top: 7%;
+  margin-bottom: 7%;
 }
 
 /*Håndskrevet font - citater*/
@@ -563,6 +565,10 @@ font-family: "Annie Use Your Telescope", cursive;
   margin-top: 8%;
 }
 
+.kursivtekst {
+ margin-left: 5%;
+}
+
 /* tekst til midtersection */
 .knap {
   border: 2px solid #c7352a; 
@@ -852,6 +858,18 @@ footer {
 
   }
 
+}
+
+@media (min-width: 750px) {
+  #andimg{
+    margin-top: 0;
+  }
+ 
+  #andimg img{
+    width: 40%;
+    margin-top: 30%;
+  }
+
   #andimg h3 {
     display: flex;
     flex-direction: column;
@@ -861,6 +879,7 @@ footer {
     margin-block-end: 1em;
     font-size: 5em;
   }
+
 
   #andimg2 img{
     position: absolute;
@@ -878,6 +897,85 @@ footer {
     margin-block-end: 1em;
     font-size: 5em;
   }
+
+  /* forside */
+/* multiwords(dingse)*/
+.multiwords {
+ 
+}
+
+/* dingsedame */
+.dingseukop {
+  width: 25%;
+  margin-top: 10%;
+  background-color:#c7352a;
+
+}
+
+/* midtersection */
+.midtersection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 5%;
+}
+
+.alefdarkknap {
+  margin-top: 5%;
+}
+
+/* tekst til midtersection */
+.knap {
+  border: 2px solid #c7352a; 
+  padding-bottom: 2px; 
+}
+
+/* billeder på midtersection */
+.udefraillustration {
+  width: 50%;
+  height: 50%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+
+/* instagram sektion */
+
+.instagram {
+  margin-top: 10%;
+}
+
+.foelgtekst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.foelgbilleder {
+display: flex;
+width: 32%;
+height: 32%;
+}
+
+.billedeserie1 {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-left: 10%;
+margin-right: 10%;
+}
+
+
+.alefdarkknap {
+  display: flex;
+  justify-content: center ;
+}
+
+  /******************' Font styling *********************/
+
+
 }
 
 
