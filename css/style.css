@@ -732,8 +732,7 @@ margin-bottom: 10%;
   margin-bottom: 10%;
   }
 
-
-
+ 
 /*Bag om Dingse*/
 
 /* Styling af første del af bagom */
@@ -819,19 +818,8 @@ button.collapsible {
 }
 
 /* Tilføjet padding for afstand til kant */
-.read-more h3{
-  padding-left: 5%;
-}
-
-.read-more h2{
-  padding-left: 5%;
-}
-.read-more p{
-  padding-left: 5%;
-}
-
-.read-more section button{
-  justify-content: center;
+.read-more h3, h2, p{
+  padding: 5%;
 }
 
 /* bag om - surdej */
@@ -892,7 +880,50 @@ footer {
   margin-right: 1rem; 
 }
 
-/*Media Quarey Computer*/
+
+
+/* ************************************************ */
+
+/*Media Querey Computer*/
+
+
+/* Vi har stylet alt vores CSS mobile first og tilføjet media querys til desktop efter */
+
+/* STYLING AF FONT TIL COMPUTER */
+
+@media (min-width: 700px) {
+    /*Font styling*/
+    h3{
+      display: flex;
+      color: var(--dark);
+      font-family: "Alef", sans-serif;
+    }
+
+    h4{
+      display: flex;
+      color: var(--dark);
+      font-family: "Alef", sans-serif;
+    }
+
+    p{
+      color: var(--dark);
+      font-family: "Alef", sans-serif;
+      font-size: 1.2em;
+    }
+
+    /*Rød stor font - bliver brugt x4*/
+    .alefred{
+      color: var(--red);
+      font-size: 4em;
+      font-family: "Alef", sans-serif;
+    }
+
+    .anniestor {
+        color: var(--dark);
+        font-size: 2.3em;
+        font-family: "Annie Use Your Telescope", cursive;
+        }
+  }
 
 /* Menukort */
 @media (min-width: 400px) {
@@ -1078,81 +1109,6 @@ footer {
     margin-bottom: 5%;
   }
 
-
-  /* instagram sektion */
-
-  .instagram {
-    margin-top: 10%;
-  }
-
-  .foelgtekst {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .foelgbilleder {
-  display: flex;
-  object-fit: cover;
-  width: 380px;
-  height: 380px;
-  }
-
-  #kursivtekst{
-    margin-left: 23%;
-    margin-right: 21%;
-    text-align: center;
-  }
-
-
-
-  .billedeserie1{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 10%;
-  margin-right: 10%;
-  }
-
-  .foelgknap {
-    display: flex;
-    justify-content: center;
-    margin-top: 3%;
-
-  }
-
-
-
-  /******************' Font styling *********************/
-
-    /*Font styling*/
-    h3{
-      display: flex;
-      color: var(--dark);
-      font-family: "Alef", sans-serif;
-    }
-
-    h4{
-      display: flex;
-      color: var(--dark);
-      font-family: "Alef", sans-serif;
-    }
-
-    p{
-      color: var(--dark);
-      font-family: "Alef", sans-serif;
-      font-size: 0.8em;
-    }
-
-    /*Rød stor font - bliver brugt x4*/
-    .alefred{
-      color: var(--red);
-      font-size: 4em;
-      font-family: "Alef", sans-serif;
-    }
-
-
   /* instagram sektion */
 
   .instagram {
@@ -1229,76 +1185,6 @@ footer {
     margin-right: 15%;
   }
 
-  /******************' Font styling *********************/
-
-  /*Font styling*/
-  h3{
-    display: flex;
-    color: var(--dark);
-    font-family: "Alef", sans-serif;
-  }
-
-  h4{
-    display: flex;
-    color: var(--dark);
-    font-family: "Alef", sans-serif;
-  }
-
-  p{
-    color: var(--dark);
-    font-family: "Alef", sans-serif;
-    font-size: 0.8em;
-  }
-
-  /*Rød stor font - bliver brugt x4*/
-  .alefred{
-    color: var(--red);
-    font-size: 4em;
-    font-family: "Alef", sans-serif;
-  }
-
-
-/* instagram sektion */
-
-.instagram {
-  margin-top: 10%;
-}
-
-.foelgtekst {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.foelgbilleder {
-display: flex;
-object-fit: cover;
-width: 380px;
-height: 380px;
-}
-
-#kursivtekst{
-  margin-left: 23%;
-  margin-right: 21%;
-  text-align: center;
-}
-
-.billedeserie1 {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-margin-left: 10%;
-margin-right: 10%;
-}
-
-.foelgknap {
-  display: flex;
-  justify-content: center;
-  margin-top: 3%;
-  margin-left: 0%;
-}
-
 /******** kontakt os *******/
 
 .coverbillede {
@@ -1352,8 +1238,14 @@ height: 70%;
 
 @media (min-width: 700px) {
 
+/* **** Styling af første del af bagom - Søren og olivia billede + tekst **** */
   .bagom1 {
     display: grid;
+  }
+
+  #mere {
+    padding-left: 5%;
+    padding-bottom: 3%;
   }
   
   .bagom-ordx4 {
@@ -1361,7 +1253,17 @@ height: 70%;
     align-self: center;
   }
 
-/* Styling af første del af bagom */
+  .bagom1 h1 {
+    text-align: center;
+    padding-top: 2%; 
+    padding-bottom: 1%;
+  }
+  .bagom1 p {
+    padding: 2%;
+  }
+
+  /*  Styles med en anden class for at få korrekt opsætning */
+
 .bagom1-desktop{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1370,10 +1272,9 @@ height: 70%;
 .bagom1 h1 {
   justify-self: center;
   align-self: center;
-  padding: 2%; 
 }
 
-/* Styler så billedet croppes til desktop*/
+/* Styling af billedet af søren og olivia, billedet croppes til desktop*/
 .bagom1 img{
   width: 100%;
   height: 80vh;
@@ -1381,62 +1282,32 @@ height: 70%;
   object-position: top;
 }
 
+
+/* Styling af read more sektionen på Bag om */
 .read-more img{
   width: 50%;
 }
 
-
-/* Styler søren og olivia teksten til mobil */
-.bagom-ordx4 {
-  padding-left: 10%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
-
-/* Styling af button */
-.collapsible{
-  display: flex;
-  cursor: pointer;
-  color: var(--dark);
-  font-family: "Alef", sans-serif;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border: 2px solid var(--red);
+.read-more section {
+  align-items: center;
+  justify-content: center;
 }
 
 /* Bag om undersider */
 
-.content {
-  display: none;
-  overflow: hidden;
-}
-
-/* Styler alle p i "content" fold ud sektionerne */
-.content p {
+/* Styler alt tekst i "content" fold ud sektionerne */
+.content p, h4 {
   margin: 10px;
   padding-left: 5%;
   padding-right: 5%;
-}
-
-.content h4 {
-  margin: 10px;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-
-button.collapsible {
-  background-color: transparent;
 }
 
 /* Styling af "read more" er styling af hele indholdet under "bagom1" på bag om dingse siden */
 
 .read-more{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  box-sizing: border-box;
 }
 
 .read-more img {
@@ -1445,19 +1316,6 @@ button.collapsible {
 }
 
 /* Tilføjet padding for afstand til kant */
-.read-more h3{
-  padding-left: 5%;
-}
-
-.read-more h2{
-  padding-left: 5%;
-}
-.read-more p{
-  padding-left: 5%;
-}
-
-.read-more section button{
-  justify-content: center;
-}
-
+.read-more h3, h2, p{
+  padding: 1%;
 }
