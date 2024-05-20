@@ -627,6 +627,7 @@ flex-direction: column;
 .foelgknap {
 margin-left: 40%;
 margin-top: 10%;
+margin-bottom: 10%;
 }
 
 
@@ -918,7 +919,7 @@ footer {
     font-size: 3em;
   }
 
-/* forside */
+/******** forside *******/
 .multiwords{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1014,7 +1015,6 @@ height: 380px;
 }
 
 .billedeserie1 {
-
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -1027,6 +1027,41 @@ margin-right: 10%;
   justify-content: center;
   margin-top: 3%;
   margin-left: 0%;
+}
+
+/******** kontakt os *******/
+#openhours {
+  font-size: 3rem;
+}
+
+.dingsetelefon {
+  width: 130%;
+  height: 100%;
+}
+
+.ringx4 {
+  margin-top: 35%;
+}
+
+.ringx4container {
+width: 70%;
+height: 70%;
+}
+
+.adresse-kontakt {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kort-kontakt {
+  width: 55%;
+}
+
+.telefon-nummer-kontakt {
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 /******************' Font styling *********************/
