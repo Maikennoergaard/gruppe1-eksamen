@@ -797,7 +797,7 @@ button.collapsible {
   padding: 5%;
 }
 
-.read-more section{
+.read-more section button{
   justify-content: center;
 }
 
@@ -1039,17 +1039,13 @@ footer {
   }
 
   .foelgbilleder {
-  display: flex;
-  object-fit: cover;
-<<<<<<< Updated upstream
-  height: 600px;
-  width: 100%;
-  margin-top: 10%;
-}
-=======
-  width: 380px;
-  height: 380px;
-  }
+    display: flex;
+    object-fit: cover;
+    width: 380px;
+    height: 380px;
+    }
+  
+  
 
   #kursivtekst{
     margin-left: 23%;
@@ -1058,7 +1054,6 @@ footer {
   }
 
   .billedeserie1 {
->>>>>>> Stashed changes
 
   display: flex;
   flex-direction: row;
