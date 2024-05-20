@@ -926,16 +926,27 @@ footer {
   width: 60%;
 }
 
+.brødforside {
+  object-fit: cover;
+  height: 600px;
+  width: 100%;
+}
+
 /* midtersection */
 #responsivetekst {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 22%;
+  margin-right: 20%;
+  text-align: center;
 }
 
 #responsivetekst1 {
 display: none;
 }
+
+
 .midtersection {
   display: flex;
   flex-direction: column;
@@ -981,6 +992,12 @@ display: flex;
 object-fit: cover;
 width: 380px;
 height: 380px;
+}
+
+#kursivtekst{
+  margin-left: 23%;
+  margin-right: 21%;
+  text-align: center;
 }
 
 .billedeserie1 {
