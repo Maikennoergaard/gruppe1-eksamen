@@ -798,7 +798,7 @@ button.collapsible {
   padding: 5%;
 }
 
-.read-more section{
+.read-more section button{
   justify-content: center;
 }
 
@@ -1043,12 +1043,30 @@ footer {
   }
 
   .foelgbilleder {
+<<<<<<< HEAD
   display: flex;
   object-fit: cover;
   height: 600px;
   width: 100%;
   margin-top: 10%;
 }
+=======
+    display: flex;
+    object-fit: cover;
+    width: 380px;
+    height: 380px;
+    }
+  
+  
+
+  #kursivtekst{
+    margin-left: 23%;
+    margin-right: 21%;
+    text-align: center;
+  }
+
+  .billedeserie1 {
+>>>>>>> 2be9d2c7ee1eeaea046eae7fd30365a4ba9e54d5
 
 .billedeserie1{
   display: flex;
