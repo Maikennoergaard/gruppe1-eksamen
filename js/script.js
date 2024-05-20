@@ -86,4 +86,10 @@ function changeTextColor() {
    }
 }
 
+// forside video
+document.addEventListener("DOMContentLoaded", function() {
+  var video = document.getElementById("forsideVideo");
+  video.play();
+});
+
 

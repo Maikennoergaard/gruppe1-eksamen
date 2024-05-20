@@ -579,7 +579,7 @@ font-family: "Annie Use Your Telescope", cursive;
   margin-right: 20px;
   padding-bottom: 2px; 
 }
-#kursivtekst {
+.kursivtekst {
   margin-left: 5%;
   margin-right: 5%;
   text-align: center;
@@ -1114,7 +1114,7 @@ footer {
   height: 380px;
   }
 
-  #kursivtekst{
+  .kursivtekst{
     margin-left: 23%;
     margin-right: 21%;
     text-align: center;
