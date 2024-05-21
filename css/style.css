@@ -822,7 +822,7 @@ margin-bottom: 10%;
   padding: 20px;
   box-sizing: border-box;
 }
-
+/*læs mere knap bag om*/
 .fold_reply {
   display: flex;
   cursor: pointer; 
@@ -851,8 +851,7 @@ margin-bottom: 10%;
 
 .reply {
   display: none; /* Hide the reply content initially */
-  background-color: var(--gul);
-  opacity: 0.5;
+  background-color: var(--contrastbackground);
 }
 
 /* Styling af fold ud siderne */
