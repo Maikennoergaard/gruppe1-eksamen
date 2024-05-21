@@ -844,19 +844,11 @@ margin-bottom: 10%;
   width: 8em;
 }
 
-<<<<<<< HEAD
 .fold_btn1 {
   margin-left: 90% ;
 }
 
 
-=======
-.lille-pil {
-  height: 10px;
-  width: 10px;
-}
-
->>>>>>> 811590d91509be6bd3b14a98bc4aaddd5cd21811
 .reply {
   display: none; /* Hide the reply content initially */
   background-color: var(--gul);
