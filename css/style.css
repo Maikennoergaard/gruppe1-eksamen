@@ -849,11 +849,13 @@ margin-bottom: 10%;
 }
 .smagsvarianter {
   display: grid;
+  justify-self: center;
+  align-self: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   object-fit: cover;
   height: 10vh;
-  width: auto;
+  width: 10vh;
 }
 
 
