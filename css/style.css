@@ -594,12 +594,6 @@ nav li:first-child {
   margin-top: 0;
 }
 
-/* midtersection */
-
-.responsivetekst {
-  display: none;
-}
-
 .midtersection {
   display: flex;
   flex-direction: column;
@@ -607,6 +601,7 @@ nav li:first-child {
   align-items: center; 
   margin-top: 8%;
 }
+
 
 /* tekst til midtersection */
 .knap {
@@ -616,8 +611,7 @@ nav li:first-child {
   padding-bottom: 2px; 
 }
 .kursivtekst {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 5% 10%;
   text-align: center;
 }
 
@@ -1035,6 +1029,10 @@ footer {
       font-size: 2.3em;
       font-family: "Annie Use Your Telescope", cursive;
     }
+
+    .alefdark {
+      font-size: 2em;
+    }
   }
 
 /* Menukort */
@@ -1166,7 +1164,6 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   box-sizing: border-box;
-  margin-top: 5%;
 }
 
   #lodretskrift, #lodretskrift2, #lodretskrift3{
@@ -1178,7 +1175,9 @@ footer {
     line-height: 130%;
   }
   
-  /* forside */
+  /* forside - responsiv */
+
+  /* Styling ad dingse damen + tekst */
   .multiwords{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1198,24 +1197,24 @@ footer {
     width: 60%;
   }
 
+  /* Beskærer billede */
   .brødforside {
     object-fit: cover;
-    height: 600px;
+    height: 30vh;
     width: 100%;
   }
 
   /* midtersection */
-  #responsivetekst {
+  .responsivetekst {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 22%;
-    margin-right: 20%;
-    text-align: justify;
+    text-align: center;
+    padding: 0 20%;
   }
 
   #responsivetekst1 {
-  display: none;
+    display: none;
   }
 
   .midtersection {
@@ -1228,6 +1227,7 @@ footer {
 
   .alefdarkknap {
     margin-top: 5%;
+
   }
 
   /* tekst til midtersection */
@@ -1240,8 +1240,8 @@ footer {
   .udefraillustration {
     width: 50%;
     height: 50%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 1%;
+    margin-bottom: 3%;
   }
 
   /* instagram sektion */
@@ -1265,8 +1265,6 @@ footer {
   }
 
   .kursivtekst{
-    margin-left: 23%;
-    margin-right: 21%;
     text-align: center;
   }
 
