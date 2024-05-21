@@ -231,7 +231,7 @@ font-family: "Annie Use Your Telescope", cursive;
   #morewordsmenu {
     margin-block-start: 0;
     margin-block-end: 1em;
-    margin-top: 190%;
+    margin-top: 170%;
   }
 
   #tekstmenu {
@@ -299,10 +299,10 @@ font-family: "Annie Use Your Telescope", cursive;
 
   #andimg img {
     position: absolute;
-    width: 250px;
+    width: 200px;
     z-index: 1;
-    top: 70%;
-    left: 50%;
+    top: 65%;
+    left: 60%;
     transform: translateX(-50%);
   }
 
@@ -428,7 +428,7 @@ font-family: "Annie Use Your Telescope", cursive;
     max-width: none; /* Fjerner fast maksimal bredde */
     overflow-x: hidden; /* Forhindrer vandret rulning */
     transform: translateX(100%);
-  }
+}
 
   
   .popup-overlay {
@@ -489,9 +489,8 @@ font-family: "Annie Use Your Telescope", cursive;
 /*Forside*/
 /* video forside */
 .forside1 {
-  height: 84vh;
+  height: 93vh;
   position: relative; /* Tilføjer position: relative; til forældreelementet */
-  overflow: hidden;
 }
 
 .forside-video {
@@ -586,10 +585,7 @@ font-family: "Annie Use Your Telescope", cursive;
   flex-direction: column;
   justify-content: center;
   align-items: center; 
-  text-align: center;
   margin-top: 8%;
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
 /* tekst til midtersection */
@@ -602,8 +598,7 @@ font-family: "Annie Use Your Telescope", cursive;
 .kursivtekst {
   margin-left: 5%;
   margin-right: 5%;
-  text-align: justify;
-  font-size: large;
+  text-align: center;
 }
 
 /* billeder på midtersection */
@@ -924,7 +919,7 @@ footer {
 }
 
 .fotodesktop {
-  width: 90%;
+  width: 60%;
   height: auto;
 }
 
@@ -987,13 +982,13 @@ footer {
 @media (min-width: 525px) {
  
   #morewordsmenu{
-    margin-top: 100%;
+    margin-top: 190%;
     font-size: 130%;
   }
 
   #andimg img{
-    width: 300px;
-    top: 50%;
+    width: 270px;
+    top: 70%;
   }
 
   #sandwichul, #sodtul, #drikkeul{
@@ -1045,7 +1040,27 @@ footer {
     
 }
 
- 
+@media (min-width: 1000px) {
+  #andimg img{
+    top: 67%;
+    width: 300px;
+  }
+
+  #morewordsmenu {
+    margin-top: 180%;
+  }
+}
+
+@media (min-width: 1500px) {
+  #andimg img{
+    top: 57%;
+    width: 300px;
+  }
+
+  #morewordsmenu {
+    margin-top: 100%;
+  }
+}
 
 @media(min-width: 800px) {
   
@@ -1067,10 +1082,7 @@ footer {
     overflow-x: auto; /* Ændret fra "hidden" til "auto" */
   }
   
-   #andimg img{
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
+  #andimg img{
     width: 320px;
     top: 70%;
   }
@@ -1081,49 +1093,7 @@ footer {
   
   #morewordsmenu{
     margin-top: 200%;
-  } 
-}
-
-@media (min-width: 1000px) {
-  #andimg img{
-    top: 67%;
-    width: 300px;
   }
-
-  #morewordsmenu {
-    margin-top: 150%;
-  }
-}
-
-@media (min-width: 1500px) {
-  #andimg img{
-    top: 60%;
-    width: 300px;
-  }
-
-  #morewordsmenu {
-    margin-top: 100%;
-  }
-}
-
-@media(min-width: 2000px) { 
-  #andimg img{
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    width: 320px;
-    top: 15%;
-  }
-
-  #andimg h3 {
-    font-size: 4em;
-  }
-  
-  #morewordsmenu{
-    margin-top: 0%;
-  }
-} 
-
 
 /******** forside *******/
 .multiwords{
@@ -1188,9 +1158,6 @@ footer {
     justify-content: center;
     align-items: center; 
     margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: center;
   }
 
   .alefdarkknap {
@@ -1234,15 +1201,7 @@ footer {
   .kursivtekst{
     margin-left: 23%;
     margin-right: 21%;
-    text-align: justify;
-  }
-
-  #kursivtekst {
-    font-size: 2.5rem;
-    margin-left: 10%;
-    margin-right: 10%;
     text-align: center;
-    margin-bottom: 2%;
   }
 
   .billedeserie1 {
@@ -1343,7 +1302,7 @@ height: 70%;
   margin-left: 15%;
   margin-right: 15%;
 }
-
+}
 /******** Bag Om *******/
 
 @media (min-width: 700px) {
@@ -1400,5 +1359,18 @@ height: 70%;
 }
 }
 
+@media (min-width: 1100px){
+  #andimg img{
+    width: 320px;
+    top: 70%;
+  }
 
+  #andimg h3 {
+    font-size: 4em;
+  }
+  
+  #morewordsmenu{
+    margin-top: 200%;
+  }
+}
   
