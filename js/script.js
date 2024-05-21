@@ -8,8 +8,9 @@ function showSidebar() {
 
 function hideSidebar() {
   const sidebar = document.querySelector('.sidebar');
-   sidebar.style.display = 'none';
+  sidebar.style.display = 'none';
 }
+
 
 // Select the required elements
   const menuButton = document.querySelector('.open-btn');
