@@ -748,7 +748,6 @@ margin-bottom: 10%;
   padding: 5%;
 }
 
-
 /* Styler så billedet er 100% på telefon */
 .bagom1 img{
   width: 100%;
@@ -758,32 +757,17 @@ margin-bottom: 10%;
   width: 100%;
 }
 
-
 /* Styler søren og olivia teksten til mobil */
 .bagom-ordx4 {
-  padding-left: 10%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding: 5% 3%;
+  margin-left: 20px;
 }
 
-/* Styling af button */
-.collapsible{
-  display: flex;
-  cursor: pointer;
-  color: var(--dark);
-  font-family: "Alef", sans-serif;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border: 2px solid var(--red);
-}
 
 /* Bag om undersider */
 
-
 .read-more-start{
-  padding: 50px 0;
+  padding:5%;
 }
 
 .read-more {
@@ -801,7 +785,7 @@ margin-bottom: 10%;
 }
 
 .text {
-  background-color: #007BFF;
+  background-color: var(--background);
   width: 50%;
   color: #FFFFFF;
   padding: 20px;
@@ -809,34 +793,67 @@ margin-bottom: 10%;
 }
 
 .img {
-  background-color: aqua;
+  background-color: var(--background);
   width: 50%;
   padding: 20px;
   box-sizing: border-box;
 }
 
 .fold_reply {
+  display: flex;
   cursor: pointer; /* Change cursor to pointer to indicate interactivity */
   text-align: center;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .fold_btn {
-  padding: 10px 20px;
+  padding: 5px 10px;
   margin: 10px 0;
-  background-color: #007BFF;
-  color: #FFFFFF;
+  background-color: var(--contrastbackground);
+  color: var(--dark);
+  font-family: "Alef", sans-serif;
   text-align: center;
-  border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  width: 8em;
 }
 
 .reply {
   display: none; /* Hide the reply content initially */
-  margin-top: 10px; /* Example margin */
-  padding: 10px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: var(--contrastbackground);
+}
+
+/* Styling af fold ud siderne */
+
+.content {
+  display: none;
+  overflow: hidden;
+}
+/* Styler alle p i "content" fold ud sektionerne */
+.content p {
+  margin: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.content h4 {
+  margin: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.surdej5 {
+  object-fit: cover;
+  height: 30vh;
+  width: 35vh;
+}
+.smagsvarianter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  object-fit: cover;
+  height: 10vh;
+  width: auto;
 }
 
 
