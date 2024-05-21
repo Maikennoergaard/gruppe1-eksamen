@@ -788,10 +788,6 @@ margin-bottom: 10%;
 
 /* Bag om undersider */
 
-.read-more-start{
-  padding:5%;
-}
-
 .read-more {
   margin: 60px 0;
 }
@@ -839,6 +835,11 @@ margin-bottom: 10%;
   text-align: center;
   cursor: pointer;
   width: 8em;
+}
+
+.lille-pil {
+  height: 10px;
+  width: 10px;
 }
 
 .reply {
