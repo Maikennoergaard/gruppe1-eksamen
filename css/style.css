@@ -693,6 +693,11 @@ display: none;
 
 .foelgtekst {
   margin-left: 5%;
+  text-align: center;
+}
+
+.midtersection h2 {
+padding: 2%;
 }
 
 .foelgbilleder {
