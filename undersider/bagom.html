@@ -130,24 +130,46 @@
 
             <!-- Content til undersiden - dingsevand -->
             <div class="reply reply2">
-                <div class="dingsedrik-titel">
-                    <h2 class="alefred" id="hjemmelavet">HJEMMELAVET DINGSEVAND</h2>
-                    <p>Lavet af friskpresset juice og danskvand</p>
-                    <img src="/img/dingsedamer/drikker.png" alt="Dingsevand figur">
+                <div class="dingsedrik_titel">
+                    <h2 class="alefred" id="h2_hjemmelavet">HJEMMELAVET DINGSEVAND</h2>
+                    <p class="annielille">Lavet af friskpresset juice og danskvand.</p>
+                    <img src="/img/dingsedamer/drikker.png" alt="Dingsevand figur" id="dingsevand_figur">
                 </div>
-              <img src="/img/farver/daase.webp" alt="Dingsevand">
-              <img src="/img/farver/daase3.webp" alt="Dingsevand">
-              <p>Dingsevand er vores egen hjemmelavede friske vand med smag. Dingsevand består af friskpresset 
+
+                <div class="dingsevand-fotocontainer">
+              <img src="/img/farver/daase.webp" alt="Dingsevand" id="dingsevand_foto">
+              <img src="/img/farver/daase3.webp" alt="Dingsevand" id="dingsecand_foto">
+            </div>
+
+              <p class="p_foldud_dingsevand">Dingsevand er vores egen hjemmelavede friske vand med smag. Dingsevand består af friskpresset 
                 juice kombineret med en læskende dansk vand. </p>
-                <img src="/img/familystyle/dingsevand.webp" alt="Dingsevand illustration">
-                <p> Vi har forskellige varianter som varierer efter sæson. Lige nu sælger vi med smag af både lime, grape, citron og jordbær.</p>
-                <h3 class="annielille">Find din ynglings variant</h3>
-                <div class="smagsvarianter">
-                    <img src="/img/familystyle/citron.webp" alt="citron smag">
-                    <img src="/img/familystyle/grape.webp" alt="grape smag">
-                    <img src="/img/familystyle/lime.webp" alt="lime smag">
-                    <img src="/img/familystyle/jordbaer.webp" alt="jordbær smag">
+
+                <div class="dingsevand_illustration">
+                    <img src="/img/familystyle/dingsevand.webp" alt="Dingsevand illustration" id="dingsevand_illustration">
                 </div>
+
+                <p class="p_foldud_dingsevand"> Vi har forskellige varianter som varierer efter sæson. Lige nu sælger vi med smag af både lime, grape, citron og jordbær.</p>
+                <h3 class="anniestor" id="h3_foldud_dingsevand">Find din ynglings variant</h3>
+                
+                <div class="smagsvarianter">
+                    <div class="citron_smag">
+                        <img src="/img/familystyle/citron.webp" alt="citron smag">
+                        <p class="annielille">Citron</p>
+                    </div>
+                    <div class="grape_smag">
+                        <img src="/img/familystyle/grape.webp" alt="grape smag">
+                        <p class="annielille">Grapefrugt</p>
+                    </div>
+                    <div class="lime_smag">
+                        <img src="/img/familystyle/lime.webp" alt="lime smag">
+                        <p class="annielille">Lime</p>
+                    </div>
+                    <div class="jordbaer_smag">
+                        <img src="/img/familystyle/jordbaer.webp" alt="jordbær smag">
+                        <p class="annielille">Jordbær</p>
+                    </div>
+                </div>
+
             </div>
 
             <!-- sektion 3 - RÅVARER-->
@@ -167,22 +189,30 @@
             <!-- Content til undersiden - surdej-->
             <div class="reply reply3">
                 <!-- video råvare -->
-            <h2 class="alefred">KVALITETS RÅVARER</h2>
+            <h2 class="alefred" id="h2_foldud_raevare">VI HAR UDVALGT RÅVARER AF HØJ KVALITET</h2>
+
             <div class="bagom-raevare">
                 <video class="raevare-video" loop autoplay muted controlsList="nodownload">
                     <source src="/video/raevare-video.mp4" type="video/mp4">
                 </video>
             </div>
-          <p>Vi bruger udvalgte skinker og oste til fyld i vores sandwich. Udvalgt er fra de bedste leverandører og tilsmagt nøje.</p>
-          <img src="/img/familystyle/platte.png" alt="Platte">
-          <h3 class="anniestor">“Mere olivenolie - mindre friture”</h3>
-          <img src="/img/familystyle/oliven.webp" alt="Olivenolie og smør">
-          <p>Vores sandwichmenu byder på et væld af smagsoplevelser: nyd den 24 måneder lagrede Serranoskinke med frisk basilikum, pinjekerner, 
+
+          <p class="p_foldud_raevare">Vi bruger udvalgte skinker og oste til fyld i vores sandwich. Udvalgt er fra de bedste leverandører og tilsmagt nøje.</p>
+          <div class="platte_container"><img src="/img/familystyle/platte.png" alt="Platte" class="platte"></div>
+          
+          <div class="oliven_container">
+          <div class="tekstcontainer_olivenolie">
+          <h3 class="anniestor" id="h3_foldud_raevare">“Mere olivenolie - mindre friture”</h3>
+          <p>Dette er et signatur udsagn fra Dingses kok; Søren</p>
+          </div>
+          <img src="/img/familystyle/oliven.webp" alt="Olivenolie og smør" class="olivenolie_og_smoer">
+          </div>
+
+          <p class="p_foldud_raevare">Vores sandwichmenu byder på et væld af smagsoplevelser: nyd den 24 måneder lagrede Serranoskinke med frisk basilikum, pinjekerner, 
             mozzarella og rucola. Oplev saftig kylling med jalapenosvinaigrette, padrons, skalotteløg og rucola. Prøv focaccia med mortadella, 
             ricottacreme og pistacie, eller jambon-beurre med prosciutto cotto, dobbelt fermenteret smør og 16 måneder lagret Comté. Smag de 
             delikate rose rejer med rød peber, chili, tomatiseret mayonnaise, frisk agurk og rucola. Endelig kan du nyde vores 'Salad à la 
             Provençal' med nye kartofler, modne tomater, oliven, skalotteløg, estragon, ramsløg og dijon vinaigrette.</p>
-    
             </div>
         </div>
     </section>
