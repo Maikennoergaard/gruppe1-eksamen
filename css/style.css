@@ -469,7 +469,9 @@ nav li:first-child {
   
   .close-btn {
     padding: 10px;
-    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
     top: 1rem;
     right: 1rem;
     font-size: 2rem;
@@ -593,7 +595,7 @@ nav li:first-child {
 
 /* midtersection */
 
-#responsivetekst {
+.responsivetekst {
   display: none;
 }
 
