@@ -125,3 +125,27 @@ function toggleSidebar() {
   // Toggle the 'show' class on the sidebar to show/hide it
   sidebar.classList.toggle('show');
 }
+
+// DINGSE DINGSE DING
+document.addEventListener("DOMContentLoaded", function() {
+  const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+          }
+      });
+  }, observerOptions);
+
+  const elements = document.querySelectorAll('.firexdingse h3');
+  elements.forEach((element, index) => {
+      element.style.transitionDelay = `${index * 0.5}s`;
+      observer.observe(element);
+  });
+});
