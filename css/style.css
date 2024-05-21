@@ -821,6 +821,17 @@ align-items: center;
   background-color: var(--background);
 }
 
+.ringx4 h3 {
+  opacity: 0;
+  transform: translateY(20px); /* Startposition under deres endelige destination */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.ringx4 h3.visible {
+  opacity: 1;
+  transform: translateY(0); /* Endelig position */
+}
+
 .dingsetelefon {
   width: auto;
   height: 35vh;

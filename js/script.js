@@ -134,11 +134,11 @@ document.addEventListener("DOMContentLoaded", function() {
       threshold: 0.1
   };
 
-  const observer = new IntersectionObserver((entries, observer) => {
+  const observer1 = new IntersectionObserver((entries, observer1) => {
       entries.forEach(entry => {
           if (entry.isIntersecting) {
               entry.target.classList.add('visible');
-              observer.unobserve(entry.target);
+              observer1.unobserve(entry.target);
           }
       });
   }, observerOptions);
@@ -146,6 +146,25 @@ document.addEventListener("DOMContentLoaded", function() {
   const elements = document.querySelectorAll('.firexdingse h3');
   elements.forEach((element, index) => {
       element.style.transitionDelay = `${index * 0.5}s`;
-      observer.observe(element);
+      observer1.observe(element);
+  });
+
+  // RING RING RING
+  const observer2 = new IntersectionObserver((entries, observer2) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer2.unobserve(entry.target);
+          }
+      });
+  }, observerOptions);
+
+  const elements1 = document.querySelectorAll('.ringx4 h3');
+  elements1.forEach((element, index) => {
+      element.style.transitionDelay = `${index * 0.5}s`;
+      observer2.observe(element);
   });
 });
+
+
+
