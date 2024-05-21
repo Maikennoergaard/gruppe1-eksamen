@@ -1505,6 +1505,31 @@ footer {
     }
 
     .billedeserie1 {
+  .alefdarkknap {
+    margin-top: 5%;
+  }
+
+  /* tekst til midtersection */
+  .knap {
+    border: 2px solid #c7352a; 
+    padding-bottom: 2px; 
+  }
+
+  /* billeder på midtersection */
+  .udefraillustration {
+    width: 50%;
+    height: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  /* instagram sektion */
+
+  .instagram {
+    margin-top: 10%;
+  }
+
+  .foelgtekst {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1522,6 +1547,11 @@ footer {
     #openhours {
       font-size: 3rem;
     }
+  .kursivtekst{
+    margin-left: 23%;
+    margin-right: 21%;
+    text-align: center;
+  }
 
     .dingsetelefon {
       width: 130%;
@@ -1600,6 +1630,7 @@ footer {
       margin-right: 15%;
     }
     }
+  }
   
   /******STYLER MEDIA OVER 1000PX******/ 
   @media (min-width: 1000px) {
