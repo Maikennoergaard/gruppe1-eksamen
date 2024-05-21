@@ -71,6 +71,8 @@ const hidden2Elemnts = document.querySelectorAll('.hidden2');
 hidden2Elemnts.forEach((el) => observer.observe(el));
 
 
+
+
 // Farveskift på menukort knap
 window.onscroll = function () { changeTextColor() };
 var button = document.querySelector(".btn");
