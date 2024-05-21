@@ -672,6 +672,9 @@ margin-bottom: 10%;
 
 #openhours{
   font-size: 2em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 #vibor, #adressekontakt{
