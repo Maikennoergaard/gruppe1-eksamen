@@ -1011,31 +1011,157 @@ margin-top: -2%;
 }
 
 
-/* <h3 class="anniestor" id="h3_foldud">Trin 1</h3>
-<img src="../img/familystyle/infografik-1.webp" alt="Fermentering af surdej" class="fermentering_af_surdej">
-<p>Surdejen fermenterer i mindst 48 timer for at sikre god smag. </p>
-<h3 class="anniestor" id="h3_foldud_siden">Trin 2</h3>
-<img src="../img/familystyle/infografik-2.webp" alt="Stræk og fold surdej" class="stræk_og_fold_surdej">
-<p>Herefter strækker og folder vi dejen sådan vi får lufttige brød </p>
-<h3 class="anniestor" id="h3_foldud">Trin 3</h3>
-<img src="../img/familystyle/infografik-3.webp" alt="Bages ved høj varme" class="bages_ved_høj_varme">
-<p>Til sidst bager vi brødet i ovnen ved høj intens varme </p>
-<img class="surdej5" src="/img/farver/brodtat.webp" alt="Surdejs brød fra Dingse"> */
-
 /* dingsevand foldud side */
 
-.smagsvarianter {
-  display: grid;
-  justify-self: center;
-  align-self: center;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+/* tekst til folud dingsevand */
+
+.dingsedrik_titel {
+  margin-top: -8%;
+  margin-left: 10%;
+}
+
+#h2_hjemmelavet {
+  font-weight: 100;
+}
+
+.p_foldud_dingsevand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20.5%;
+  margin-right: 20.5%;
+  margin-top: 5%;
+}
+
+#h3_foldud_dingsevand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20.5%;
+  margin-right: 20.5%;
+  margin-top: 5%;
+}
+
+
+/* billeder foldud dingsevand */
+#dingsevand_figur {
+  width: 40%;
+  margin-left: 50%;
+  margin-top: -7%;
+  margin-bottom: 5%;
+}
+
+.dingsevand-fotocontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; 
+}
+
+.dingsevand-fotocontainer img {
   object-fit: cover;
-  height: 10vh;
-  width: 10vh;
+  width: 50vh;
+  height: 50vh;
+}
+
+
+.dingsevand_illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#dingsevand_illustration {
+  width: 30%;
+  height: auto;
+  margin-top: 3%;
+}
+
+/* smagsvarianter */
+
+.smagsvarianter {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 40px;  
+  margin-top: 2%; 
+  margin-bottom: 10%;            
+}
+
+.smagsvarianter > div {
+  text-align: center;      
+}
+
+.smagsvarianter img {
+  width: 120px;            
+  height: auto;
 }
 
 /* råvarer foldud side */
+
+/* tekst i folud råvare */
+
+#h2_foldud_raevare {
+  font-weight: 100;
+  margin-top: -7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 17%;
+  margin-right: 17%;
+  margin-bottom: 5%;
+}
+
+.p_foldud_raevare {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/* billeder/video i foldud råvare */
+.bagom-raevare {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.raevare-video {
+  width: 60%;
+}
+
+.platte_container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.platte {
+  width: 80%;             
+  max-width: 600px;       
+  height: auto;            
+}
+
+/* olivien oliecontainer */
+.oliven_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.olivenolie_og_smoer {
+  max-width: 300px;
+}
 
 /*Footer*/
 footer {
@@ -1109,17 +1235,12 @@ footer {
   margin-left: 1%;
 }
 
-/* <div class="insta-container">
-<h4 class="annielille">“Del dine bedste dingse oplevelser. Vi elsker, at følge med i jeres bedste nye madoplevelser"</h4>
-<h4 class="annielille"> #dingsefriskbagt</h4>
-<img src="/img/icon/instagram.png" alt="instaicon" class="instaicon">
-</div> */
 
 /* Image container styling */
 .foto-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em; /* Add space between images */
+  gap: 1em; 
   justify-content: center;
 }
 
