@@ -724,6 +724,10 @@ justify-content: center;
 align-items: center;
 }
 
+.desktopbilleder {
+  display: none;
+}
+
 
 
 /*Kontakt os*/ 
@@ -1433,6 +1437,23 @@ footer {
     height: 50%;
     margin-top: 1%;
     margin-bottom: 3%;
+  }
+
+
+/* Styling af ekstra billeder til forsiden til desktop */
+  .desktopbilleder {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+  }
+  .desktopbilleder img {
+    width: 65vh;
+    height: 45vh;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .brødforside {
+    display: none;
   }
 
   /* instagram sektion */
