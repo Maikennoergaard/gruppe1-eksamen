@@ -930,6 +930,7 @@ margin-bottom: 10%;
 .reply {
   display: none; /* Hide the reply content initially */
   background-color: var(--contrastbackground);
+  margin-bottom: 10%;
 }
 
 /* Styling af fold ud siderne */
@@ -938,23 +939,101 @@ margin-bottom: 10%;
   display: none;
   overflow: hidden;
 }
+
 /* Styler alle p i "content" fold ud sektionerne */
-.content p {
-  margin: 10px;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-.content h4 {
-  margin: 10px;
-  padding-left: 5%;
-  padding-right: 5%;
+
+
+/* surdej foldud side */
+
+
+/* tekst til foldud surdej */
+
+#h1_foldud {
+  font-weight: 100;
+  margin-bottom: 2%;
 }
 
+#h2_foldud {
+font-weight: 100;
+margin-bottom: -7%;
+}
+
+#h3_foldud {
+font-size: 3rem;
+color: #c7352a;
+margin-left: 22%;
+margin-bottom: 1%;
+}
+
+#h3_foldud_siden {
+  font-size: 3rem;
+  color: #c7352a;
+  margin-left: 58%;
+  margin-top: -5%;
+  }
+
+#p_foldud {
+  margin-right: 30%;
+  margin-bottom: 5%;
+}
+
+.p_foldud_info {
+  margin-left: 25%;
+  margin-right: 55%;
+  margin-top: 2%;
+}
+
+.p_foldud_info_side {
+ margin-left: 60%;
+ margin-right: 20%;
+}
+
+.tekst_foldud_bagom {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+
+/* billeder foldud bagom surdej */
 .surdej5 {
   object-fit: cover;
-  height: 30vh;
+  height: 50vh;
   width: 35vh;
 }
+
+#fermentering_af_surdej {
+width: 20%;
+margin-left: 25%;
+margin-top: -2%;
+}
+
+#straek_og_fold_surdej {
+width: 20%;
+margin-left: 60%;
+margin-top: -5;
+}
+
+#bages_ved_hoej_varme {
+width: 20%;
+margin-left: 25%;
+margin-top: -2%;
+}
+
+
+/* <h3 class="anniestor" id="h3_foldud">Trin 1</h3>
+<img src="../img/familystyle/infografik-1.webp" alt="Fermentering af surdej" class="fermentering_af_surdej">
+<p>Surdejen fermenterer i mindst 48 timer for at sikre god smag. </p>
+<h3 class="anniestor" id="h3_foldud_siden">Trin 2</h3>
+<img src="../img/familystyle/infografik-2.webp" alt="Stræk og fold surdej" class="stræk_og_fold_surdej">
+<p>Herefter strækker og folder vi dejen sådan vi får lufttige brød </p>
+<h3 class="anniestor" id="h3_foldud">Trin 3</h3>
+<img src="../img/familystyle/infografik-3.webp" alt="Bages ved høj varme" class="bages_ved_høj_varme">
+<p>Til sidst bager vi brødet i ovnen ved høj intens varme </p>
+<img class="surdej5" src="/img/farver/brodtat.webp" alt="Surdejs brød fra Dingse"> */
+
+/* dingsevand foldud side */
+
 .smagsvarianter {
   display: grid;
   justify-self: center;
@@ -966,9 +1045,7 @@ margin-bottom: 10%;
   width: 10vh;
 }
 
-.galleri {
-  padding: 5%;
-}
+/* råvarer foldud side */
 
 /*Footer*/
 footer {
