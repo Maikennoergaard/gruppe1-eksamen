@@ -35,6 +35,7 @@ h4{
   display: flex;
   color: var(--dark);
   font-family: "Alef", sans-serif;
+  margin-bottom: 2%;
 }
 
 p{
@@ -749,8 +750,10 @@ margin-bottom: 10%;
   text-align: center;
   padding: 5%; 
 }
+
 .bagom1 p {
   padding: 5%;
+  text-align: justify;
 }
 
 /* Styler så billedet er 100% på telefon */
@@ -780,7 +783,9 @@ margin-bottom: 10%;
 }
 
 .faqer {
-  margin-bottom: 20px;
+  margin-bottom: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .read-more-content {
@@ -795,6 +800,7 @@ margin-bottom: 10%;
   color: #FFFFFF;
   padding: 20px;
   box-sizing: border-box;
+  line-height: 2rem;
 }
 
 .img {
@@ -806,14 +812,15 @@ margin-bottom: 10%;
 
 .fold_reply {
   display: flex;
-  cursor: pointer; /* Change cursor to pointer to indicate interactivity */
+  cursor: pointer; 
   text-align: center;
   justify-content: center;
   align-items: center;
-
+  margin-left: -84%;
+  margin-top: -10%;
 }
 
-.fold_btn {
+.fold_btn, .fold_btn1 {
   padding: 5px 10px;
   margin: 10px 0;
   background-color: var(--contrastbackground);
@@ -823,6 +830,11 @@ margin-bottom: 10%;
   cursor: pointer;
   width: 8em;
 }
+
+.fold_btn1 {
+  margin-left: 90% ;
+}
+
 
 .reply {
   display: none; /* Hide the reply content initially */
@@ -905,9 +917,46 @@ footer {
 
 /* Gallery section styling */
 .galleri {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
   padding: 2em 1em;
+  margin-bottom: 5%;
+  margin-top: -5%;
 }
+
+#galleri_tekst {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#galleri_tekst1 {
+  margin-bottom: 3%;
+}
+
+.insta-container {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  flex-direction: column;
+  margin-top: -8%;
+  margin-left: 6%;
+  margin-right: 63%;
+}
+
+.instaicon {
+  width: 7%;
+  height: auto;
+  margin-left: 1%;
+}
+
+/* <div class="insta-container">
+<h4 class="annielille">“Del dine bedste dingse oplevelser. Vi elsker, at følge med i jeres bedste nye madoplevelser"</h4>
+<h4 class="annielille"> #dingsefriskbagt</h4>
+<img src="/img/icon/instagram.png" alt="instaicon" class="instaicon">
+</div> */
 
 /* Image container styling */
 .foto-container {
@@ -1175,7 +1224,7 @@ footer {
     align-items: center;
     margin-left: 22%;
     margin-right: 20%;
-    text-align: center;
+    text-align: justify;
   }
 
   #responsivetekst1 {
@@ -1354,7 +1403,7 @@ height: 70%;
   }
 
   #mere {
-    padding-left: 5%;
+    padding-left: 1%;
     padding-bottom: 3%;
   }
   
