@@ -212,6 +212,7 @@ nav li:first-child {
   }
   .sidebar {
       display: flex;
+      display: none;
       gap: 100px;
       align-content: center;
       width: 100%;
