@@ -93,7 +93,7 @@ font-family: "Annie Use Your Telescope", cursive;
 nav {
   background-color: var(--contrastbackground);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-  position: relative;
+  position: sticky;
   top: 0;
   z-index: 100;
   overflow-x: auto;
@@ -281,7 +281,6 @@ nav li:first-child {
   margin-bottom: 10%;
   margin-left: 5%;
   margin-right: 5%;
-  
   font-size: 1.7em;
 }
 
@@ -340,14 +339,13 @@ nav li:first-child {
     width: 40%;
     padding-top: 2%;
     padding-bottom: 2%;
-    font-weight: 500;
+    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     margin-bottom: 10%;
     margin-top: 10%;
-    
   }
 
   #andimg {
@@ -632,6 +630,18 @@ nav li:first-child {
   margin-left: 35%;
 }
 
+.firexdingse h3 {
+  opacity: 0;
+  transform: translateY(20px); /* Startposition under deres endelige destination */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.firexdingse h3.visible {
+  opacity: 1;
+  transform: translateY(0); /* Endelig position */
+}
+
+
 /* dingsedame */
 .dingseukop {
   width: 60%;
@@ -645,15 +655,27 @@ nav li:first-child {
   margin-top: 0;
 }
 
+/* midtersection */
+
 .midtersection {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; 
+  margin: 8% 10%;
+  text-align: center;
   margin-top: 8%;
 }
 
-
+/* Fjerner noget af teksten fra mobil version */
+  .responsivetekst {
+    display: none;
+  }
+  
+  #responsivetekst1 {
+    display: none;
+  }
+  
 /* tekst til midtersection */
 .knap {
   border: 2px solid #c7352a; 
@@ -663,6 +685,8 @@ nav li:first-child {
 }
 .kursivtekst {
   margin: 5% 10%;
+  margin-left: 5%;
+  margin-right: 5%;
   text-align: center;
 }
 
@@ -683,6 +707,11 @@ nav li:first-child {
 
 .foelgtekst {
   margin-left: 5%;
+  text-align: center;
+}
+
+.midtersection h2 {
+padding: 2%;
 }
 
 .foelgbilleder {
@@ -704,9 +733,13 @@ flex-direction: column;
 }
 
 .foelgknap {
-margin-left: 40%;
-margin-top: 10%;
-margin-bottom: 10%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.desktopbilleder {
+  display: none;
 }
 
 
@@ -796,8 +829,7 @@ margin-bottom: 10%;
 }
 
 .foelgknap1 {
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin: 5% 5%;
   }
 
  
@@ -833,6 +865,37 @@ margin-bottom: 10%;
   margin-left: 20px;
 }
 
+.bagom-ordx4 h3 {
+  opacity: 0;
+  transform: translateY(20px); /* Startposition under deres endelige destination */
+  animation: pop 0.5s forwards;
+}
+
+.bagom-ordx4 h3:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.bagom-ordx4 h3:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.bagom-ordx4 h3:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.bagom-ordx4 h3:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+@keyframes pop {
+  to {
+      opacity: 1;
+      transform: translateY(0); /* Endelig position */
+  }
+}
+
+
+
 /* tekst til bagom */
 .tekst_container_bagom {
   margin-top: 10%;
@@ -853,7 +916,17 @@ margin-bottom: 10%;
   margin-left: 10%;
 }
 
+.bagom-ordx4 {
+  padding: 5% 3%;
+  margin-left: 20px;
+}
+
+
 /* Bag om undersider */
+
+.read-more {
+  margin: 60px 0;
+}
 
 .faqer {
   margin-bottom: 15%;
@@ -882,7 +955,6 @@ margin-bottom: 10%;
   padding: 20px;
   box-sizing: border-box;
 }
-
 /*læs mere knap bag om*/
 .fold_reply {
   display: flex;
@@ -894,7 +966,7 @@ margin-bottom: 10%;
   margin-top: -10%;
 }
 
-.fold_btn{
+.fold_btn {
   padding: 5px 10px;
   margin: 10px 0;
   background-color: var(--contrastbackground);
@@ -915,7 +987,8 @@ margin-bottom: 10%;
   cursor: pointer;
   width: 8em;
   margin-left: 92% ;
-}
+  margin-left: 90% ;}
+
 
 .reply {
   display: none; /* Hide the reply content initially */
@@ -1196,7 +1269,7 @@ footer {
   margin-bottom: 7%;
   margin-left: 1rem; 
   margin-right: 1rem; 
-}
+} 
 
 /* Gallery section styling */
 .galleri {
@@ -1265,263 +1338,339 @@ footer {
 /*Media Querey Computer*/
 
 
-/* Vi har stylet alt vores CSS mobile first og tilføjet media querys til desktop efter */
+  /* Vi har stylet alt vores CSS mobile first og tilføjet media querys til desktop efter */
 
-/* STYLING AF FONT TIL COMPUTER */
+  /* STYLING AF FONT TIL COMPUTER */
 
-@media (min-width: 700px) {
-    /*Font styling*/
-    h3{
-      display: flex;
-      color: var(--dark);
-      font-family: "Alef", sans-serif;
+  @media (min-width: 700px) {
+      /*Font styling*/
+      h3{
+        display: flex;
+        color: var(--dark);
+        font-family: "Alef", sans-serif;
+      }
+
+      h4{
+        display: flex;
+        color: var(--dark);
+        font-family: "Alef", sans-serif;
+      }
+
+      p{
+        color: var(--dark);
+        font-family: "Alef", sans-serif;
+        font-size: 1.2em;
+      }
+
+      /*Rød stor font - bliver brugt x4*/
+      .alefred{
+        color: var(--red);
+        font-size: 4em;
+        font-family: "Alef", sans-serif;
+      }
+
+      .anniestor {
+        color: var(--dark);
+        font-size: 2.3em;
+        font-family: "Annie Use Your Telescope", cursive;
+      }
     }
 
-    h4{
-      display: flex;
-      color: var(--dark);
-      font-family: "Alef", sans-serif;
+  /* Menukort */
+  @media (min-width: 400px) {
+    
+    /*Sektion med billed og 4x sandwich på menukort*/
+    #andimg{
+      margin-top: 230%;
     }
 
-    p{
-      color: var(--dark);
-      font-family: "Alef", sans-serif;
+  }
+
+  @media (min-width: 525px) {
+    /* Styling af menukort*/
+    /* Sektion med ord og billede*/
+    #morewordsmenu{
+      margin-top: 190%;
+      font-size: 130%;
+    }
+
+    /* Øverste dingsedame på menukortet*/
+    #andimg img{
+      width: 270px;
+      top: 70%;
+    }
+
+    /* Sandwich, sødt og drikkevare listerne på menukort*/
+    #sandwichul, #sodtul, #drikkeul{
+      font-size: 150%;
+      line-height: 130%;
+    }
+
+    /*De lodrette skrifter i asiden på menukort*/
+    #lodretskrift, #lodretskrift2, #lodretskrift3{
+      font-size: 300%;
+    }
+  }
+
+  @media (min-width: 700px) {
+    #andimg img{
+      top: 65%;
+      width: 300px;
+    }
+
+    #andimg h3 {
+      margin-top: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+    }
+
+    #morewordsmenu{
+      margin-top: 130%;
+      font-size: 150%;
+    }
+
+    #lodretskrift, #lodretskrift2, #lodretskrift3{
+      margin-top: 36%;
+    }
+
+    #tekstmenu {
+      font-size: 2em;
+    }
+
+    #tekstmenu2 {
+      font-size: 2em;
+    }
+
+    .menuitemname{
+      font-size: 2em;
+    }
+
+    .menuitemtxt{
+      font-size: 1.5em;
+    }
+
+    #bestilknapmenu{
       font-size: 1.2em;
     }
 
-    /*Rød stor font - bliver brugt x4*/
-    .alefred{
-      color: var(--red);
-      font-size: 4em;
-      font-family: "Alef", sans-serif;
-    }
-
-    .anniestor {
+  h3{
+      display: flex;
       color: var(--dark);
-      font-size: 2.3em;
-      font-family: "Annie Use Your Telescope", cursive;
-    }
-
-    .alefdark {
+      font-family: "Alef", sans-serif;
       font-size: 2em;
     }
+      
+    /* **** Styling af første del af bagom - Søren og olivia billede + tekst **** */
+      .bagom1 {
+        display: grid;
+      }
+
+      #mere {
+        padding-left: 1%;
+        padding-bottom: 3%;
+      }
+      
+      .bagom-ordx4 {
+        justify-self: center;
+        align-self: center;
+      }
+
+      .bagom1 h1 {
+        text-align: center;
+        padding-top: 2%; 
+        padding-bottom: 1%;
+      }
+      .bagom1 p {
+        padding: 2%;
+      }
+
+    /*  Styles med en anden class for at få korrekt opsætning */
+      .bagom1-desktop{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .bagom1 h1 {
+        justify-self: center;
+        align-self: center;
+      }
+
+      /* Styling af billedet af søren og olivia, billedet croppes til desktop*/
+      .bagom1 img{
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+        object-position: top;
+      }
+
+      .fotomobil {
+        display: none;
+      }
+
+      .fotodesktop {
+        display: block;
+      }
   }
 
-/* Menukort */
-@media (min-width: 400px) {
-  #andimg{
-    margin-top: 230%;
-  }
-
-}
-
-@media (min-width: 525px) {
- 
-  #morewordsmenu{
-    margin-top: 190%;
-    font-size: 130%;
-  }
-
-  #andimg img{
-    width: 270px;
-    top: 70%;
-  }
-
-  #sandwichul, #sodtul, #drikkeul{
-    font-size: 150%;
-    line-height: 130%;
-  }
-
-  #lodretskrift, #lodretskrift2, #lodretskrift3{
-    font-size: 300%;
-  }
-}
-
-@media (min-width: 700px) {
-  #andimg img{
-    top: 65%;
-    width: 300px;
-  }
-
-  #andimg h3 {
-    margin-top: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-  }
-
-  #morewordsmenu{
-    margin-top: 130%;
-    font-size: 150%;
-  }
-
-  #lodretskrift, #lodretskrift2, #lodretskrift3{
-    margin-top: 36%;
-  }
-
-  #tekstmenu {
-    font-size: 2em;
-  }
-
-  #tekstmenu2 {
-    font-size: 2em;
-  }
-
-  .menuitemname{
-    font-size: 1.5em;
-    font-weight: 150;
-  }
-
-  .menuitemtxt{
-    font-size: 1em;
-  }
- 
- h3{
-    display: flex;
-    color: var(--dark);
-    font-family: "Alef", sans-serif;
-    font-size: 2em;
-  }
-
-  #bestilknapmenu{
-    font-size: 1.2em;
-  }
+  /******STYLER MEDIA OVER 800PX******/ 
+  @media(min-width: 800px) {
     
-}
+    .main-popup {
+      /* Dine stilarter for computere */
+      max-width: 50%; /* Begræns popupens bredde til halvdelen af skærmen */
+      width: 100%; /* Juster bredden efter behov */
+      height: 100vh; /* Juster højden efter behov */
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
 
-@media (min-width: 1000px) {
-  #andimg img{
-    top: 67%;
-    width: 300px;
-  }
+    .popup-overlay {
+      background-color: var(--gul);
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      z-index: -1;
+      overflow-x: auto; /* Ændret fra "hidden" til "auto" */
+    }
+    
+    #andimg img{
+      width: 320px;
+      top: 70%;
+    }
 
-  #morewordsmenu {
-    margin-top: 180%;
-  }
-}
+    #andimg h3 {
+      font-size: 4em;
+    }
+    
+    #morewordsmenu{
+      margin-top: 200%;
+    }
 
-@media (min-width: 1500px) {
-  #andimg img{
-    top: 57%;
-    width: 300px;
-  }
+    .menuitemname{
+      font-size: 2em;
+    }
 
-  #morewordsmenu {
-    margin-top: 100%;
-  }
-}
-
-@media(min-width: 800px) {
-  
-  .main-popup {
-    /* Dine stilarter for computere */
-    max-width: 50%; /* Begræns popupens bredde til halvdelen af skærmen */
-    width: 100%; /* Juster bredden efter behov */
-    height: 100vh; /* Juster højden efter behov */
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .popup-overlay {
-    background-color: var(--gul);
-    height: 100vh;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-    overflow-x: auto; /* Ændret fra "hidden" til "auto" */
-  }
-  
-  #andimg img{
-    width: 320px;
-    top: 70%;
-  }
-
-  #andimg h3 {
-    font-size: 4em;
-  }
-  
-  #morewordsmenu{
-    margin-top: 200%;
-  }
-
-  .menuitemname{
-    font-size: 2em;
-  }
-
-
-
-/******** forside *******/
-.multiwords{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  box-sizing: border-box;
-}
-
-  #lodretskrift, #lodretskrift2, #lodretskrift3{
-    font-size: 300%;
-  }
-
-  #sandwichul, #sodtul, #drikkeul{
-    font-size: 150%;
-    line-height: 130%;
-  }
-  
-  /* forside - responsiv */
-
-  /* Styling ad dingse damen + tekst */
+  /******** forside *******/
   .multiwords{
     display: grid;
     grid-template-columns: 1fr 1fr;
     box-sizing: border-box;
-  }
-
-  .firexdingse {
-    margin-top: 25%;
-  }
-
-  .baggrunddingse {
-    background-color: #c7352a;
-  }
-
-  /* dingsedame */
-  .dingseukop {
-    width: 60%;
-  }
-
-  /* Beskærer billede */
-  .brødforside {
-    object-fit: cover;
-    height: 30vh;
-    width: 100%;
-  }
-
-  /* midtersection */
-  .responsivetekst {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20%;
-  }
-
-  #responsivetekst1 {
-    display: none;
-  }
-
-  .midtersection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
     margin-top: 5%;
   }
 
+    #lodretskrift, #lodretskrift2, #lodretskrift3{
+      font-size: 300%;
+    }
+
+    #sandwichul, #sodtul, #drikkeul{
+      font-size: 150%;
+      line-height: 130%;
+    }
+    
+    /* forside */
+    .multiwords{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      box-sizing: border-box;
+    }
+
+    .firexdingse {
+      margin-top: 25%;
+    }
+
+    .baggrunddingse {
+      background-color: #c7352a;
+    }
+
+    /* dingsefigur på forside*/
+    .dingseukop {
+      width: 60%;
+    }
+
+    .brødforside {
+      object-fit: cover;
+      height: 600px;
+      width: 100%;
+    }
+
+    /* midtersection på forside*/
+    .responsivetekst {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20%;
+      margin-left: 22%;
+      margin-right: 20%;
+      text-align: justify;
+    }
+
+    .responsivetekst {
+      display: flex;
+    }
+
+    #responsivetekst1 {
+    display: none;
+    }
+
+    .midtersection {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+      margin-top: 5%;
+    }
+
+    .alefdarkknap {
+      margin-top: 5%;
+    }
+
+    /* tekst til midtersection forside*/
+    .knap {
+      border: 2px solid #c7352a; 
+      padding-bottom: 2px; 
+    }
+
+    /* billeder på midtersection af forside*/
+    .udefraillustration {
+      width: 50%;
+      height: 50%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+
+    /* instagram sektion forside */
+    .instagram {
+      margin-top: 10%;
+    }
+
+    .foelgtekst {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .foelgbilleder {
+    display: flex;
+    object-fit: cover;
+    width: 380px;
+    height: 380px;
+    }
+
+    .kursivtekst{
+      margin-left: 23%;
+      margin-right: 21%;
+      text-align: center;
+    }
+
+    .billedeserie1 {
   .alefdarkknap {
     margin-top: 5%;
-
   }
 
   /* tekst til midtersection */
@@ -1534,8 +1683,8 @@ footer {
   .udefraillustration {
     width: 50%;
     height: 50%;
-    margin-top: 1%;
-    margin-bottom: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 
   /* instagram sektion */
@@ -1546,189 +1695,149 @@ footer {
 
   .foelgtekst {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    }
 
-  .foelgbilleder {
-  display: flex;
-  object-fit: cover;
-  width: 380px;
-  height: 380px;
-  }
+    .foelgknap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
+    /******** kontakt os *******/
+    #openhours {
+      font-size: 3rem;
+    }
   .kursivtekst{
+    margin-left: 23%;
+    margin-right: 21%;
     text-align: center;
   }
 
-  .billedeserie1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 10%;
-  margin-right: 10%;
-  }
+    .dingsetelefon {
+      width: 130%;
+      height: 100%;
+    }
 
-  .foelgknap {
-    display: flex;
-    justify-content: center;
-    margin-top: 3%;
-    margin-left: 0%;
-  }
+    .ringx4 {
+      margin-top: 35%;
+    }
 
-  /******** kontakt os *******/
-  #openhours {
-    font-size: 3rem;
-  }
+    .ringx4container {
+    width: 70%;
+    height: 70%;
+    }
 
-  .dingsetelefon {
-    width: 130%;
-    height: 100%;
-  }
+    .adresse-kontakt {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
 
-  .ringx4 {
-    margin-top: 35%;
-  }
+    .kort-kontakt {
+      width: 55%;
+    }
 
-  .ringx4container {
-  width: 70%;
-  height: 70%;
-  }
+    .telefon-nummer-kontakt {
+      margin-left: 15%;
+      margin-right: 15%;
+    }
 
-  .adresse-kontakt {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
+    .coverbillede {
+      height: 60vh;
+      position: relative;
+    }
 
-  .kort-kontakt {
-    width: 55%;
-  }
+    .coverkontakt {
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      left: 0;
+    }
 
-  .telefon-nummer-kontakt {
-    margin-left: 15%;
-    margin-right: 15%;
-  }
+    #openhours {
+      font-size: 3rem;
+    }
 
-/******** kontakt os *******/
+    .dingsetelefon {
+      width: 130%;
+      height: 100%;
+    }
 
-.coverbillede {
-  height: 60vh;
-  position: relative;
-}
+    .ringx4 {
+      margin-top: 35%;
+    }
 
-.coverkontakt {
-  position: absolute;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  left: 0;
-}
+    .ringx4container {
+    width: 70%;
+    height: 70%;
+    }
 
-#openhours {
-  font-size: 3rem;
-}
+    .adresse-kontakt {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
 
-.dingsetelefon {
-  width: 130%;
-  height: 100%;
-}
+    .kort-kontakt {
+      width: 55%;
+    }
 
-.ringx4 {
-  margin-top: 35%;
-}
-
-.ringx4container {
-width: 70%;
-height: 70%;
-}
-
-.adresse-kontakt {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.kort-kontakt {
-  width: 55%;
-}
-
-.telefon-nummer-kontakt {
-  margin-left: 15%;
-  margin-right: 15%;
-}
-}
-/******** Bag Om *******/
-
-@media (min-width: 700px) {
-
-/* **** Styling af første del af bagom - Søren og olivia billede + tekst **** */
-  .bagom1 {
-    display: grid;
-  }
-
-  #mere {
-    padding-left: 1%;
-    padding-bottom: 3%;
+    .telefon-nummer-kontakt {
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+    }
   }
   
-  .bagom-ordx4 {
-    justify-self: center;
-    align-self: center;
+  /******STYLER MEDIA OVER 1000PX******/ 
+  @media (min-width: 1000px) {
+    #andimg img{
+      top: 67%;
+      width: 300px;
+    }
+
+    #morewordsmenu {
+      margin-top: 180%;
+    }
+    }
+
+  /******STYLER MEDIA OVER 1100PX******/ 
+  @media (min-width: 1100px){
+    /*Øverste billed og tekst på menukort*/
+    /*Styler billedet*/
+    #andimg img{
+      width: 320px;
+      top: 70%;
+    }
+
+    /*Styler overskrifterne*/
+    #andimg h3 {
+      font-size: 4em;
+    }
+    
+    /*Styler hele sektionen*/
+    #morewordsmenu{
+      margin-top: 200%;
+    }
   }
 
-  .bagom1 h1 {
-    text-align: center;
-    padding-top: 2%; 
-    padding-bottom: 1%;
+  /******STYLER MEDIA OVER 1500PX******/ 
+
+  @media (min-width: 1500px) {
+    #andimg img{
+      top: 57%;
+      width: 300px;
+    }
+
+    #morewordsmenu {
+      margin-top: 100%;
+    }
   }
-  .bagom1 p {
-    padding: 2%;
-  }
-
-  /*  Styles med en anden class for at få korrekt opsætning */
-
-.bagom1-desktop{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.bagom1 h1 {
-  justify-self: center;
-  align-self: center;
-}
-
-/* Styling af billedet af søren og olivia, billedet croppes til desktop*/
-.bagom1 img{
-  width: 100%;
-  height: 80vh;
-  object-fit: cover;
-  object-position: top;
-}
-
-.fotomobil {
-  display: none;
-}
-.fotodesktop {
-  display: block;
-}
-}
-
-@media (min-width: 1100px){
-  #andimg img{
-    width: 320px;
-    top: 70%;
-  }
-
-  #andimg h3 {
-    font-size: 4em;
-  }
-  
-  #morewordsmenu{
-    margin-top: 200%;
-  }
-}
-  
+    
