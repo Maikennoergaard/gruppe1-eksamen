@@ -237,8 +237,56 @@ nav li:first-child {
 
 }
 
+/* Menukort i html*/
+#menucard2 {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 
-/*Menukort*/
+#morewordsmenu2 {
+  margin-block-start: 0;
+  margin-block-end: 1em;
+}
+
+#andimg2 {
+  position: relative;
+  margin-top: 50px;
+}
+
+#andimg2 h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.7em;
+  z-index: 0;
+}
+
+#andimg2 img {
+  position: absolute;
+  width: 250px;
+  z-index: 1;
+  top: 10%;
+  left: 60%;
+  transform: translateX(-50%);
+}
+
+#tekstmenu2 {
+  line-height: 110%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  
+  font-size: 1.7em;
+}
+
+
+/*Menukort - slide out*/
   /* Menukort */
   #menucard {
     display: flex;
@@ -263,7 +311,7 @@ nav li:first-child {
 
   #menusandwich {
     display: grid;
-    grid-template-columns: 10% 1% 67% 20%;
+    grid-template-columns: 10% 1% 65% 20%;
     grid-row-gap: 50px;
     margin-left: 2%;
     margin-right: 2%;
@@ -290,13 +338,16 @@ nav li:first-child {
 
   #bestilknapmenu{
     width: 40%;
-   padding-top: 2%;
-   padding-bottom: 2%;
-   font-weight: 600;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    
   }
 
   #andimg {
@@ -1091,15 +1142,31 @@ footer {
   }
 
   #tekstmenu {
-    font-size: 2.2em;
+    font-size: 2em;
   }
 
+  #tekstmenu2 {
+    font-size: 2em;
+  }
+
+  .menuitemname{
+    font-size: 1.5em;
+    font-weight: 150;
+  }
+
+  .menuitemtxt{
+    font-size: 1em;
+  }
  
  h3{
     display: flex;
     color: var(--dark);
     font-family: "Alef", sans-serif;
     font-size: 2em;
+  }
+
+  #bestilknapmenu{
+    font-size: 1.2em;
   }
     
 }
@@ -1158,6 +1225,12 @@ footer {
   #morewordsmenu{
     margin-top: 200%;
   }
+
+  .menuitemname{
+    font-size: 2em;
+  }
+
+
 
 /******** forside *******/
 .multiwords{
