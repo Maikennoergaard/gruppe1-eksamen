@@ -489,8 +489,9 @@ font-family: "Annie Use Your Telescope", cursive;
 /*Forside*/
 /* video forside */
 .forside1 {
-  height: 93vh;
+  height: 84vh;
   position: relative; /* Tilføjer position: relative; til forældreelementet */
+  overflow: hidden;
 }
 
 .forside-video {
@@ -585,7 +586,10 @@ font-family: "Annie Use Your Telescope", cursive;
   flex-direction: column;
   justify-content: center;
   align-items: center; 
+  text-align: center;
   margin-top: 8%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 /* tekst til midtersection */
@@ -598,7 +602,8 @@ font-family: "Annie Use Your Telescope", cursive;
 .kursivtekst {
   margin-left: 5%;
   margin-right: 5%;
-  text-align: center;
+  text-align: justify;
+  font-size: large;
 }
 
 /* billeder på midtersection */
@@ -919,7 +924,7 @@ footer {
 }
 
 .fotodesktop {
-  width: 60%;
+  width: 90%;
   height: auto;
 }
 
@@ -1183,6 +1188,9 @@ footer {
     justify-content: center;
     align-items: center; 
     margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
   }
 
   .alefdarkknap {
@@ -1226,7 +1234,15 @@ footer {
   .kursivtekst{
     margin-left: 23%;
     margin-right: 21%;
+    text-align: justify;
+  }
+
+  #kursivtekst {
+    font-size: 2.5rem;
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
+    margin-bottom: 2%;
   }
 
   .billedeserie1 {
