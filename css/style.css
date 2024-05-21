@@ -35,7 +35,6 @@ h4{
   display: flex;
   color: var(--dark);
   font-family: "Alef", sans-serif;
-  margin-bottom: 2%;
 }
 
 p{
@@ -85,158 +84,141 @@ font-family: "Annie Use Your Telescope", cursive;
 }
 
 /* Navbar */
-.logo img {
-  width: 100px;
-  height: auto;
-}
-
-nav {
-  background-color: var(--contrastbackground);
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-  position: relative;
-  top: 0;
-  z-index: 100;
-  overflow-x: auto;
-}
-
-nav ul {
-  width: 100%;
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 5px 10px;
-}
-
-nav li {
-  height: 50px;
-}
-
-nav a {
-  height: 100%;
-  padding: 0 20px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--dark);
-  font-family: "Alef", sans-serif;
-  font-size: 1.1rem;
-}
-
-.hideOnMobile nav a {
-  color: var(--red);
-}
-
-nav a:hover {
-  border-radius: 10px;
-}
-
-nav li:first-child {
-  margin-right: auto;
-}
-
-.sidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 250px;
-  background-color: var(--gul);
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  list-style: none;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 170px;
-  gap: 20px;
-  z-index: 200;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}
-
-.sidebar li {
-  width: 100%;
-}
-
-.sidebar a {
-  width: 100%;
-  text-align: center;
-  padding: 10px 0;
-  text-decoration: none;
-  color: var(--dark);
-}
-
-.menu-button {
-  display: none;
-}
-
-.krys {
-  position: absolute;
-  left: 140px;
-  top: 40px;
-}
-
-.kigop {
-  position: absolute;
-  bottom: 0;
-  width: 250px;
-  right: 10px;
-}
-
-.bue1{
-  position: absolute;
-  top: 135px;
-
-}
-
-.bue2{
-  position: absolute;
-  top: 270px;
-}
-
-
-/* Mobil Media Queries */
-@media (max-width: 800px) {
-  .hideOnMobile {
-      display: none;
+  .logo img {
+    width: 100px;
+    height: auto;
   }
-  .menu-button {
-      display: block;
-      font-size: 2em;
-  }
-  .sidebar {
-      display: flex;
-      display: none;
-      gap: 100px;
-      align-content: center;
-      width: 100%;
+  
+  nav{
+    background-color: var(--contrastbackground);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    top: 0;
+    z-index: 1;
+    overflow-x: auto;
+
   }
 
-  .sidebar a {
+  .nav-bottom{
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    background-color: var(--background);
+  }
+
+  .nav-top{
+    position: fixed;
+    top: 0;
+    height: 75px;
+    background-color: var(--background);
+  }
+  
+  nav ul{
     width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    text-decoration: none;
-    color: var(--red);
-    font-size: 2.3em;
-  }
-
-  .uller{
+    list-style: none;
     display: flex;
-    flex-direction: column;
-    gap: 100px;
-    text-align: center;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 10px;
   }
 
-}
+  nav li{
+    height: 50px;
+  }
 
+  nav a{
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark);
+    font-family: "Alef", sans-serif;
+    font-size: 1.1rem;
+  }
+
+
+  .buetekst{
+    font-family: "Annie Use Your Telescope", cursive;
+    /* position: absolute; */
+    top: 50%; /* Placer tekstens top i midten af containeren */
+    left: 50%; /* Placer tekstens venstre kant i midten af containeren */
+    transform: translate(-50%, -50%) rotate(-90deg); /* Rotér teksten med -90 grader (mod uret) */
+    text-align: center; /* Centrer teksten */
+    font-size: 30px; /* Juster skriftstørrelsen efter behov */
+    white-space: nowrap; /* Forhindre linjeskift for lang tekst */
+  }
+
+  .hideOnMobile nav a{
+    color: var(--red);
+  }
+
+  nav a:hover{
+    background-color: var(--lightblue);
+    border-radius: 10px;
+  }
+  nav li:first-child{
+    margin-right: auto;
+  }
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: var(--gul);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 170px;
+    gap: 20px;
+    z-index: 110;
+  }
+
+  .sidebar li{
+    width: 100%;
+  }
+
+  .sidebar a{
+    width: 100%;
+  }
+
+  .menu-button{
+    display: none;
+  }
+
+  .krys{
+    position: absolute;
+    left: 140px;
+    top: 40px;
+  }
+
+  .kigop{
+    position: absolute;
+    bottom: 0;
+    width: 250px;
+    right: 10px;
+  }
+
+/* Media */
+
+    @media(max-width: 800px){
+      .hideOnMobile{
+        display: none;
+      }
+      .menu-button{
+        display: block;
+        size: 2rem;
+      }
+    }
+    @media(max-width: 800px){
+      .sidebar{
+        width: 100%;
+      }
+    }
 
 /*Menukort*/
   /* Menukort */
@@ -249,7 +231,7 @@ nav li:first-child {
   #morewordsmenu {
     margin-block-start: 0;
     margin-block-end: 1em;
-    margin-top: 170%;
+    margin-top: 190%;
   }
 
   #tekstmenu {
@@ -317,10 +299,10 @@ nav li:first-child {
 
   #andimg img {
     position: absolute;
-    width: 200px;
+    width: 250px;
     z-index: 1;
-    top: 65%;
-    left: 60%;
+    top: 62%;
+    left: 50%;
     transform: translateX(-50%);
   }
 
@@ -412,10 +394,10 @@ nav li:first-child {
   }
   
   .open-btn {
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding: 1rem 1.8rem;
+    padding: 1rem 2.5rem;
     cursor: pointer;
   }
   
@@ -470,9 +452,7 @@ nav li:first-child {
   
   .close-btn {
     padding: 10px;
-    display: flex;
-    justify-content: flex-end;
-    position: sticky;
+    position: absolute;
     top: 1rem;
     right: 1rem;
     font-size: 2rem;
@@ -509,8 +489,9 @@ nav li:first-child {
 /*Forside*/
 /* video forside */
 .forside1 {
-  height: 93vh;
+  height: 90vh;
   position: relative; /* Tilføjer position: relative; til forældreelementet */
+  overflow: hidden;
 }
 
 .forside-video {
@@ -544,10 +525,10 @@ nav li:first-child {
 
 .pil div{
   display: block;
-  width: 25px;
-  height: 25px;
-  border-bottom: 5px solid var(--gul);
-  border-right: 5px solid var(--gul);
+  width: 20px;
+  height: 20px;
+  border-bottom: 3px solid var(--gul);
+  border-right: 3px solid var(--gul);
   transform: rotate(45deg);
   margin: -5px;
   animation: animate 2s infinite;
@@ -596,7 +577,7 @@ nav li:first-child {
 
 /* midtersection */
 
-.responsivetekst {
+#responsivetekst {
   display: none;
 }
 
@@ -605,7 +586,10 @@ nav li:first-child {
   flex-direction: column;
   justify-content: center;
   align-items: center; 
+  text-align: center;
   margin-top: 8%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 /* tekst til midtersection */
@@ -618,7 +602,8 @@ nav li:first-child {
 .kursivtekst {
   margin-left: 5%;
   margin-right: 5%;
-  text-align: center;
+  text-align: justify;
+  font-size: large;
 }
 
 /* billeder på midtersection */
@@ -673,9 +658,6 @@ margin-bottom: 10%;
 
 #openhours{
   font-size: 2em;
-  display: flex;
-  text-align: center;
-  justify-content: center;
 }
 
 #vibor, #adressekontakt{
@@ -767,10 +749,8 @@ margin-bottom: 10%;
   text-align: center;
   padding: 5%; 
 }
-
 .bagom1 p {
   padding: 5%;
-  text-align: justify;
 }
 
 /* Styler så billedet er 100% på telefon */
@@ -796,9 +776,7 @@ margin-bottom: 10%;
 }
 
 .faqer {
-  margin-bottom: 15%;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-bottom: 20px;
 }
 
 .read-more-content {
@@ -813,7 +791,6 @@ margin-bottom: 10%;
   color: #FFFFFF;
   padding: 20px;
   box-sizing: border-box;
-  line-height: 2rem;
 }
 
 .img {
@@ -825,15 +802,14 @@ margin-bottom: 10%;
 
 .fold_reply {
   display: flex;
-  cursor: pointer; 
+  cursor: pointer; /* Change cursor to pointer to indicate interactivity */
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin-left: -84%;
-  margin-top: -10%;
+
 }
 
-.fold_btn, .fold_btn1 {
+.fold_btn {
   padding: 5px 10px;
   margin: 10px 0;
   background-color: var(--contrastbackground);
@@ -844,15 +820,14 @@ margin-bottom: 10%;
   width: 8em;
 }
 
-.fold_btn1 {
-  margin-left: 90% ;
+.lille-pil {
+  height: 10px;
+  width: 10px;
 }
-
 
 .reply {
   display: none; /* Hide the reply content initially */
-  background-color: var(--gul);
-  opacity: 0.5;
+  background-color: var(--contrastbackground);
 }
 
 /* Styling af fold ud siderne */
@@ -893,6 +868,7 @@ margin-bottom: 10%;
   padding: 5%;
 }
 
+
 /*Footer*/
 footer {
   background-color: #DDDFC7; 
@@ -930,46 +906,9 @@ footer {
 
 /* Gallery section styling */
 .galleri {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   text-align: center;
   padding: 2em 1em;
-  margin-bottom: 5%;
-  margin-top: -5%;
 }
-
-#galleri_tekst {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#galleri_tekst1 {
-  margin-bottom: 3%;
-}
-
-.insta-container {
-  display: flex;
-  justify-content: center;
-  text-align: justify;
-  flex-direction: column;
-  margin-top: -8%;
-  margin-left: 6%;
-  margin-right: 63%;
-}
-
-.instaicon {
-  width: 7%;
-  height: auto;
-  margin-left: 1%;
-}
-
-/* <div class="insta-container">
-<h4 class="annielille">“Del dine bedste dingse oplevelser. Vi elsker, at følge med i jeres bedste nye madoplevelser"</h4>
-<h4 class="annielille"> #dingsefriskbagt</h4>
-<img src="/img/icon/instagram.png" alt="instaicon" class="instaicon">
-</div> */
 
 /* Image container styling */
 .foto-container {
@@ -986,7 +925,7 @@ footer {
 }
 
 .fotodesktop {
-  width: 60%;
+  width: 90%;
   height: auto;
 }
 
@@ -1032,10 +971,10 @@ footer {
     }
 
     .anniestor {
-      color: var(--dark);
-      font-size: 2.3em;
-      font-family: "Annie Use Your Telescope", cursive;
-    }
+        color: var(--dark);
+        font-size: 2.3em;
+        font-family: "Annie Use Your Telescope", cursive;
+        }
   }
 
 /* Menukort */
@@ -1049,13 +988,13 @@ footer {
 @media (min-width: 525px) {
  
   #morewordsmenu{
-    margin-top: 190%;
+    margin-top: 100%;
     font-size: 130%;
   }
 
   #andimg img{
-    width: 270px;
-    top: 70%;
+    width: 300px;
+    top: 50%;
   }
 
   #sandwichul, #sodtul, #drikkeul{
@@ -1070,8 +1009,8 @@ footer {
 
 @media (min-width: 700px) {
   #andimg img{
-    top: 65%;
-    width: 300px;
+    top: 60%;
+    width: 400px;
   }
 
   #andimg h3 {
@@ -1082,6 +1021,7 @@ footer {
     align-items: center;
     margin-block-start: 1em;
     margin-block-end: 1em;
+    font-size: 5em;
   }
 
   #morewordsmenu{
@@ -1107,28 +1047,6 @@ footer {
     
 }
 
-@media (min-width: 1000px) {
-  #andimg img{
-    top: 67%;
-    width: 300px;
-  }
-
-  #morewordsmenu {
-    margin-top: 180%;
-  }
-}
-
-@media (min-width: 1500px) {
-  #andimg img{
-    top: 57%;
-    width: 300px;
-  }
-
-  #morewordsmenu {
-    margin-top: 100%;
-  }
-}
-
 @media(min-width: 800px) {
   
   .main-popup {
@@ -1150,16 +1068,14 @@ footer {
   }
   
   #andimg img{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
     width: 320px;
-    top: 70%;
   }
 
   #andimg h3 {
     font-size: 4em;
-  }
-  
-  #morewordsmenu{
-    margin-top: 200%;
   }
 
 /******** forside *******/
@@ -1212,7 +1128,7 @@ footer {
     align-items: center;
     margin-left: 22%;
     margin-right: 20%;
-    text-align: justify;
+    text-align: center;
   }
 
   #responsivetekst1 {
@@ -1225,6 +1141,9 @@ footer {
     justify-content: center;
     align-items: center; 
     margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
   }
 
   .alefdarkknap {
@@ -1268,7 +1187,15 @@ footer {
   .kursivtekst{
     margin-left: 23%;
     margin-right: 21%;
+    text-align: justify;
+  }
+
+  #kursivtekst {
+    font-size: 2.5rem;
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
+    margin-bottom: 2%;
   }
 
   .billedeserie1 {
@@ -1380,7 +1307,7 @@ height: 70%;
   }
 
   #mere {
-    padding-left: 1%;
+    padding-left: 5%;
     padding-bottom: 3%;
   }
   
@@ -1426,18 +1353,5 @@ height: 70%;
 }
 }
 
-@media (min-width: 1100px){
-  #andimg img{
-    width: 320px;
-    top: 70%;
-  }
 
-  #andimg h3 {
-    font-size: 4em;
-  }
-  
-  #morewordsmenu{
-    margin-top: 200%;
-  }
-}
   
