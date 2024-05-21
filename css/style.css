@@ -101,7 +101,7 @@ font-family: "Annie Use Your Telescope", cursive;
   .nav-bottom{
     position: absolute;
     bottom: 0;
-    height: 100px;
+    height: 75px;
     background-color: var(--background);
   }
 
@@ -301,7 +301,7 @@ font-family: "Annie Use Your Telescope", cursive;
     position: absolute;
     width: 250px;
     z-index: 1;
-    top: 62%;
+    top: 70%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -428,7 +428,7 @@ font-family: "Annie Use Your Telescope", cursive;
     max-width: none; /* Fjerner fast maksimal bredde */
     overflow-x: hidden; /* Forhindrer vandret rulning */
     transform: translateX(100%);
-}
+  }
 
   
   .popup-overlay {
@@ -913,7 +913,7 @@ footer {
 }
 
 /* Mobile image styling */
-.fotomobil, {
+.fotomobil {
   max-width: 100%;
   height: auto;
 }
@@ -965,10 +965,10 @@ footer {
     }
 
     .anniestor {
-        color: var(--dark);
-        font-size: 2.3em;
-        font-family: "Annie Use Your Telescope", cursive;
-        }
+      color: var(--dark);
+      font-size: 2.3em;
+      font-family: "Annie Use Your Telescope", cursive;
+    }
   }
 
 /* Menukort */
@@ -1003,8 +1003,8 @@ footer {
 
 @media (min-width: 700px) {
   #andimg img{
-    top: 60%;
-    width: 400px;
+    top: 65%;
+    width: 300px;
   }
 
   #andimg h3 {
@@ -1015,7 +1015,6 @@ footer {
     align-items: center;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    font-size: 5em;
   }
 
   #morewordsmenu{
@@ -1041,6 +1040,8 @@ footer {
     
 }
 
+ 
+
 @media(min-width: 800px) {
   
   .main-popup {
@@ -1061,16 +1062,63 @@ footer {
     overflow-x: auto; /* Ændret fra "hidden" til "auto" */
   }
   
-  #andimg img{
+   #andimg img{
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     width: 320px;
+    top: 70%;
   }
 
   #andimg h3 {
     font-size: 4em;
   }
+  
+  #morewordsmenu{
+    margin-top: 200%;
+  } 
+}
+
+@media (min-width: 1000px) {
+  #andimg img{
+    top: 67%;
+    width: 300px;
+  }
+
+  #morewordsmenu {
+    margin-top: 150%;
+  }
+}
+
+@media (min-width: 1500px) {
+  #andimg img{
+    top: 60%;
+    width: 300px;
+  }
+
+  #morewordsmenu {
+    margin-top: 100%;
+  }
+}
+
+@media(min-width: 2000px) { 
+  #andimg img{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    top: 15%;
+  }
+
+  #andimg h3 {
+    font-size: 4em;
+  }
+  
+  #morewordsmenu{
+    margin-top: 0%;
+  }
+} 
+
 
 /******** forside *******/
 .multiwords{
@@ -1279,7 +1327,7 @@ height: 70%;
   margin-left: 15%;
   margin-right: 15%;
 }
-}
+
 /******** Bag Om *******/
 
 @media (min-width: 700px) {
