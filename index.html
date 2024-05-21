@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
+    <!-- SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/img/icon/favicon.svg">
+    <meta name="description" content="På forsiden ligger der en stemnings video fra dingse og du linkes videre til kontakt side og instagram">
+    <meta name="keywords"content= "Friskbagt, bestil sandwich, Badestuegade 15 Aarhus C, hurtig frokost, Frokost i Aarhus">
+    <meta name="author" content= "Dingse Frisk Bagt i Aarhus C">
+
+    <title>Dingse - frisk bagt</title>
+    
+    <!-- links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
-    <title>Dingse - frisk bagt</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -27,29 +34,32 @@
     </div>
 
     <header>
-        <nav>
-            <ul class="sidebar">
-                <li class="krys" onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 96 960 960" width="50"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" /></svg></a></li>
-                <img src="img/icon/bue1.png" alt="">
-                <li><a href=".">MENU</a></li>
-                <img src="img/icon/bue2.png" alt="">
-                <li><a href="undersider/kontaktos.html">KONTAKT</a></li>
-                <br>
-                <li><a href="undersider/bagom.html">BAG OM DINGSE</a></li>
-                <img class="kigop" src="img/dingsedamer/kigop.png" alt="">
-            </ul>
-            <div class="mainnav">
-                <ul class="nav nav-bottom">
-                    <li><a href="index.html" class="logo"><img src="img/icon/logo.webp" alt="" width="100" height="50"></a></li>
 
-                    <li class="hideOnMobile"><a href="undersider/menu.html">MENU</a></li>
-                    <li class="hideOnMobile"><a href="undersider/kontaktos.html">KONTAKT</a></li>
-                    <li class="hideOnMobile"><a href="undersider/bagom.html">BAG OM DINGSE</a></li>
-                    <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 96 960 960" width="50"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" /></svg></a></li>
-                </ul>
-            </div>
+        <!-- Navbar -->
+        <nav>
+            <ul>
+                <li><a href="index.html" class="logo"><img src="img/icon/logo.webp" alt="" width="100" height="50"></a></li>
+                <li class="hideOnMobile"><a href="undersider/menukort.html">MENU</a></li>
+                <li class="hideOnMobile"><a href="undersider/kontaktos.html">KONTAKT</a></li>
+                <li class="hideOnMobile"><a href="undersider/bagom.html">BAG OM DINGSE</a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 96 960 960" width="50"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" /></svg></a></li>
+            </ul>
         </nav>
+
+        <!-- Burgermenu -->
+        <div class="sidebar">
+            <ul class="uller">
+                <li class="krys" onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 96 960 960" width="50"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" /></svg></a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="undersider/kontaktos.html">KONTAKT</a></li>
+                <li><a href="undersider/bagom.html">BAG OM DINGSE</a></li>
+            </ul>
+            <img class="bue1" src="img/icon/bue1.png" alt="prøv vores lækre menu">
+            <img class="bue2" src="img/icon/bue2.png" alt="ring eller kom forbi">
+            <img class="kigop" src="img/dingsedamer/kigop.png" alt="dingsedame kigger op">
+        </div>
     </header>
+    
 
 
     <main>
@@ -66,24 +76,29 @@
         </div>
     </section>
 
-        <img src="img/farver/broed-paa-stak.png" alt="brødforside" class="brødforside">
+        <img src="img/farver/broed-paa-stak.webp" alt="brødforside" class="brødforside">
 
         <section class="midtersection">
-            <h2 class="annielille" class="kursivtekst" id="kursivtekst">
+            <h2 class="annielille kursivtekst" id="kursivtekst">
                 “Vi bager friskbagt surdejsbrød hver dag. Kom forbi og se os tage de friske brød ud af ovnen”
             </h2>
+<<<<<<< HEAD
             <p class="alefdark" id="responsivetekst">Kom forbi og se os tage de friske brød ud af ovnen. Vores surdej fermenterer mindst 48 timer i køleskabet før vi bager det.</p>
+=======
+            <h3 class="alefdark responsivetekst">Kom forbi og se os tage de friske brød ud af ovnen. Vores surdej fermenterer mindst 48 timer i køleskabet før vi bager det.</h3>
+>>>>>>> 811590d91509be6bd3b14a98bc4aaddd5cd21811
             <a href="undersider/kontaktos.html" class="alefdarkknap">BESTIL HER</a>
             <img src="img/familystyle/butikken.webp" alt="udefraillustration" class="udefraillustration">
             <h2 class="alefdark">Badestuegade 15, 8000 Aarhus C</h2>
-            <h2 class="anniestor" class="kursivtekst">“Der kommer nyheder fra dag til dag. Vi deler altid vores spontane ideer eller tilføjelser til menuen på instagram.”</h2>
+            <h2 class="anniestor kursivtekst">“Der kommer nyheder fra dag til dag. Vi deler altid vores spontane ideer eller tilføjelser til menuen på instagram.”</h2>
         </section>
 
+        <!-- Instagram -->
         <section class="instagram">
             <div class="foelgtekst">
-            <h1 class="alefred">FØLG MED PÅ INSTAGRAM</h1>
+            <h3 class="alefred">FØLG MED PÅ INSTAGRAM</h3>
             <h2 class="alefdark" id="responsivetekst1">"dingsefriskbagt"</h2>
-            <h2 class="alefdark" id="responsivetekst">Del din oplevelse med #dingsefriskbagt</h2>
+            <h2 class="alefdark responsivetekst">Del din oplevelse med #dingsefriskbagt</h2>
             </div>
             <div class="billedeserie1">
                 <img src="img/farver/bank.webp" alt="bank" class="foelgbilleder">
@@ -102,7 +117,7 @@
                     <div class="popup-overlay"></div>
                     <div class="main-popup" id="mainPopup">
 
-                    <section  id="menucard">
+                    <div id="menucard">
                         <span class="close-btn">&times;</span>
                         <section id="andimg">
                             <div class="morewords" id="morewordsmenu">
@@ -124,8 +139,10 @@
                 
                 
                             <ul class="hidden" id="sandwichul">
+                                <li>
                                 <h4 class="alefred" id="prismenu"> Alle sandwich 89kr</h4>
-                
+                                </li>
+                                
                                 <li>
                                     <h4 class="menuitemname">SERRANO</h4>
                                     <p class="menuitemtxt">fra 'Monte Nevado' (23 mdr.), basilikum, mozarella, pinjekerner & rucola</p>
@@ -205,7 +222,7 @@
                             </ul>
                         </section>
                         <a href="undersider/kontaktos.html" class="alefdarkknap" id="bestilknapmenu">BESTIL HER</a>
-                    </section>
+                    </div>
                 </div>
                 </div>
             </div>
@@ -214,7 +231,7 @@
      
     <!-- Footer -->
     <footer>
-        <h1 class="besøg">BESØG OS PÅ</h1>
+        <h3 class="besøg">BESØG OS PÅ</h3>
         <ul class="info-container1">
             <li>Badestuegade 15, 8000 Aarhus C</li>
             <li>Åbent tirsdag til lørdag  fra 10.00-17.30</li>
