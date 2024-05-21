@@ -489,7 +489,7 @@ font-family: "Annie Use Your Telescope", cursive;
 /*Forside*/
 /* video forside */
 .forside1 {
-  height: 86vh;
+  height: 84vh;
   position: relative; /* Tilføjer position: relative; til forældreelementet */
   overflow: hidden;
 }
