@@ -35,6 +35,7 @@ h4{
   display: flex;
   color: var(--dark);
   font-family: "Alef", sans-serif;
+  margin-bottom: 2%;
 }
 
 p{
@@ -178,7 +179,7 @@ nav li:first-child {
 
 .krys {
   position: absolute;
-  left: 220px;
+  left: 140px;
   top: 40px;
 }
 
@@ -236,8 +237,56 @@ nav li:first-child {
 
 }
 
+/* Menukort i html*/
+#menucard2 {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 
-/*Menukort*/
+#morewordsmenu2 {
+  margin-block-start: 0;
+  margin-block-end: 1em;
+}
+
+#andimg2 {
+  position: relative;
+  margin-top: 50px;
+}
+
+#andimg2 h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.7em;
+  z-index: 0;
+}
+
+#andimg2 img {
+  position: absolute;
+  width: 250px;
+  z-index: 1;
+  top: 10%;
+  left: 60%;
+  transform: translateX(-50%);
+}
+
+#tekstmenu2 {
+  line-height: 110%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  
+  font-size: 1.7em;
+}
+
+
+/*Menukort - slide out*/
   /* Menukort */
   #menucard {
     display: flex;
@@ -262,7 +311,7 @@ nav li:first-child {
 
   #menusandwich {
     display: grid;
-    grid-template-columns: 10% 1% 67% 20%;
+    grid-template-columns: 10% 1% 65% 20%;
     grid-row-gap: 50px;
     margin-left: 2%;
     margin-right: 2%;
@@ -289,13 +338,16 @@ nav li:first-child {
 
   #bestilknapmenu{
     width: 40%;
-   padding-top: 2%;
-   padding-bottom: 2%;
-   font-weight: 600;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    
   }
 
   #andimg {
@@ -593,19 +645,24 @@ nav li:first-child {
   margin-top: 0;
 }
 
-/* midtersection */
-
-.responsivetekst {
-  display: none;
-}
-
 .midtersection {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; 
-  margin-top: 8%;
+  margin: 8% 10%;
+  text-align: center;
 }
+
+/* Fjerner noget af teksten fra mobil version */
+.responsivetekst {
+display: none;
+}
+
+#responsivetekst {
+  display: none;
+}
+
 
 /* tekst til midtersection */
 .knap {
@@ -615,8 +672,7 @@ nav li:first-child {
   padding-bottom: 2px; 
 }
 .kursivtekst {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 5% 10%;
   text-align: center;
 }
 
@@ -637,6 +693,11 @@ nav li:first-child {
 
 .foelgtekst {
   margin-left: 5%;
+  text-align: center;
+}
+
+.midtersection h2 {
+padding: 2%;
 }
 
 .foelgbilleder {
@@ -658,9 +719,13 @@ flex-direction: column;
 }
 
 .foelgknap {
-margin-left: 40%;
-margin-top: 10%;
-margin-bottom: 10%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.desktopbilleder {
+  display: none;
 }
 
 
@@ -750,8 +815,7 @@ margin-bottom: 10%;
 }
 
 .foelgknap1 {
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin: 5% 5%;
   }
 
  
@@ -766,8 +830,10 @@ margin-bottom: 10%;
   text-align: center;
   padding: 5%; 
 }
+
 .bagom1 p {
   padding: 5%;
+  text-align: justify;
 }
 
 /* Styler så billedet er 100% på telefon */
@@ -785,15 +851,32 @@ margin-bottom: 10%;
   margin-left: 20px;
 }
 
+/* tekst til bagom */
+.tekst_container_bagom {
+  margin-top: 10%;
+}
+
+.broedtekst {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  line-height: 2rem;
+}
+
+#mere {
+  margin-left: 10%;
+}
 
 /* Bag om undersider */
 
-.read-more {
-  margin: 60px 0;
-}
-
 .faqer {
-  margin-bottom: 20px;
+  margin-bottom: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .read-more-content {
@@ -808,6 +891,7 @@ margin-bottom: 10%;
   color: #FFFFFF;
   padding: 20px;
   box-sizing: border-box;
+  line-height: 2rem;
 }
 
 .img {
@@ -817,16 +901,18 @@ margin-bottom: 10%;
   box-sizing: border-box;
 }
 
+/*læs mere knap bag om*/
 .fold_reply {
   display: flex;
-  cursor: pointer; /* Change cursor to pointer to indicate interactivity */
+  cursor: pointer; 
   text-align: center;
   justify-content: center;
   align-items: center;
-
+  margin-left: -84%;
+  margin-top: -10%;
 }
 
-.fold_btn {
+.fold_btn{
   padding: 5px 10px;
   margin: 10px 0;
   background-color: var(--contrastbackground);
@@ -837,14 +923,22 @@ margin-bottom: 10%;
   width: 8em;
 }
 
-.lille-pil {
-  height: 10px;
-  width: 10px;
+.fold_btn1 {
+  padding: 5px 10px;
+  margin: 10px 0;
+  background-color: var(--contrastbackground);
+  color: var(--dark);
+  font-family: "Alef", sans-serif;
+  text-align: center;
+  cursor: pointer;
+  width: 8em;
+  margin-left: 92% ;
 }
 
 .reply {
   display: none; /* Hide the reply content initially */
   background-color: var(--contrastbackground);
+  margin-bottom: 10%;
 }
 
 /* Styling af fold ud siderne */
@@ -853,23 +947,101 @@ margin-bottom: 10%;
   display: none;
   overflow: hidden;
 }
+
 /* Styler alle p i "content" fold ud sektionerne */
-.content p {
-  margin: 10px;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-.content h4 {
-  margin: 10px;
-  padding-left: 5%;
-  padding-right: 5%;
+
+
+/* surdej foldud side */
+
+
+/* tekst til foldud surdej */
+
+#h1_foldud {
+  font-weight: 100;
+  margin-bottom: 2%;
 }
 
+#h2_foldud {
+font-weight: 100;
+margin-bottom: -7%;
+}
+
+#h3_foldud {
+font-size: 3rem;
+color: #c7352a;
+margin-left: 22%;
+margin-bottom: 1%;
+}
+
+#h3_foldud_siden {
+  font-size: 3rem;
+  color: #c7352a;
+  margin-left: 58%;
+  margin-top: -5%;
+  }
+
+#p_foldud {
+  margin-right: 30%;
+  margin-bottom: 5%;
+}
+
+.p_foldud_info {
+  margin-left: 25%;
+  margin-right: 55%;
+  margin-top: 2%;
+}
+
+.p_foldud_info_side {
+ margin-left: 60%;
+ margin-right: 20%;
+}
+
+.tekst_foldud_bagom {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+
+/* billeder foldud bagom surdej */
 .surdej5 {
   object-fit: cover;
-  height: 30vh;
+  height: 50vh;
   width: 35vh;
 }
+
+#fermentering_af_surdej {
+width: 20%;
+margin-left: 25%;
+margin-top: -2%;
+}
+
+#straek_og_fold_surdej {
+width: 20%;
+margin-left: 60%;
+margin-top: -5;
+}
+
+#bages_ved_hoej_varme {
+width: 20%;
+margin-left: 25%;
+margin-top: -2%;
+}
+
+
+/* <h3 class="anniestor" id="h3_foldud">Trin 1</h3>
+<img src="../img/familystyle/infografik-1.webp" alt="Fermentering af surdej" class="fermentering_af_surdej">
+<p>Surdejen fermenterer i mindst 48 timer for at sikre god smag. </p>
+<h3 class="anniestor" id="h3_foldud_siden">Trin 2</h3>
+<img src="../img/familystyle/infografik-2.webp" alt="Stræk og fold surdej" class="stræk_og_fold_surdej">
+<p>Herefter strækker og folder vi dejen sådan vi får lufttige brød </p>
+<h3 class="anniestor" id="h3_foldud">Trin 3</h3>
+<img src="../img/familystyle/infografik-3.webp" alt="Bages ved høj varme" class="bages_ved_høj_varme">
+<p>Til sidst bager vi brødet i ovnen ved høj intens varme </p>
+<img class="surdej5" src="/img/farver/brodtat.webp" alt="Surdejs brød fra Dingse"> */
+
+/* dingsevand foldud side */
+
 .smagsvarianter {
   display: grid;
   justify-self: center;
@@ -881,10 +1053,7 @@ margin-bottom: 10%;
   width: 10vh;
 }
 
-.galleri {
-  padding: 5%;
-}
-
+/* råvarer foldud side */
 
 /*Footer*/
 footer {
@@ -923,9 +1092,46 @@ footer {
 
 /* Gallery section styling */
 .galleri {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
   padding: 2em 1em;
+  margin-bottom: 5%;
+  margin-top: -5%;
 }
+
+#galleri_tekst {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#galleri_tekst1 {
+  margin-bottom: 3%;
+}
+
+.insta-container {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  flex-direction: column;
+  margin-top: -7%;
+  margin-left: 6%;
+  margin-right: 63%;
+}
+
+.instaicon {
+  width: 7%;
+  height: auto;
+  margin-left: 1%;
+}
+
+/* <div class="insta-container">
+<h4 class="annielille">“Del dine bedste dingse oplevelser. Vi elsker, at følge med i jeres bedste nye madoplevelser"</h4>
+<h4 class="annielille"> #dingsefriskbagt</h4>
+<img src="/img/icon/instagram.png" alt="instaicon" class="instaicon">
+</div> */
 
 /* Image container styling */
 .foto-container {
@@ -937,12 +1143,12 @@ footer {
 
 /* Mobile image styling */
 .fotomobil {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
 .fotodesktop {
-  width: 60%;
+  width: 80%;
   height: auto;
 }
 
@@ -991,6 +1197,10 @@ footer {
       color: var(--dark);
       font-size: 2.3em;
       font-family: "Annie Use Your Telescope", cursive;
+    }
+
+    .alefdark {
+      font-size: 2em;
     }
   }
 
@@ -1050,15 +1260,31 @@ footer {
   }
 
   #tekstmenu {
-    font-size: 2.2em;
+    font-size: 2em;
   }
 
+  #tekstmenu2 {
+    font-size: 2em;
+  }
+
+  .menuitemname{
+    font-size: 1.5em;
+    font-weight: 150;
+  }
+
+  .menuitemtxt{
+    font-size: 1em;
+  }
  
  h3{
     display: flex;
     color: var(--dark);
     font-family: "Alef", sans-serif;
     font-size: 2em;
+  }
+
+  #bestilknapmenu{
+    font-size: 1.2em;
   }
     
 }
@@ -1118,12 +1344,17 @@ footer {
     margin-top: 200%;
   }
 
+  .menuitemname{
+    font-size: 2em;
+  }
+
+
+
 /******** forside *******/
 .multiwords{
   display: grid;
   grid-template-columns: 1fr 1fr;
   box-sizing: border-box;
-  margin-top: 5%;
 }
 
   #lodretskrift, #lodretskrift2, #lodretskrift3{
@@ -1135,7 +1366,9 @@ footer {
     line-height: 130%;
   }
   
-  /* forside */
+  /* forside - responsiv */
+
+  /* Styling ad dingse damen + tekst */
   .multiwords{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1155,24 +1388,28 @@ footer {
     width: 60%;
   }
 
+  /* Beskærer billede */
   .brødforside {
     object-fit: cover;
-    height: 600px;
+    height: 30vh;
     width: 100%;
   }
 
   /* midtersection */
-  #responsivetekst {
+  .responsivetekst {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 22%;
-    margin-right: 20%;
     text-align: center;
+    padding: 0 20%;
+  }
+
+  #responsivetekst {
+    display: flex;
   }
 
   #responsivetekst1 {
-  display: none;
+    display: none;
   }
 
   .midtersection {
@@ -1185,6 +1422,7 @@ footer {
 
   .alefdarkknap {
     margin-top: 5%;
+
   }
 
   /* tekst til midtersection */
@@ -1197,8 +1435,25 @@ footer {
   .udefraillustration {
     width: 50%;
     height: 50%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+  }
+
+
+/* Styling af ekstra billeder til forsiden til desktop */
+  .desktopbilleder {
+    display: flex;
+    flex-direction: row;
     margin-top: 5%;
-    margin-bottom: 5%;
+  }
+  .desktopbilleder img {
+    width: 65vh;
+    height: 45vh;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .brødforside {
+    display: none;
   }
 
   /* instagram sektion */
@@ -1222,8 +1477,6 @@ footer {
   }
 
   .kursivtekst{
-    margin-left: 23%;
-    margin-right: 21%;
     text-align: center;
   }
 
@@ -1238,8 +1491,7 @@ footer {
   .foelgknap {
     display: flex;
     justify-content: center;
-    margin-top: 3%;
-    margin-left: 0%;
+    align-items: center;
   }
 
   /******** kontakt os *******/
@@ -1336,7 +1588,7 @@ height: 70%;
   }
 
   #mere {
-    padding-left: 5%;
+    padding-left: 1%;
     padding-bottom: 3%;
   }
   
