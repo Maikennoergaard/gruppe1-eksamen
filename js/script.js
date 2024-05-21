@@ -87,4 +87,39 @@ function changeTextColor() {
    }
 }
 
+//Nav bar og farve skift på menukort
+window.onscroll = function () {
+  changeTextColor();
 
+  var mainnav = document.querySelector('.mainnav');
+  var nav = document.querySelector('.nav');
+  var offset = mainnav.offsetTop;
+
+  if (window.pageYOffset > offset) {
+      nav.classList.add('nav-top');
+      mainnav.style.marginBottom = nav.offsetHeight + 'px';
+  } else {
+      nav.classList.remove('nav-top');
+      mainnav.style.marginBottom = '0'; 
+  }
+
+  if (nav.classList.contains('nav-top')) {
+      nav.classList.add('nav-transition');
+  } else {
+      nav.classList.remove('nav-transition');
+  }
+};
+
+// forside video
+document.addEventListener("DOMContentLoaded", function() {
+  var video = document.getElementById("forsideVideo");
+  video.play();
+});
+
+function toggleSidebar() {
+  // Select the sidebar element
+  var sidebar = document.querySelector('.sidebar');
+
+  // Toggle the 'show' class on the sidebar to show/hide it
+  sidebar.classList.toggle('show');
+}

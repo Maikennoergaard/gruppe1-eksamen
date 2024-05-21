@@ -257,6 +257,7 @@ nav li:first-child {
     justify-content: center;
     align-items: center;
     margin-top: 10%;
+    font-size: 1.7em;
   }
 
   #menusandwich {
@@ -317,7 +318,7 @@ nav li:first-child {
     position: absolute;
     width: 250px;
     z-index: 1;
-    top: 62%;
+    top: 70%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -444,7 +445,7 @@ nav li:first-child {
     max-width: none; /* Fjerner fast maksimal bredde */
     overflow-x: hidden; /* Forhindrer vandret rulning */
     transform: translateX(100%);
-}
+  }
 
   
   .popup-overlay {
@@ -505,8 +506,9 @@ nav li:first-child {
 /*Forside*/
 /* video forside */
 .forside1 {
-  height: 93vh;
+  height: 85vh;
   position: relative; /* Tilføjer position: relative; til forældreelementet */
+  overflow: hidden;
 }
 
 .forside-video {
@@ -573,7 +575,7 @@ nav li:first-child {
 
 /* multiwords(dingse)*/
 .firexdingse {
-  margin-top: 10%;
+  margin-top: 15%;
   margin-left: 35%;
 }
 
@@ -601,7 +603,10 @@ nav li:first-child {
   flex-direction: column;
   justify-content: center;
   align-items: center; 
+  text-align: center;
   margin-top: 8%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 /* tekst til midtersection */
@@ -611,10 +616,11 @@ nav li:first-child {
   margin-right: 20px;
   padding-bottom: 2px; 
 }
-#kursivtekst {
+.kursivtekst {
   margin-left: 5%;
   margin-right: 5%;
-  text-align: center;
+  text-align: justify;
+  font-size: large;
 }
 
 /* billeder på midtersection */
@@ -686,10 +692,17 @@ margin-bottom: 10%;
 
 /* Styling af billeder på kontakt siden */
 
+.coverbillede {
+  height: 40vh;
+  position: relative;
+}
+
 .coverkontakt {
-  display: flex;
+  position: absolute;
+  object-fit: cover;
   width: 100%;
-  height: auto; 
+  height: 100%;
+  left: 0;
 }
 
 .kort-kontakt {
@@ -736,6 +749,12 @@ margin-bottom: 10%;
   height: 35vh;
 }
 
+.foelgknap1 {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  }
+
+ 
 /*Bag om Dingse*/
 
 /* Styling af første del af bagom */
@@ -751,7 +770,6 @@ margin-bottom: 10%;
   padding: 5%;
 }
 
-
 /* Styler så billedet er 100% på telefon */
 .bagom1 img{
   width: 100%;
@@ -761,70 +779,111 @@ margin-bottom: 10%;
   width: 100%;
 }
 
-
 /* Styler søren og olivia teksten til mobil */
 .bagom-ordx4 {
-  padding-left: 10%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding: 5% 3%;
+  margin-left: 20px;
 }
 
-/* Styling af button */
-.collapsible{
-  display: flex;
-  cursor: pointer;
-  color: var(--dark);
-  font-family: "Alef", sans-serif;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border: 2px solid var(--red);
-  align-items: center;
-  justify-content: center;
-}
 
 /* Bag om undersider */
+
+.read-more-start{
+  padding:5%;
+}
+
+.read-more {
+  margin: 60px 0;
+}
+
+.faqer {
+  margin-bottom: 20px;
+}
+
+.read-more-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.text {
+  background-color: var(--background);
+  width: 50%;
+  color: #FFFFFF;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.img {
+  background-color: var(--background);
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.fold_reply {
+  display: flex;
+  cursor: pointer; /* Change cursor to pointer to indicate interactivity */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.fold_btn {
+  padding: 5px 10px;
+  margin: 10px 0;
+  background-color: var(--contrastbackground);
+  color: var(--dark);
+  font-family: "Alef", sans-serif;
+  text-align: center;
+  cursor: pointer;
+  width: 8em;
+}
+
+.reply {
+  display: none; /* Hide the reply content initially */
+  background-color: var(--contrastbackground);
+}
+
+/* Styling af fold ud siderne */
 
 .content {
   display: none;
   overflow: hidden;
 }
-
-button.collapsible {
-  background-color: transparent;
+/* Styler alle p i "content" fold ud sektionerne */
+.content p {
+  margin: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.content h4 {
+  margin: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-/* Styling af "read more" er styling af hele indholdet under "bagom1" på bag om dingse siden */
-
-.read-more{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 5%;
+.surdej5 {
+  object-fit: cover;
+  height: 30vh;
+  width: 35vh;
 }
-
-.read-more section button{
-  justify-content: center;
-}
-
-/* Bag om - surdej */
-
-
-/* bag om - dingsevand */
-
 .smagsvarianter {
   display: grid;
+  justify-self: center;
+  align-self: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   object-fit: cover;
-  height: 40vh;
-  width: 35vh;
+  height: 10vh;
+  width: 10vh;
 }
 
-#hjemmelavet {
-  font-size: 2em;
+.galleri {
+  padding: 5%;
 }
+
 
 /*Footer*/
 footer {
@@ -861,7 +920,78 @@ footer {
   margin-right: 1rem; 
 }
 
-/*Media Quarey Computer*/
+/* Gallery section styling */
+.galleri {
+  text-align: center;
+  padding: 2em 1em;
+}
+
+/* Image container styling */
+.foto-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em; /* Add space between images */
+  justify-content: center;
+}
+
+/* Mobile image styling */
+.fotomobil {
+  max-width: 100%;
+  height: auto;
+}
+
+.fotodesktop {
+  width: 90%;
+  height: auto;
+}
+
+/* Hide desktop image by default */
+.fotodesktop {
+  display: none;
+}
+
+/* ************************************************ */
+
+/*Media Querey Computer*/
+
+
+/* Vi har stylet alt vores CSS mobile first og tilføjet media querys til desktop efter */
+
+/* STYLING AF FONT TIL COMPUTER */
+
+@media (min-width: 700px) {
+    /*Font styling*/
+    h3{
+      display: flex;
+      color: var(--dark);
+      font-family: "Alef", sans-serif;
+    }
+
+    h4{
+      display: flex;
+      color: var(--dark);
+      font-family: "Alef", sans-serif;
+    }
+
+    p{
+      color: var(--dark);
+      font-family: "Alef", sans-serif;
+      font-size: 1.2em;
+    }
+
+    /*Rød stor font - bliver brugt x4*/
+    .alefred{
+      color: var(--red);
+      font-size: 4em;
+      font-family: "Alef", sans-serif;
+    }
+
+    .anniestor {
+      color: var(--dark);
+      font-size: 2.3em;
+      font-family: "Annie Use Your Telescope", cursive;
+    }
+  }
 
 /* Menukort */
 @media (min-width: 400px) {
@@ -895,8 +1025,8 @@ footer {
 
 @media (min-width: 700px) {
   #andimg img{
-    top: 60%;
-    width: 400px;
+    top: 65%;
+    width: 300px;
   }
 
   #andimg h3 {
@@ -907,7 +1037,6 @@ footer {
     align-items: center;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    font-size: 5em;
   }
 
   #morewordsmenu{
@@ -922,7 +1051,18 @@ footer {
   #tekstmenu {
     font-size: 2.2em;
   }
+
+ 
+ h3{
+    display: flex;
+    color: var(--dark);
+    font-family: "Alef", sans-serif;
+    font-size: 2em;
+  }
+    
 }
+
+ 
 
 @media(min-width: 800px) {
   
@@ -944,22 +1084,70 @@ footer {
     overflow-x: auto; /* Ændret fra "hidden" til "auto" */
   }
   
-  #andimg img{
+   #andimg img{
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     width: 320px;
+    top: 70%;
   }
 
   #andimg h3 {
     font-size: 4em;
   }
+  
+  #morewordsmenu{
+    margin-top: 200%;
+  } 
+}
+
+@media (min-width: 1000px) {
+  #andimg img{
+    top: 67%;
+    width: 300px;
+  }
+
+  #morewordsmenu {
+    margin-top: 150%;
+  }
+}
+
+@media (min-width: 1500px) {
+  #andimg img{
+    top: 60%;
+    width: 300px;
+  }
+
+  #morewordsmenu {
+    margin-top: 100%;
+  }
+}
+
+@media(min-width: 2000px) { 
+  #andimg img{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    top: 15%;
+  }
+
+  #andimg h3 {
+    font-size: 4em;
+  }
+  
+  #morewordsmenu{
+    margin-top: 0%;
+  }
+} 
+
 
 /******** forside *******/
 .multiwords{
   display: grid;
   grid-template-columns: 1fr 1fr;
   box-sizing: border-box;
+  margin-top: 5%;
 }
 
   #lodretskrift, #lodretskrift2, #lodretskrift3{
@@ -1017,6 +1205,9 @@ footer {
     justify-content: center;
     align-items: center; 
     margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
   }
 
   .alefdarkknap {
@@ -1037,7 +1228,6 @@ footer {
     margin-bottom: 5%;
   }
 
-
   /* instagram sektion */
 
   .instagram {
@@ -1058,82 +1248,18 @@ footer {
   height: 380px;
   }
 
-  #kursivtekst{
+  .kursivtekst{
     margin-left: 23%;
     margin-right: 21%;
+    text-align: justify;
+  }
+
+  #kursivtekst {
+    font-size: 2.5rem;
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
-  }
-
-
-
-  .billedeserie1{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 10%;
-  margin-right: 10%;
-  }
-
-  .foelgknap {
-    display: flex;
-    justify-content: center;
-    margin-top: 3%;
-    margin-left: 0%;
-  }
-
-  /******************' Font styling *********************/
-
-    /*Font styling*/
-    h3{
-      display: flex;
-      color: var(--dark);
-      font-family: "Alef", sans-serif;
-    }
-
-    h4{
-      display: flex;
-      color: var(--dark);
-      font-family: "Alef", sans-serif;
-    }
-
-    p{
-      color: var(--dark);
-      font-family: "Alef", sans-serif;
-      font-size: 0.8em;
-    }
-
-    /*Rød stor font - bliver brugt x4*/
-    .alefred{
-      color: var(--red);
-      font-size: 4em;
-      font-family: "Alef", sans-serif;
-    }
-
-
-  /* instagram sektion */
-
-  .instagram {
-    margin-top: 10%;
-  }
-
-  .foelgtekst {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .foelgbilleder {
-  display: flex;
-  object-fit: cover;
-  width: 380px;
-  height: 380px;
-  }
-
-  #kursivtekst{
-    margin-left: 23%;
-    margin-right: 21%;
-    text-align: center;
+    margin-bottom: 2%;
   }
 
   .billedeserie1 {
@@ -1186,13 +1312,110 @@ footer {
     margin-right: 15%;
   }
 
-  /******************' Font styling *********************/
+/******** kontakt os *******/
 
-  /*Font styling*/
-  h3{
-    display: flex;
-    color: var(--dark);
-    font-family: "Alef", sans-serif;
-    font-size: 2em;
-    }
+.coverbillede {
+  height: 60vh;
+  position: relative;
 }
+
+.coverkontakt {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+#openhours {
+  font-size: 3rem;
+}
+
+.dingsetelefon {
+  width: 130%;
+  height: 100%;
+}
+
+.ringx4 {
+  margin-top: 35%;
+}
+
+.ringx4container {
+width: 70%;
+height: 70%;
+}
+
+.adresse-kontakt {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kort-kontakt {
+  width: 55%;
+}
+
+.telefon-nummer-kontakt {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/******** Bag Om *******/
+
+@media (min-width: 700px) {
+
+/* **** Styling af første del af bagom - Søren og olivia billede + tekst **** */
+  .bagom1 {
+    display: grid;
+  }
+
+  #mere {
+    padding-left: 5%;
+    padding-bottom: 3%;
+  }
+  
+  .bagom-ordx4 {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .bagom1 h1 {
+    text-align: center;
+    padding-top: 2%; 
+    padding-bottom: 1%;
+  }
+  .bagom1 p {
+    padding: 2%;
+  }
+
+  /*  Styles med en anden class for at få korrekt opsætning */
+
+.bagom1-desktop{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bagom1 h1 {
+  justify-self: center;
+  align-self: center;
+}
+
+/* Styling af billedet af søren og olivia, billedet croppes til desktop*/
+.bagom1 img{
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  object-position: top;
+}
+
+.fotomobil {
+  display: none;
+}
+.fotodesktop {
+  display: block;
+}
+}
+
+
+  
