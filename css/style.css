@@ -84,126 +84,158 @@ font-family: "Annie Use Your Telescope", cursive;
 }
 
 /* Navbar */
-  .logo img {
-    width: 100px;
-    height: auto;
-  }
-  
+.logo img {
+  width: 100px;
+  height: auto;
+}
 
-  nav{
-    background-color: var(--contrastbackground);
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-    top: 0;
-    z-index: 100;
-    overflow-x: auto;
+nav {
+  background-color: var(--contrastbackground);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 0;
+  z-index: 100;
+  overflow-x: auto;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark);
+  font-family: "Alef", sans-serif;
+  font-size: 1.1rem;
+}
+
+.hideOnMobile nav a {
+  color: var(--red);
+}
+
+nav a:hover {
+  background-color: var(--lightblue);
+  border-radius: 10px;
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: var(--gul);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 170px;
+  gap: 20px;
+  z-index: 200;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.menu-button {
+  display: none;
+}
+
+.krys {
+  position: absolute;
+  left: 140px;
+  top: 40px;
+}
+
+.kigop {
+  position: absolute;
+  bottom: 0;
+  width: 250px;
+  right: 10px;
+}
+
+.bue1{
+  position: absolute;
+  top: 135px;
+
+}
+
+.bue2{
+  position: absolute;
+  top: 270px;
+}
+
+
+/* Mobil Media Queries */
+@media (max-width: 800px) {
+  .hideOnMobile {
+      display: none;
+  }
+  .menu-button {
+      display: block;
+      size: 2rem;
+  }
+  .sidebar {
+      display: flex;
+      gap: 100px;
+      align-content: center;
+      width: 100%;
   }
 
-  nav ul{
+  .sidebar a {
     width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 5px 10px;
-  }
-
-  nav li{
-    height: 50px;
-  }
-
-  nav a{
-    height: 100%;
-    padding: 0 20px;
+    text-align: center;
+    padding: 10px 0;
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--dark);
-    font-family: "Alef", sans-serif;
-    font-size: 1.1rem;
-  }
-
-  .buetekst{
-    font-family: "Annie Use Your Telescope", cursive;
-    /* position: absolute; */
-    top: 50%; /* Placer tekstens top i midten af containeren */
-    left: 50%; /* Placer tekstens venstre kant i midten af containeren */
-    transform: translate(-50%, -50%) rotate(-90deg); /* Rotér teksten med -90 grader (mod uret) */
-    text-align: center; /* Centrer teksten */
-    font-size: 30px; /* Juster skriftstørrelsen efter behov */
-    white-space: nowrap; /* Forhindre linjeskift for lang tekst */
-  }
-
-  .hideOnMobile nav a{
     color: var(--red);
+    font-size: 2.3em;
   }
 
-  nav a:hover{
-    background-color: var(--lightblue);
-    border-radius: 10px;
-  }
-  nav li:first-child{
-    margin-right: auto;
-  }
-  .sidebar{
-    position: fixed;
-    top: 0; 
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    background-color: var(--gul);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    list-style: none;
-    display: none;
+  .uller{
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 170px;
-    gap: 20px;
+    gap: 100px;
+    text-align: center;
   }
 
-  .sidebar li{
-    width: 100%;
-  }
+}
 
-  .sidebar a{
-    width: 100%;
-  }
-
-  .menu-button{
-    display: none;
-  }
-
-  .krys{
-    position: absolute;
-    left: 140px;
-    top: 40px;
-  }
-
-  .kigop{
-    position: absolute;
-    bottom: 0;
-    width: 250px;
-    right: 10px;
-  }
-
-/* Media */
-
-    @media(max-width: 800px){
-      .hideOnMobile{
-        display: none;
-      }
-      .menu-button{
-        display: block;
-        size: 2rem;
-      }
-    }
-    @media(max-width: 800px){
-      .sidebar{
-        width: 100%;
-      }
-    }
 
 /*Menukort*/
   /* Menukort */
@@ -378,10 +410,10 @@ font-family: "Annie Use Your Telescope", cursive;
   }
   
   .open-btn {
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding: 1rem 2.5rem;
+    padding: 1rem 1.8rem;
     cursor: pointer;
   }
   
@@ -508,10 +540,10 @@ font-family: "Annie Use Your Telescope", cursive;
 
 .pil div{
   display: block;
-  width: 20px;
-  height: 20px;
-  border-bottom: 3px solid var(--gul);
-  border-right: 3px solid var(--gul);
+  width: 25px;
+  height: 25px;
+  border-bottom: 5px solid var(--gul);
+  border-right: 5px solid var(--gul);
   transform: rotate(45deg);
   margin: -5px;
   animation: animate 2s infinite;
