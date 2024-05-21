@@ -650,7 +650,17 @@ nav li:first-child {
   flex-direction: column;
   justify-content: center;
   align-items: center; 
-  margin-top: 8%;
+  margin: 8% 10%;
+  text-align: center;
+}
+
+/* Fjerner noget af teksten fra mobil version */
+.responsivetekst {
+display: none;
+}
+
+#responsivetekst {
+  display: none;
 }
 
 
