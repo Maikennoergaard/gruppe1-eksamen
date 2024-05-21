@@ -913,13 +913,13 @@ footer {
 }
 
 /* Mobile image styling */
-.fotomobil, {
+.fotomobil {
   max-width: 100%;
   height: auto;
 }
 
 .fotodesktop {
-  width: 60%;
+  width: 90%;
   height: auto;
 }
 
