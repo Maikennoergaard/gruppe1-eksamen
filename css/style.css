@@ -954,7 +954,7 @@ footer {
   justify-content: center;
   text-align: justify;
   flex-direction: column;
-  margin-top: -8%;
+  margin-top: -7%;
   margin-left: 6%;
   margin-right: 63%;
 }
@@ -981,12 +981,12 @@ footer {
 
 /* Mobile image styling */
 .fotomobil {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
 .fotodesktop {
-  width: 60%;
+  width: 80%;
   height: auto;
 }
 
