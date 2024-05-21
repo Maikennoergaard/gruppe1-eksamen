@@ -484,6 +484,8 @@ font-family: "Annie Use Your Telescope", cursive;
     }
   }
   
+  
+
 /*Forside*/
 /* video forside */
 .forside1 {
@@ -746,7 +748,6 @@ margin-bottom: 10%;
   padding: 5%;
 }
 
-
 /* Styler så billedet er 100% på telefon */
 .bagom1 img{
   width: 100%;
@@ -756,92 +757,107 @@ margin-bottom: 10%;
   width: 100%;
 }
 
-
 /* Styler søren og olivia teksten til mobil */
 .bagom-ordx4 {
-  padding-left: 10%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding: 5% 3%;
+  margin-left: 20px;
 }
 
-/* Styling af button */
-.collapsible{
-  display: flex;
-  cursor: pointer;
-  color: var(--dark);
-  font-family: "Alef", sans-serif;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border: 2px solid var(--red);
-}
 
 /* Bag om undersider */
+
+.read-more-start{
+  padding:5%;
+}
+
+.read-more {
+  margin: 60px 0;
+}
+
+.faqer {
+  margin-bottom: 20px;
+}
+
+.read-more-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.text {
+  background-color: var(--background);
+  width: 50%;
+  color: #FFFFFF;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.img {
+  background-color: var(--background);
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.fold_reply {
+  display: flex;
+  cursor: pointer; /* Change cursor to pointer to indicate interactivity */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.fold_btn {
+  padding: 5px 10px;
+  margin: 10px 0;
+  background-color: var(--contrastbackground);
+  color: var(--dark);
+  font-family: "Alef", sans-serif;
+  text-align: center;
+  cursor: pointer;
+  width: 8em;
+}
+
+.reply {
+  display: none; /* Hide the reply content initially */
+  background-color: var(--contrastbackground);
+}
+
+/* Styling af fold ud siderne */
 
 .content {
   display: none;
   overflow: hidden;
 }
-
 /* Styler alle p i "content" fold ud sektionerne */
 .content p {
   margin: 10px;
   padding-left: 5%;
   padding-right: 5%;
 }
-
 .content h4 {
   margin: 10px;
   padding-left: 5%;
   padding-right: 5%;
 }
 
-
-button.collapsible {
-  background-color: transparent;
-}
-
-/* Styling af "read more" er styling af hele indholdet under "bagom1" på bag om dingse siden */
-
-.read-more{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.read-more img {
-  justify-content: center;
-  align-items: center;
-}
-
-/* Tilføjet padding for afstand til kant */
-.read-more h3, .read-more h2, .read-more p{
-  padding: 5%;
-}
-
-/* bag om - surdej */
-
 .surdej5 {
   object-fit: cover;
   height: 30vh;
   width: 35vh;
 }
-
-/* bag om - dingsevand */
-
 .smagsvarianter {
   display: grid;
+  justify-self: center;
+  align-self: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   object-fit: cover;
-  height: 40vh;
-  width: 35vh;
+  height: 10vh;
+  width: 10vh;
 }
 
-#hjemmelavet {
-  font-size: 2em;
-}
 
 /*Footer*/
 footer {
@@ -917,10 +933,10 @@ footer {
     }
 
     .anniestor {
-      color: var(--dark);
-      font-size: 2.3em;
-      font-family: "Annie Use Your Telescope", cursive;
-    }
+        color: var(--dark);
+        font-size: 2.3em;
+        font-family: "Annie Use Your Telescope", cursive;
+        }
   }
 
 /* Menukort */
@@ -1278,43 +1294,5 @@ height: 70%;
   height: 80vh;
   object-fit: cover;
   object-position: top;
-}
-
-
-/* Styling af read more sektionen på Bag om */
-.read-more img{
-  width: 50%;
-}
-
-.read-more section {
-  align-items: center;
-  justify-content: center;
-}
-
-/* Bag om undersider */
-
-/* Styler alt tekst i "content" fold ud sektionerne */
-.content p, .content h4 {
-  margin: 10px;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-/* Styling af "read more" er styling af hele indholdet under "bagom1" på bag om dingse siden */
-
-.read-more{
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-
-.read-more img {
-  justify-content: center;
-  align-items: center;
-}
-
-/* Tilføjet padding for afstand til kant */
-.read-more h3,.read-more h2,.read-more p{
-  padding: 1%;
 }
 }
