@@ -178,7 +178,7 @@ nav li:first-child {
 
 .krys {
   position: absolute;
-  left: 220px;
+  left: 140px;
   top: 40px;
 }
 
@@ -844,7 +844,8 @@ margin-bottom: 10%;
 
 .reply {
   display: none; /* Hide the reply content initially */
-  background-color: var(--contrastbackground);
+  background-color: var(--gul);
+  opacity: 0.5;
 }
 
 /* Styling af fold ud siderne */
@@ -884,7 +885,6 @@ margin-bottom: 10%;
 .galleri {
   padding: 5%;
 }
-
 
 /*Footer*/
 footer {
