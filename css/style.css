@@ -719,9 +719,9 @@ flex-direction: column;
 }
 
 .foelgknap {
-margin-left: 40%;
-margin-top: 10%;
-margin-bottom: 10%;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 
@@ -811,8 +811,7 @@ margin-bottom: 10%;
 }
 
 .foelgknap1 {
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin: 5% 5%;
   }
 
  
@@ -1401,6 +1400,10 @@ footer {
     padding: 0 20%;
   }
 
+  #responsivetekst {
+    display: flex;
+  }
+
   #responsivetekst1 {
     display: none;
   }
@@ -1467,8 +1470,7 @@ footer {
   .foelgknap {
     display: flex;
     justify-content: center;
-    margin-top: 3%;
-    margin-left: 0%;
+    align-items: center;
   }
 
   /******** kontakt os *******/
