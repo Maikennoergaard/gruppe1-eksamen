@@ -238,6 +238,13 @@ nav li:first-child {
 }
 
 /* Menukort i html*/
+
+.menukort_main{
+  display: flex;
+  min-height: 100vh;
+}
+
+
 #menucard2 {
   display: flex;
   flex-direction: column;
@@ -642,7 +649,7 @@ nav li:first-child {
 .firexdingse h3 {
   opacity: 0;
   transform: translateY(20px); /* Startposition under deres endelige destination */
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
 }
 
 .firexdingse h3.visible {
@@ -877,7 +884,7 @@ align-items: center;
 .ringx4 h3 {
   opacity: 0;
   transform: translateY(20px); /* Startposition under deres endelige destination */
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
 }
 
 .ringx4 h3.visible {
@@ -930,7 +937,7 @@ align-items: center;
 .bagom-ordx4 h3 {
   opacity: 0;
   transform: translateY(20px); /* Startposition under deres endelige destination */
-  animation: pop 0.5s forwards;
+  animation: pop 0.2s forwards;
 }
 
 .bagom-ordx4 h3:nth-child(1) {
@@ -938,15 +945,15 @@ align-items: center;
 }
 
 .bagom-ordx4 h3:nth-child(2) {
-  animation-delay: 0.5s;
+  animation-delay: 0.2s;
 }
 
 .bagom-ordx4 h3:nth-child(3) {
-  animation-delay: 1s;
+  animation-delay: 0.4s;
 }
 
 .bagom-ordx4 h3:nth-child(4) {
-  animation-delay: 1.5s;
+  animation-delay: 0.6s;
 }
 
 @keyframes pop {
@@ -1081,11 +1088,30 @@ align-items: center;
   margin-left: 92% ;
   margin-left: 90% ;}
 
+.fold_in_btn {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-bottom: 5px solid var(--red);
+  border-right: 5px solid var(--red);
+  transform: rotate(225deg);
+  margin-top: 50px;
+  animation: hop 1s ease-in-out infinite;
+}
+
+@keyframes hop {
+  0% { transform: translateY(0) rotate(225deg); }
+  50% { transform: translateY(-10px) rotate(225deg); }
+  100% { transform: translateY(0) rotate(225deg); }
+}
+
+
 
 .reply {
   display: none; /* Hide the reply content initially */
   background-color: var(--contrastbackground);
-  margin-bottom: 10%;
+  margin-bottom: 7%;
+  padding: 50px 0;
 }
 
 /* Styling af fold ud siderne */
@@ -1153,7 +1179,7 @@ margin-bottom: 1%;
   object-fit: cover;
   height: 50vh;
   width: 35vh;
-  margin-top: -5%;
+  margin-top: -50px;
 }
 
 #fermentering_af_surdej {
@@ -1255,8 +1281,8 @@ margin-top: -2%;
   justify-content: center; 
   align-items: center;     
   gap: 40px;  
-  margin-top: 2%; 
-  margin-bottom: 10%;            
+  margin-top: 5%; 
+  margin-bottom: 3%;            
 }
 
 .smagsvarianter > div {
@@ -2216,6 +2242,18 @@ margin-right: 20%;
     #bestilknapmenu{
       width: 100px;
     }
+
+  /* MENUKORT HTML */
+/* Opdeling af side */
+.leftside{
+  width: 50%;
+  background-color: var(--gul);
+}
+
+.rightside{
+  width: 50%;
+}
+
 
   }
 

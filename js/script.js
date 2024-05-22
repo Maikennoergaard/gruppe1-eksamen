@@ -14,6 +14,14 @@ function hideSidebar() {
   sidebar.style.display = 'none';
 }
 
+//////////////////// Pil
+
+// Klikfunktion der scroller en vh ned ved klikk på gul pil
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.pil').addEventListener('click', function() {
+      window.scrollBy(0, window.innerHeight);
+  });
+});
 
 ///////////////////////// Popud Menukort
 
@@ -127,8 +135,12 @@ window.onscroll = function () {
 //////////////////// forside video
 document.addEventListener("DOMContentLoaded", function() {
   var video = document.getElementById("forsideVideo");
-  video.play();
+  video.addEventListener("loadedmetadata", function() {
+    video.play();
+  });
 });
+
+
 
 function toggleSidebar() {
   // Select the sidebar element
@@ -165,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Hver h3 transition delay ganges med 0.5s så tekst dukker op en af gangen
   const elements = document.querySelectorAll('.firexdingse h3');
   elements.forEach((element, index) => {
-      element.style.transitionDelay = `${index * 0.5}s`;
+      element.style.transitionDelay = `${index * 0.2}s`;
       observer1.observe(element);
   });
 
@@ -185,7 +197,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Hver h3 transition delay ganges med 0.5s så tekst dukker op en af gangen
   const elements1 = document.querySelectorAll('.ringx4 h3');
   elements1.forEach((element, index) => {
-      element.style.transitionDelay = `${index * 0.5}s`;
+      element.style.transitionDelay = `${index * 0.2}s`;
       observer2.observe(element);
   });
 });
