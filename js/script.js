@@ -14,6 +14,14 @@ function hideSidebar() {
   sidebar.style.display = 'none';
 }
 
+//////////////////// Pil
+
+// Klikfunktion der scroller en vh ned ved klikk på gul pil
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.pil').addEventListener('click', function() {
+      window.scrollBy(0, window.innerHeight);
+  });
+});
 
 ///////////////////////// Popud Menukort
 
@@ -127,8 +135,12 @@ window.onscroll = function () {
 //////////////////// forside video
 document.addEventListener("DOMContentLoaded", function() {
   var video = document.getElementById("forsideVideo");
-  video.play();
+  video.addEventListener("loadedmetadata", function() {
+    video.play();
+  });
 });
+
+
 
 function toggleSidebar() {
   // Select the sidebar element

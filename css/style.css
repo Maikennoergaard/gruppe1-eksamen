@@ -1070,11 +1070,30 @@ align-items: center;
   margin-left: 92% ;
   margin-left: 90% ;}
 
+.fold_in_btn {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-bottom: 5px solid var(--red);
+  border-right: 5px solid var(--red);
+  transform: rotate(225deg);
+  margin-top: 50px;
+  animation: hop 1s ease-in-out infinite;
+}
+
+@keyframes hop {
+  0% { transform: translateY(0) rotate(225deg); }
+  50% { transform: translateY(-10px) rotate(225deg); }
+  100% { transform: translateY(0) rotate(225deg); }
+}
+
+
 
 .reply {
   display: none; /* Hide the reply content initially */
   background-color: var(--contrastbackground);
-  margin-bottom: 10%;
+  margin-bottom: 7%;
+  padding: 50px 0;
 }
 
 /* Styling af fold ud siderne */
@@ -1142,7 +1161,7 @@ margin-bottom: 1%;
   object-fit: cover;
   height: 50vh;
   width: 35vh;
-  margin-top: -5%;
+  margin-top: -50px;
 }
 
 #fermentering_af_surdej {
@@ -1239,8 +1258,8 @@ margin-top: -2%;
   justify-content: center; 
   align-items: center;     
   gap: 40px;  
-  margin-top: 2%; 
-  margin-bottom: 10%;            
+  margin-top: 5%; 
+  margin-bottom: 3%;            
 }
 
 .smagsvarianter > div {
