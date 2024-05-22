@@ -642,8 +642,9 @@ nav li:first-child {
 
 /* multiwords(dingse)*/
 .firexdingse {
-  margin-top: 15%;
-  margin-left: 35%;
+  margin-top: -10%;
+  margin-left: 30%;
+  font-size: 2rem;
 }
 
 .firexdingse h3 {
@@ -1536,6 +1537,7 @@ footer {
   }
 
   @media (min-width: 700px) {
+
     #andimg img{
       top: 65%;
       width: 300px;
@@ -1646,6 +1648,11 @@ footer {
 
   /* tekstcontainer bagom */
   @media(max-width: 800px) {
+    .firexdingse {
+      font-size: 1rem;
+      margin-top: 5%;
+    }
+
     .read-more {
         display: flex;
         flex-direction: column; 
@@ -1929,13 +1936,6 @@ margin-right: 20%;
       font-size: 150%;
       line-height: 130%;
     }
-    
-    /* forside */
-    .multiwords{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      box-sizing: border-box;
-    }
 
     .broedforside{
       display: none;
@@ -2123,6 +2123,7 @@ margin-right: 20%;
 
     .ringx4 {
       margin-top: 35%;
+      font-size: 2rem;
     }
 
     .ringx4container {
