@@ -238,6 +238,13 @@ nav li:first-child {
 }
 
 /* Menukort i html*/
+
+.menukort_main{
+  display: flex;
+  min-height: 100vh;
+}
+
+
 #menucard2 {
   display: flex;
   flex-direction: column;
@@ -2195,6 +2202,18 @@ margin-right: 20%;
     #bestilknapmenu{
       width: 100px;
     }
+
+  /* MENUKORT HTML */
+/* Opdeling af side */
+.leftside{
+  width: 50%;
+  background-color: var(--gul);
+}
+
+.rightside{
+  width: 50%;
+}
+
 
   }
 
