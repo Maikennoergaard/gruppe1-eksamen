@@ -110,7 +110,7 @@
                     </div>
                 </div>
                 <div class="fold_reply" data-target=".reply1">
-                    <div class="fold_btn">Læs mere</div>
+                    <div class="fold_btn" id="laesmere_hover">Læs mere</div>
                 </div>
             </section>
             <!-- Content til undersiden - surdej-->
@@ -140,7 +140,7 @@
                 <div class="read-more-content">
                     <div class="text">
                         <h4 class="anniestor"  >DINGSEVAND</h4>
-                        <p class="desktop_broed">Vi bager vores brød hver dag og flere gange om dagen, sådan du er sikker på at få høj kvalitet og helt friskt brød. Vi fermenterer surdejen mindst 48 timer i køleskabet før vi bager det - dette gør vi for at sikre god smag.</p>
+                        <p class="desktop_broed">Vi presser lækre friske frugter til vores hjemmelavede dingsevand. Dingsevanden består af den friske saft kombineret med danskvand. Vi tilsætter ingen ekstra sukker, så du kan forvente en frisk læskende drik med brus.</p>
                         <p class="mobil_broed">Prøv vores udvalg af hjemmelavet læskendedrikke</p>
                     </div>
                     <div class="img">
@@ -148,7 +148,7 @@
                     </div>
                 </div>
                 <div class="fold_reply" data-target=".reply2">
-                    <div class="fold_btn">Læs mere</div>
+                    <div class="fold_btn" id="laesmere_hover">Læs mere</div>
                 </div>
             </section>
 
@@ -201,14 +201,14 @@
                 <div class="read-more-content">
                     <div class="text">
                         <h4 class="anniestor" >RÅVARER</h4>
-                        <p class="desktop_broed">Vi bager vores brød hver dag og flere gange om dagen, sådan du er sikker på at få høj kvalitet og helt friskt brød. Vi fermenterer surdejen mindst 48 timer i køleskabet før vi bager det - dette gør vi for at sikre god smag.</p>
+                        <p class="desktop_broed">Vores sprøde sandwich fyldes med gode råvarer fra lokale leverandører som Grand Fromage og Havnens Fiskehus. Vi ønsker kun råvarer af højeste kvalitet og vi vil så vidt muligt fylde vores sandwich med råvarer der er i sæson og gerne lokaldyrket.</p>
                         <p class="mobil_broed">Vi har altid friske og lokale råvare</p>
                 </div>
                     <div class="img"><img src="../img/familystyle/platte.png" alt="Platte med kød og ost">
                     </div>
                 </div>
                 <div class="fold_reply" data-target=".reply3">
-                    <div class="fold_btn">Læs mere</div>
+                    <div class="fold_btn" id="laesmere_hover">Læs mere</div>
                 </div>
             </section>
             <!-- Content til undersiden råvare-->
@@ -222,7 +222,7 @@
                 </video>
             </div>
 
-          <p class="p_foldud_raevare">Vi bruger udvalgte skinker og oste til fyld i vores sandwich. Udvalgt er fra de bedste leverandører og tilsmagt nøje.</p>
+          <p class="p_foldud_raevare annielille">Vi bruger udvalgte skinker og oste til fyld i vores sandwich. Udvalgt er fra de bedste leverandører og tilsmagt nøje.</p>
           <div class="platte_container"><img src="/img/familystyle/platte.png" alt="Platte" class="platte"></div>
           
           <div class="oliven_container">
@@ -233,11 +233,13 @@
           <img src="/img/familystyle/oliven.webp" alt="Olivenolie og smør" class="olivenolie_og_smoer">
           </div>
 
-          <p class="p_foldud_raevare">Vores sandwichmenu byder på et væld af smagsoplevelser: nyd den 24 måneder lagrede Serranoskinke med frisk basilikum, pinjekerner, 
-            mozzarella og rucola. Oplev saftig kylling med jalapenosvinaigrette, padrons, skalotteløg og rucola. Prøv focaccia med mortadella, 
-            ricottacreme og pistacie, eller jambon-beurre med prosciutto cotto, dobbelt fermenteret smør og 16 måneder lagret Comté. Smag de 
-            delikate rose rejer med rød peber, chili, tomatiseret mayonnaise, frisk agurk og rucola. Endelig kan du nyde vores 'Salad à la 
-            Provençal' med nye kartofler, modne tomater, oliven, skalotteløg, estragon, ramsløg og dijon vinaigrette.</p>
+          <p class="p_foldud_raevare">Vores sprøde sandwich fyldes med gode råvarer fra lokale leverandører som Grand Fromage og Havnens Fiskehus. Vi elsker selv et lækkert stykke skinke eller en godt lagret ost, så derfor har vi udvalgt det bedste til vores sandwich. Vi ønsker kun råvarer af højeste kvalitet, og vi vil så vidt muligt bruge lokale råvarer fra Danmark, når de er i sæson. Vi tilpasser løbende vores udvalg af sandwich til sæsonerne, så bliv ikke forvirret, hvis menukortet ændrer sig lidt en gang imellem.
+
+            Noget af det, du altid vil finde på vores menukort, er sandwich med en god skinke. Vi er selv glade for Serranoskinken 'Monte Nevado', Jambon-beurre eller mortadella. Vi tilføjer gerne oste, som passer til kødet, så sandwich'en balanceres.
+            
+            Vi laver alle vores dressinger selv, og til tider vil der komme nye varianter til, som vi har testet os frem til. Vi er ikke bange for at tilføje lidt ekstra olie eller fermenteret smør til din sandwich, for vi mener nemlig, at det kun giver ekstra smag.
+            
+            Vores grønt leveres frisk og modnet, så du kan altid forvente frisk og høj kvalitet af grønt i din sandwich.</p>
             </div>
         </div>
     </section>
@@ -258,131 +260,7 @@
 
 
 
-<!-- NY BAG OM
-    <section class="read-more-start">
-        <h3 class="alefred" id="mere">LÆR'MERE OM VORES</h3>
-        <div class="read-more"> -->
-            
-<!-- sektion 1 - SURDEJ-->
-            <!-- <section class="faqer">
-                <div class="read-more-content">
-                    <div class="text">
-                        <h4 class="anniestor" >SURDEJ</h4>
-                        <p>Vi bager vores brød hver dag og flere gange om dagen, sådan du er sikker på at få høj kvalitet og helt friskt brød. Vi fermenterer surdejen mindst 48 timer i køleskabet før vi bager det - dette gør vi for at sikre god smag.</p>
-                    </div>
-                    <div class="img"> 
-                        <img class="bag-om-surdej-foto" src="../img/familystyle/infografik-2.webp" alt="Surdej illustration">
-                    </div>
-                </div>
-                <div class="fold_reply" data-target=".reply1">
-                    <div class="fold_btn">Læs mere</div>
-                </div>
-            </section> -->
-            <!-- Content til undersiden - surdej-->
-            <!-- <div class="reply reply1" class="content">
-                <img class="surdej5" src="../img/farver/broed-paa-stak.png" alt="Surdejs brød">
-                <h3 class="anniestor"> Vi bager frisk brød hver dag. </h3>
-                <p> Søren er uddannet i det franske køkken, men har en kærlighed for dansk bagværk og har altid bagt meget. Derfor har vi valgt at fokusere på surdejsbrød.</p>
-                <p> Se vores proces bag surdejen: </p>
-                <h4 class="annielille">Trin 1</h4>
-                <img src="../img/familystyle/infografik-1.webp" alt="Fermentering af surdej">
-                <p>Surdejen fermenterer i mindst 48 timer for at sikre god smag. </p>
-                <h4 class="annielille">Trin 2</h4>
-                <img src="../img/familystyle/infografik-2.webp" alt="Stræk og fold surdej">
-                <p>Herefter strækker og folder vi dejen sådan vi får lufttige brød </p>
-                <h4 class="annielille">Trin 3</h4>
-                <img src="../img/familystyle/infografik-3.webp" alt="Bages ved høj varme">
-                <p>Til sidst bager vi brødet i ovnen ved høj intens varme </p>
-                <img class="surdej5" src="/img/farver/brodtat.webp" alt="Surdejs brød fra Dingse">
-            </div> -->
-
-<!-- sektion 2 - DINGSEVAND-->
-            <!-- <section class="faqer">
-                <div class="read-more-content">
-                    <div class="img">
-                        <img class="read-more4" src="../img/familystyle/dingsevand.webp" alt="Dingsevand illustration">
-                    </div>
-                    <div class="text">
-                        <h4 class="anniestor"  >DINGSEVAND</h4>
-                        <p>Vi bager vores brød hver dag og flere gange om dagen, sådan du er sikker på at få høj kvalitet og helt friskt brød. Vi fermenterer surdejen mindst 48 timer i køleskabet før vi bager det - dette gør vi for at sikre god smag.</p>
-                    </div>
-                </div>
-                <div class="fold_reply" data-target=".reply2">
-                    <div class="fold_btn">Læs mere</div>
-                </div>
-            </section> -->
-             <!-- Content til undersiden - dingsevand -->
-            <!-- <div class="reply reply2" class="content">
-                <div class="dingsedrik-titel">
-                    <h2 class="alefred" id="hjemmelavet">HJEMMELAVET DINGSEVAND</h2>
-                    <p>Lavet af friskpresset juice og danskvand</p>
-                    <img src="/img/dingsedamer/drikker.png" alt="Dingsevand figur">
-                </div>
-              <img class="surdej5" src="/img/farver/daase.webp" alt="Dingsevand">
-              <img class="surdej5" src="/img/farver/daase3.webp" alt="Dingsevand">
-              <p>Dingsevand er vores egen hjemmelavede friske vand med smag. Dingsevand består af friskpresset 
-                juice kombineret med en læskende dansk vand. </p>
-                <img src="/img/familystyle/dingsevand.webp" alt="Dingsevand illustration">
-                <p> Vi har forskellige varianter som varierer efter sæson. Lige nu sælger vi med smag af både lime, grape, citron og jordbær.</p>
-                <h3 class="annielille">Find din ynglings variant</h3> -->
-                <!-- <div class="smagsvarianter">
-                    <img src="/img/familystyle/citron.webp" alt="citron smag">
-                    <img src="/img/familystyle/grape.webp" alt="grape smag">
-                    <img src="/img/familystyle/lime.webp" alt="lime smag">
-                    <img src="/img/familystyle/jordbaer.webp" alt="jordbær smag">
-                </div>
- 
-                <-- sektion 3 - RÅVARER -->
-            <!-- <section class="faqer">
-                <div class="read-more-content">
-                    <div class="text">
-                        <h4 class="anniestor" >RÅVARER</h4>
-                        <p>Vi bruger nøje udvalgte råvarer.</p></div>
-                    <div class="img"> 
-                        <div class="img">  <img src="../img/familystyle/platte.png" alt="Platte med kød og ost">
-                    </div>
-                </div>
-                <div class="fold_reply" data-target=".reply1">
-                    <div class="fold_btn">Læs mere</div>
-                </div>
-            </section>
-            Content til undersiden - surdej--> 
-            <!-- video råvare
-            <h2 class="alefred">KVALITETS RÅVARER</h2>
-            <div class="bagom-raevare">
-                <video class="raevare-video" loop autoplay muted controlsList="nodownload">
-                    <source src="/video/raevare-video.mp4" type="video/mp4">
-                </video>
-            </div>
-          <p>Vi bruger udvalgte skinker og oste til fyld i vores sandwich. Udvalgt er fra de bedste leverandører og tilsmagt nøje.</p>
-          <img src="/img/familystyle/platte.png" alt="Platte">
-          <h3 class="anniestor">“Mere olivenolie - mindre friture”</h3>
-          <img src="/img/familystyle/oliven.webp" alt="Olivenolie og smør">
-          <p>Vores sandwichmenu byder på et væld af smagsoplevelser: nyd den 24 måneder lagrede Serranoskinke med frisk basilikum, pinjekerner, 
-            mozzarella og rucola. Oplev saftig kylling med jalapenosvinaigrette, padrons, skalotteløg og rucola. Prøv focaccia med mortadella, 
-            ricottacreme og pistacie, eller jambon-beurre med prosciutto cotto, dobbelt fermenteret smør og 16 måneder lagret Comté. Smag de 
-            delikate rose rejer med rød peber, chili, tomatiseret mayonnaise, frisk agurk og rucola. Endelig kan du nyde vores 'Salad à la 
-            Provençal' med nye kartofler, modne tomater, oliven, skalotteløg, estragon, ramsløg og dijon vinaigrette.</p>
-            </div>
-        </div>
-</section> 
-
-    galleri
-    <section class="galleri">
-        <h3 class="alefred" id="galleri_tekst">GALLERI</h3>
-        <p id="galleri_tekst1">Bliv inspirreret til dit næste måltid på Dingse. Vi håber på at se dig.</p>
-        <div class="foto-container">
-            <img src="/img/farver/galleri-mobile.webp" alt="Galleri til mobil" class="fotomobil">
-            <img src="/img/farver/galleri-desktop.webp" alt="Galleri til desktop" class="fotodesktop">
-        </div>
-        <div class="insta-container">
-        <h4 class="annielille">“Del dine bedste dingse oplevelser. Vi elsker, at følge med i jeres bedste nye madoplevelser"</h4>
-        <h4 class="annielille"> #dingsefriskbagt<img src="/img/icon/instagram.png" alt="instaicon" class="instaicon"></h4>
-        </div>
-    </section>
-
-
-           <-- MENUKORT -->
+           <!-- MENUKORT --> 
     <!-- Menukort -->
             <div class="menu-container">
                 <div class="btn open-btn" id="menuButton">MENUKORT ^</div>
@@ -508,14 +386,14 @@
     
     <!-- Footer -->
     <footer>
-        <h1 class="besøg">BESØG OS PÅ</h1>
+        <h3 class="besøg">BESØG OS PÅ</h3>
         <ul class="info-container1">
             <li>Badestuegade 15, 8000 Aarhus C</li>
             <li>Åbent tirsdag til lørdag  fra 10.00-17.30</li>
             <li class="iconer">
-                <img src="/img/icon/instagram.png" alt="instagram" class="icon">
-                <img src="/img/icon/facebook.png" alt="facebook" class="icon">
-                <img src="/img/icon/mail.png" alt="mail" class="icon">
+                <a href="https://www.instagram.com/dingsefriskbagt/"><img src="/img/icon/instagram.png" alt="instagram" class="icon"></a>
+                <a href="https://www.facebook.com/profile.php?id=61551035676045"><img src="/img/icon/facebook.png" alt="facebook" class="icon"></a>
+                <a href="https://mail.google.com/"><img src="/img/icon/mail.png" alt="mail" class="icon"></a>
             </li>
         </ul>
 

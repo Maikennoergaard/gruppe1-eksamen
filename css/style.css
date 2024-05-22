@@ -339,14 +339,23 @@ nav li:first-child {
     width: 40%;
     padding-top: 2%;
     padding-bottom: 2%;
-    font-weight: 600;
+    font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     margin-bottom: 10%;
     margin-top: 10%;
-  }
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#bestilknapmenu:hover {
+  background-color: var(--contrastbackground); /* Change background color on hover */
+  box-shadow: 0 4px 15px #c7352a(0, 0, 0, 0.2); /* Add box shadow on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+  border-color: var(--red);
+}
 
   #andimg {
     position: relative;
@@ -642,19 +651,27 @@ nav li:first-child {
 }
 
 /*bestilknap forside*/
-#bestilknapforside{
+#bestilknapforside2{
   width: 40%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   margin-bottom: 10%;
-  margin-top: 10%;
+  margin-top: 2%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
+#bestilknapforside2:hover {
+  background-color: var(--contrastbackground); /* Change background color on hover */
+  box-shadow: 0 4px 15px #c7352a(0, 0, 0, 0.2); /* Add box shadow on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+  border-color: var(--red);
+}
 
 /* dingsedame */
 .dingseukop {
@@ -715,7 +732,7 @@ nav li:first-child {
 .udefraillustration {
   width: 80%;
   height: 80%;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 5%;
 }
 
@@ -737,6 +754,7 @@ nav li:first-child {
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin-top: 10%;
 }
 
 .midtersection h2 {
@@ -1156,6 +1174,11 @@ margin-left: 25%;
 margin-top: -2%;
 }
 
+#laesmere_hover:hover {
+  background-color: var(--gul); /* Change background color on hover */
+  box-shadow: 0 4px 15px #c7352a(0, 0, 0, 0.2); /* Add box shadow on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
 
 /* dingsevand foldud side */
 
@@ -1893,6 +1916,7 @@ margin-right: 20%;
       flex-direction: row;
       margin-top: 5%;
     }
+
     .desktopbilleder img {
       width: 65vh;
       height: 45vh;
@@ -1964,8 +1988,6 @@ margin-right: 20%;
     .udefraillustration {
       width: 50%;
       height: 50%;
-      margin-top: 5%;
-      margin-bottom: 5%;
     }
 
   /* instagram sektion forside */
@@ -1983,7 +2005,7 @@ margin-right: 20%;
 
     .billedeserie1{
       flex-direction: row;
-      gap: 20px;    
+      gap: 20px;   
     }
 
     .foelgbilleder {
@@ -2189,7 +2211,6 @@ margin-right: 20%;
 
     #bestilknapforside2{
       width: 100px;
-
     }
 
     #bestilknapmenu{
