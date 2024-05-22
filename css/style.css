@@ -641,6 +641,20 @@ nav li:first-child {
   transform: translateY(0); /* Endelig position */
 }
 
+/*bestilknap forside*/
+#bestilknapforside{
+  width: 40%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
 
 /* dingsedame */
 .dingseukop {
@@ -648,15 +662,8 @@ nav li:first-child {
   margin-top: 10%;
 }
 
-/* brød på forside */
-.brødforside {
-  width: 100%;
-  height: 100%;
-  margin-top: 0;
-}
 
 /* midtersection */
-
 .midtersection {
   display: flex;
   flex-direction: column;
@@ -671,9 +678,21 @@ nav li:first-child {
   .responsivetekst {
     display: none;
   }
+
+  #responsivetekst {
+    display: none;
+  }
   
   #responsivetekst1 {
-    display: none;
+    display: flex;
+    justify-content: center;
+    font-weight: 200;
+  }
+
+  #responsivetekst2 {
+    display: flex;
+    justify-content: center;
+    font-weight: 200;
   }
   
 /* tekst til midtersection */
@@ -683,11 +702,14 @@ nav li:first-child {
   margin-right: 20px;
   padding-bottom: 2px; 
 }
-.kursivtekst {
-  margin: 5% 10%;
+
+#kursivtekst {
+  margin-top: 5%;
   margin-left: 5%;
   margin-right: 5%;
   text-align: center;
+  font-size: 3em;
+  font-weight: 200;
 }
 
 /* billeder på midtersection */
@@ -698,6 +720,12 @@ nav li:first-child {
   margin-bottom: 5%;
 }
 
+.broedforside{
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  object-fit: cover;
+}
 
 /* instagram sektion */
 
@@ -706,8 +734,10 @@ nav li:first-child {
 }
 
 .foelgtekst {
-  margin-left: 5%;
   text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .midtersection h2 {
@@ -1401,7 +1431,6 @@ footer {
       /*Rød stor font - bliver brugt x4*/
       .alefred{
         color: var(--red);
-        font-size: 4em;
         font-family: "Alef", sans-serif;
       }
 
@@ -1490,6 +1519,10 @@ footer {
     }
 
     #bestilknapmenu{
+      font-size: 1.2em;
+    }
+
+    #bestilknapforside{
       font-size: 1.2em;
     }
 
@@ -1828,6 +1861,10 @@ margin-right: 20%;
       box-sizing: border-box;
     }
 
+    .broedforside{
+      display: none;
+    }
+
     .firexdingse {
       margin-top: 25%;
     }
@@ -1866,23 +1903,40 @@ margin-right: 20%;
 
   /* midtersection på forside*/
     .responsivetekst {
+      margin-left: 5%;
+      margin-right: 5%;
+      padding: 2%;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
-      margin-left: 22%;
-      margin-right: 20%;
-      text-align: justify;
       font-weight: 300;
-      font-size: 1.5em;
+      font-size: 1.7em;
     }
 
     .responsivetekst {
       display: flex;
     }
 
+    #responsivetekst {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-weight: 300;
+      font-size: 1.5em;
+    }
+
+    #responsivetekst {
+      display: flex;
+    }
+
     #responsivetekst1 {
     display: none;
+    }
+
+    #responsivetekst2 {
+      display: none;
     }
 
     .midtersection {
@@ -1897,13 +1951,13 @@ margin-right: 20%;
       margin-top: 5%;
     }
 
-    /* tekst til midtersection forside*/
+  /* tekst til midtersection forside*/
     .knap {
       border: 2px solid #c7352a; 
       padding-bottom: 2px; 
     }
 
-    /* billeder på midtersection af forside*/
+  /* billeder på midtersection af forside*/
     .udefraillustration {
       width: 50%;
       height: 50%;
@@ -1911,7 +1965,7 @@ margin-right: 20%;
       margin-bottom: 5%;
     }
 
-    /* instagram sektion forside */
+  /* instagram sektion forside */
     .instagram {
       margin-top: 10%;
       
@@ -1932,20 +1986,14 @@ margin-right: 20%;
     .foelgbilleder {
     display: flex;
     object-fit: cover;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     }
 
     .kursivtekst{
       margin-left: 23%;
       margin-right: 21%;
       text-align: center;
-    }
-
-    .billedeserie1 {
-      .alefdarkknap {
-        margin-top: 5%;
-      }
     }
 
   /* tekst til midtersection */
@@ -1981,15 +2029,16 @@ margin-right: 20%;
       align-items: center;
     }
 
-    /******** kontakt os *******/
+  /******** kontakt os *******/
     #openhours {
       font-size: 3rem;
     }
-  .kursivtekst{
-    margin-left: 23%;
-    margin-right: 21%;
-    text-align: center;
-  }
+
+    .kursivtekst{
+      margin-left: 23%;
+      margin-right: 21%;
+      text-align: center;
+    }
 
     .dingsetelefon {
       width: 130%;
@@ -2120,11 +2169,21 @@ margin-right: 20%;
       margin-left: 0;
       margin-right: 0;
     }
+
+
+    .midtersection{
+      margin-bottom: 0;
+    }
+
+    .instagram{
+      margin-top: 2%;
+    }
   }
 
   /******STYLER MEDIA OVER 1500PX******/ 
 
   @media (min-width: 1500px) {
+    /*Menukort*/
     #andimg img{
       top: 57%;
       width: 300px;
@@ -2133,5 +2192,25 @@ margin-right: 20%;
     #morewordsmenu {
       margin-top: 100%;
     }
+
+    /*Forside*/
+    .desktopbilleder {
+      align-items: center;
+      justify-content: center;
+    }
+
+    .foelgbilleder {
+      width: 380px;
+      height: 380px;
+      }
+
+    .billedeserie1{
+      gap: 50px;
+    }
+
+    .kursivtekst{
+      font-size: 3em;
+    }
+
   }
     
