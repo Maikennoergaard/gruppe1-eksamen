@@ -26,6 +26,21 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+// læs mere knap
+document.getElementById("laesMereKnap").addEventListener("click", function() {
+    document.getElementById("indhold").style.display = "block";
+    this.style.display = "none";
+    document.getElementById("lukKnap").style.display = "flex";
+});
+
+document.getElementById("lukKnap").addEventListener("click", function() {
+    document.getElementById("indhold").style.display = "none";
+    document.getElementById("laesMereKnap").style.display = "flex";
+    this.style.display = "none";
+});
+
+
+
 // Ekstra CSS til styling
 const style = document.createElement('style');
 style.innerHTML = `

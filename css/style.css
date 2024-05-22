@@ -919,7 +919,7 @@ align-items: center;
   align-items: center;
   margin-left: 10%;
   margin-right: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 1%;
   line-height: 2rem;
 }
 
@@ -935,6 +935,32 @@ align-items: center;
 
 /* Bag om undersider */
 
+/* om søren og olivia */
+#tekst_container_bagom {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+.skjult {
+  display: none;
+}
+
+#laesMereKnap, #lukKnap {
+  border: 2px solid #c7352a; 
+  padding-bottom: 2px;
+  display: flex;
+  justify-content: center;
+  margin: 0 40% 70px 40%;
+}
+
+
+#lukKnap {
+  display: none;  /* Initially hide the "Luk" button */
+}
+
+
+/* Mere om */
 .read-more {
   margin: 60px 0;
 }
@@ -1828,8 +1854,22 @@ footer {
       margin-left: 15%;
       margin-right: 15%;
     }
+
+    /***** Bagom *****/
+
+    /* læs mere knap */
+  
+    #indhold {
+      display: block !important;
+  }
+    #laesMereKnap, #lukKnap {
+      display: none !important;
+  }
+
   }
   
+
+
   
   /******STYLER MEDIA OVER 1000PX******/ 
   @media (min-width: 1000px) {
