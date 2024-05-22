@@ -4,19 +4,30 @@
     <!-- SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/img/icon/favicon.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="dingse">
+    <meta property="og:site_name" content="dingse">
     <meta name="description" content="På forsiden ligger der en stemnings video fra dingse og du linkes videre til kontakt side og instagram">
     <meta name="keywords"content= "Friskbagt, bestil sandwich, Badestuegade 15 Aarhus C, hurtig frokost, Frokost i Aarhus">
     <meta name="author" content= "Dingse Frisk Bagt i Aarhus C">
+    <meta name="geo.placename" content="Aarhus">
+    <meta property="og:url" content="https://dingse.karolinebauer.dk/">
+    <meta property="og:locale" content="da_dk">
+    <meta name="format-detection" content="telephone=no">
+    <!-- SEO slut -->
 
     <title>Dingse - frisk bagt</title>
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/icon/favicon.svg">
+
     <!-- links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
 </head>
+
 
 <body>
 
@@ -26,7 +37,6 @@
             <source src="video/dingse-forside.mp4" type="video/mp4">
         </video>
     </div>
-
 
     <!-- Pile -->
     <div class="pil">
@@ -50,7 +60,7 @@
         <div class="sidebar">
             <ul class="uller">
                 <li class="krys" onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 96 960 960" width="50"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" /></svg></a></li>
-                <li><a href="undersider/menukort.html">MENU</a></li>
+                <li><a href="#">MENU</a></li>
                 <li><a href="undersider/kontaktos.html">KONTAKT</a></li>
                 <li><a href="undersider/bagom.html">BAG OM DINGSE</a></li>
             </ul>
@@ -59,6 +69,8 @@
             <img class="kigop" src="img/dingsedamer/kigop.png" alt="dingsedame kigger op">
         </div>
     </header>
+    
+
 
     <main>
         <section class="multiwords">
@@ -74,8 +86,6 @@
         </div>
     </section>
 
-        <img src="img/farver/broed-paa-stak.webp" alt="friskbagt surdejs brød" class="brødforside">
-
         <div class="desktopbilleder">
             <img src="img/farver/sandwich-foto.webp" alt="sandwich">
             <img src="img/farver/broed-paa-stak.webp" alt="Surdejs brød">
@@ -86,18 +96,18 @@
             <h2 class="anniestor" id="kursivtekst">
                 “Vi bager friskbagt surdejsbrød hver dag! <br> Kom forbi og se os tage de friske brød ud af ovnen”
             </h2>
-            <p class="responsivetekst"> Vores surdej fermenterer mindst 48 timer i køleskabet før vi bager det. Dette gør vi for at sikre den gode smag. Vi bruger kun surdej til alt vores baggværk og vi håber meget du vil prøve noget fra vores udvalg.</p>
+            <h3 class="alefdark responsivetekst">Kom forbi og se os tage de friske brød ud af ovnen. Vores surdej fermenterer mindst 48 timer i køleskabet før vi bager det.</h3>
             <a href="undersider/kontaktos.html" class="alefdarkknap">BESTIL HER</a>
             <img src="img/familystyle/butikken.webp" alt="udefraillustration" class="udefraillustration">
             <h2 class="alefdark">Badestuegade 15, 8000 Aarhus C</h2>
-            <h2 class="annielille" id="kursivtekst">“Der kommer nyheder fra dag til dag. Vi deler altid vores spontane ideer eller tilføjelser til menuen på instagram.”</h2>
+            <h2 class="anniestor kursivtekst">“Der kommer nyheder fra dag til dag. Vi deler altid vores spontane ideer eller tilføjelser til menuen på instagram.”</h2>
         </section>
 
         <!-- Instagram -->
         <section class="instagram">
             <div class="foelgtekst">
             <h3 class="alefred">FØLG MED PÅ INSTAGRAM</h3>
-            <h2 class="alefdark" id="responsivetekst1">#dingsefriskbagt</h2>
+            <h2 class="alefdark" id="responsivetekst1">"dingsefriskbagt"</h2>
             <h2 class="alefdark" id="responsivetekst">Del din oplevelse med #dingsefriskbagt</h2>
             </div>
             <div class="billedeserie1">
@@ -121,11 +131,11 @@
                         <span class="close-btn">&times;</span>
                         <section id="andimg">
                             <div class="morewords" id="morewordsmenu">
-                                <h3 class="alefred">SANDWICH</h3>
-                                <h3 class="alefred">SANDWICH</h3>
-                                <h3 class="alefred">SANDWICH</h3>
-                                <h3 class="alefred">SANDWICH</h3>
-                            </div>
+                            <h3 class="alefred">SANDWICH</h3>
+                            <h3 class="alefred">SANDWICH</h3>
+                            <h3 class="alefred">SANDWICH</h3>
+                            <h3 class="alefred">SANDWICH</h3>
+                        </div>
 
                             <img src="/img/dingsedamer/fuldfigur.svg" alt="">
                             <p class="anniestor" id="tekstmenu">"Vi servere restaurantkvalitet - i en sandwich"</p>
@@ -152,22 +162,18 @@
                                     <h4 class="menuitemname">KYLLING</h4>
                                     <p class="menuitemtxt">jalapenosvinaigrette, padrons, skalotteløg & rucola</p>
                                 </li>
-
                                 <li>
                                     <h4 class="menuitemname">FOCACCIA</h4>
                                     <p class="menuitemtxt">mortadella, ricottacreme & ristede mandler</p>
                                 </li>
-
                                 <li>
                                     <h4 class="menuitemname">'JAMBON BEURRE'</h4>
                                     <p class="menuitemtxt">dobbelt fermenteret smør, kogt italiensk skinke & conté (12 mdr.)</p>
                                 </li>
-
                                 <li>
                                     <h4 class="menuitemname">ROSÉ REJER</h4>
                                     <p class="menuitemtxt">rød peber, chili & tomatiseret mayonaise, frisk agurk & rucola</p>
                                 </li>
-
                                 <li>
                                     <h4 class="menuitemname">SALAD À LA PROVENCAL</h4>
                                     <p class="menuitemtxt">nye kartofler, modne tomater, oliven, skalotteløg, estragon, ramsløg & dijon vinaigrette</p>
@@ -193,6 +199,7 @@
                                     <h4 class="menuitemname">TIRAMISU / / 20 KR</h4>
                                     <p class="menuitemtxt">espresso, marsala & cognac</p>
                                 </li>
+                                
                             </ul>
                 
                             <img class="hidden2" id="menukortkaffeimg" src="img/familystyle/kaffe.webp" alt="">
