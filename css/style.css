@@ -772,6 +772,10 @@ align-items: center;
   display: none;
 }
 
+.desktopbilleder img{
+  display: none;
+}
+
 
 
 /*Kontakt os*/ 
