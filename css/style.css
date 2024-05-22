@@ -1065,6 +1065,11 @@ align-items: center;
   margin-top: -10%;
 }
 
+.in{
+  margin-left: 0;
+}
+
+
 .fold_btn {
   padding: 5px 10px;
   margin: 10px 0;
@@ -1096,6 +1101,7 @@ align-items: center;
   border-right: 5px solid var(--red);
   transform: rotate(225deg);
   margin-top: 50px;
+  margin-left: 0;
   animation: hop 1s ease-in-out infinite;
 }
 
