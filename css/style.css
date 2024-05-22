@@ -1523,7 +1523,7 @@ footer {
       }
 
       .fotodesktop {
-        display: block;
+        display: flex;
       }
   }
 
@@ -1596,8 +1596,8 @@ footer {
     .baggrunddingse {
       background-color: #c7352a;
     }
-
-    /* dingsefigur på forside*/
+  
+  /* dingsefigur på forside*/
     .dingseukop {
       width: 60%;
     }
@@ -1608,16 +1608,34 @@ footer {
       width: 100%;
     }
 
-    /* midtersection på forside*/
+  /* Styling af ekstra billeder til forsiden til desktop */
+    .desktopbilleder {
+      display: flex;
+      flex-direction: row;
+      margin-top: 5%;
+    }
+    .desktopbilleder img {
+      width: 65vh;
+      height: 45vh;
+      object-fit: cover;
+      overflow: hidden;
+    }
+    .brødforside {
+      display: none;
+    }
+  
+
+  /* midtersection på forside*/
     .responsivetekst {
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 0 20%;
       margin-left: 22%;
       margin-right: 20%;
       text-align: justify;
+      font-weight: 300;
+      font-size: 1.5em;
     }
 
     .responsivetekst {
@@ -1657,6 +1675,7 @@ footer {
     /* instagram sektion forside */
     .instagram {
       margin-top: 10%;
+      
     }
 
     .foelgtekst {
@@ -1666,11 +1685,16 @@ footer {
       flex-direction: column;
     }
 
+    .billedeserie1{
+      flex-direction: row;
+      gap: 20px;    
+    }
+
     .foelgbilleder {
     display: flex;
     object-fit: cover;
-    width: 380px;
-    height: 380px;
+    width: 200px;
+    height: 200px;
     }
 
     .kursivtekst{
@@ -1680,9 +1704,10 @@ footer {
     }
 
     .billedeserie1 {
-  .alefdarkknap {
-    margin-top: 5%;
-  }
+      .alefdarkknap {
+        margin-top: 5%;
+      }
+    }
 
   /* tekst til midtersection */
   .knap {
@@ -1706,7 +1731,6 @@ footer {
 
   .foelgtekst {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     margin-left: 10%;
     margin-right: 10%;
@@ -1804,8 +1828,8 @@ footer {
       margin-left: 15%;
       margin-right: 15%;
     }
-    }
   }
+  
   
   /******STYLER MEDIA OVER 1000PX******/ 
   @media (min-width: 1000px) {
@@ -1836,6 +1860,12 @@ footer {
     /*Styler hele sektionen*/
     #morewordsmenu{
       margin-top: 200%;
+    }
+
+    /*forside kursiv tekst*/
+    .kursivtekst{
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 
