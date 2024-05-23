@@ -14,6 +14,12 @@ function hideSidebar() {
   sidebar.style.display = 'none';
 }
 
+// Viser den hvis den er skjult, skjuler den hvis den er vist
+function toggleSidebar() {
+  var sidebar = document.querySelector('.sidebar');
+  sidebar.classList.toggle('show');
+}
+
 //////////////////// Pil
 
 // Klikfunktion der scroller en vh ned ved klikk på gul pil
@@ -78,8 +84,8 @@ closeButton.addEventListener('click', hidePopup);
     });
   });
 
-// hvis "sektionen" er synlig sker det følgende
-// elementer for en class der trikker en animertion når "sektionen scrolles henover"
+// hvis "sektionen" er synlig sker det følgende 
+// Css stylingen tilføjet og trikker en animertion når "sektionen scrolles henover"
 const hiddenElemnts = document.querySelectorAll('.hidden');
 hiddenElemnts.forEach((el) => observer.observe(el));
 
@@ -139,16 +145,6 @@ document.addEventListener("DOMContentLoaded", function() {
     video.play();
   });
 });
-
-
-
-function toggleSidebar() {
-  // Select the sidebar element
-  var sidebar = document.querySelector('.sidebar');
-
-  // Toggle the 'show' class on the sidebar to show/hide it
-  sidebar.classList.toggle('show');
-}
 
 
 ////////////// Tekst animation

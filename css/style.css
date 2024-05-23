@@ -577,7 +577,7 @@ nav li:first-child {
     }
 
   /*bestilknap forside*/
-    #bestilknapforside2{
+    .bestilknapforside2{
       width: 40%;
       padding-top: 1%;
       padding-bottom: 1%;
@@ -592,7 +592,7 @@ nav li:first-child {
       transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
     }
 
-    #bestilknapforside2:hover {
+    .bestilknapforside2:hover {
       background-color: var(--contrastbackground); /* Change background color on hover */
       box-shadow: 0 4px 15px #c7352a(0, 0, 0, 0.2); /* Add box shadow on hover */
       transform: scale(1.05); /* Slightly enlarge the button on hover */
@@ -2252,7 +2252,7 @@ margin-right: 20%;
 
     }
 
-    #bestilknapforside2{
+    .bestilknapforside2{
       width: 100px;
     }
 
