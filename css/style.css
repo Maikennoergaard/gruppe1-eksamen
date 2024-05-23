@@ -1284,6 +1284,10 @@ nav li:first-child {
         margin-bottom: 5%;
       }
 
+      .p_foldud_raevare_lang {
+        display: none;
+      }
+
       .p_foldud_raevare {
         margin-top: 5%;
         display: flex;
@@ -1563,295 +1567,6 @@ footer {
       font-size: 2em;
     }
       
-    /* bagom siden i media */
-    /* **** Styling af første del af bagom - Søren og olivia billede + tekst **** */
-      .bagom1 {
-        display: grid;
-      }
-
-      #mere {
-        padding-left: 1%;
-        padding-bottom: 3%;
-      }
-      
-      .bagom-ordx4 {
-        justify-self: center;
-        align-self: center;
-      }
-
-      .bagom1 h1 {
-        text-align: center;
-        padding-top: 2%; 
-        padding-bottom: 1%;
-      }
-      .bagom1 p {
-        padding: 2%;
-      }
-
-    /*  Styles med en anden class for at få korrekt opsætning */
-      .bagom1-desktop{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .bagom1 h1 {
-        justify-self: center;
-        align-self: center;
-      }
-
-      /* Styling af billedet af søren og olivia, billedet croppes til desktop*/
-      .bagom1 img{
-        width: 100%;
-        height: 80vh;
-        object-fit: cover;
-        object-position: top;
-      }
-
-      .fotomobil {
-        display: none;
-      }
-
-      .fotodesktop {
-        display: flex;
-      }
-  }
-
-  /* tekstcontainer bagom */
-  @media(max-width: 800px) {
-    .firexdingse {
-      font-size: 1rem;
-      margin-top: 5%;
-    }
-
-    .read-more {
-        display: flex;
-        flex-direction: column; 
-        gap: 5px; 
-    }
-
-    .text {
-      text-align: justify;
-    }
-
-    .desktop_broed {
-      display: none;
-    }
-
-    .mobil_broed {
-      display: flex;
-    }
-
-    .read-more-content {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-        gap: 20px; 
-    }
-
-    .read-more-content img {
-        max-width: 100%; 
-        height: auto;
-    }
-
-    /* billeder bagomsiden */
-    .img {
-      width: 80%;
-      margin-top: -25%;
-    }
-
-    /* knapper foldud siden */
-    .fold_reply {
-     margin-left: 2%;
-     margin-top: 1%;
-    }
-    
-    .fold_btn1 {
-      margin-left: -3%;
-      margin-top: -1%;
-    }
-
-    .reply {
-      display: none; /* Hide the reply content initially */
-      background-color: var(--contrastbackground);
-      margin-bottom: 7%;
-      padding: 30px 0;
-    }
-
-    .fold_in_btn {
-      margin-top: 50px;
-    }
-
-    /* surdej foldud container */
-
-    .surdej5 {
-      object-fit: cover;
-      height: 50vh;
-      width: 35vh;
-      margin-top: -90px;
-  }
-  /* tekst til surdej foldud */
-
-  #p_foldud {
-    text-align: justify;
-  margin-right: 20%;
-  }
-
-  #h2_foldud {
-    font-size: 1.55rem;
-  }
-
-  #h3_foldud {
-    font-size: 2rem;
-  }
-
-  #h3_foldud_siden {
-    font-size: 2rem;
-  }
-
-  .p_foldud_info {
-    text-align: center;
-    margin-right: 50%;
-    margin-left: 20%;
-  }
-
-  .p_foldud_info_side {
-    text-align:center;
-    margin-right: 11%;
-    margin-left: 55%;
-  }
-
-  /* billeder til surdej foldud */
-  .surdej5 {
-    object-fit: cover;
-    width: 100vh;
-    height: 20vh;
-  }
-  #fermentering_af_surdej {
-    width: 35%;
-    margin-left: 17%;
-    margin-top: -2%;
-    }
-    
-    #straek_og_fold_surdej {
-    width: 35%;
-    margin-left: 55%;
-    margin-top: -5;
-    }
-    
-    #bages_ved_hoej_varme {
-    width: 35%;
-    margin-left: 17%;
-    margin-top: -2%;
-    }
-
-      /* dingsevand foldud container */
-  /* tekst til dingsevand foldud */
-
-  #h2_hjemmelavet {
-    margin-top: 15%;
-  }
-
-  .dingsedrik_titel p {
-    font-size: 1rem;
-  }
-
-  .dingsedrik_titel {
-    margin-left: 5%;
-  }
-
-      #dingsevand_figur {
-        width: 50%;
-        margin-left: 40%;
-        margin-top: -7%;
-        margin-bottom: 5%;
-      }
-      
-      .dingsevand-fotocontainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px; 
-      }
-      
-      .dingsevand-fotocontainer img {
-        object-fit: cover;
-        width: 20vh;
-        height: 20vh;
-      }
-      
-      #dingsevand_illustration {
-        width: 50%;
-        height: auto;
-        margin-top: 3%;
-      }
-
-      .smagsvarianter {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 10px; 
-      }
-
-      .smagsvarianter div {
-          margin-bottom: 10px;
-      }
-
-      /* råvare foldud container */
-      /* tekst til foldud råvare */
-      #h2_foldud_raevare{
-        margin-top: 7%;
-        text-align: center;
-        margin-left: 0;
-        margin-right: 0;
-      }
-
-      /* billeder/video til foldud råvare */
-
-      .bagom-raevare{
-        width: 130%;
-        margin-left: -15%;
-      }
-      .oliven_container {
-          display: flex;
-          flex-direction: column; 
-          align-items: center;
-          gap: 10px;
-      }
-
-      .platte_container {
-        width: 60%;
-        margin-left: 20%;
-      }
-
-      .oliven_container img {
-          width: 50%; 
-          height: auto;
-      }
-
-      .tekstcontainer_olivenolie {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-      }
-      
-      .instaicon {
-        width: 14%;
-        height: auto;
-        margin-left: 2%;
-      }
-  }
-
-  @media(min-width: 800px) {
-    .instaicon {
-      width: 5%;
-      height: auto;
-      margin-left: 2%;
-    }
-
-    .insta-container{
-      width: 80%;
-    }
-  }
 
   /******STYLER MEDIA OVER 800PX******/ 
   @media(min-width: 800px) {
@@ -2176,6 +1891,313 @@ footer {
   }
 
   }
+    /* bagom siden i media */
+    /* **** Styling af første del af bagom - Søren og olivia billede + tekst **** */
+    .bagom1 {
+      display: grid;
+    }
+
+    #mere {
+      padding-left: 1%;
+      padding-bottom: 3%;
+    }
+    
+    .bagom-ordx4 {
+      justify-self: center;
+      align-self: center;
+      font-size: 1.5rem;
+    }
+
+    .bagom1 h1 {
+      text-align: center;
+      padding-top: 2%; 
+      padding-bottom: 1%;
+    }
+    .bagom1 p {
+      padding: 2%;
+    }
+
+  /*  Styles med en anden class for at få korrekt opsætning */
+    .bagom1-desktop{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .bagom1 h1 {
+      justify-self: center;
+      align-self: center;
+    }
+
+    /* Styling af billedet af søren og olivia, billedet croppes til desktop*/
+    .bagom1 img{
+      width: 100%;
+      height: 80vh;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    .fotomobil {
+      display: none;
+    }
+
+    .fotodesktop {
+      display: flex;
+    }
+}
+
+/* tekstcontainer bagom */
+@media(max-width: 800px) {
+  .firexdingse {
+    font-size: 1rem;
+    margin-top: 5%;
+  }
+
+  .read-more {
+      display: flex;
+      flex-direction: column; 
+      gap: 5px; 
+  }
+
+  .text {
+    text-align: justify;
+  }
+
+  .desktop_broed {
+    display: none;
+  }
+
+  .mobil_broed {
+    display: flex;
+  }
+
+  .read-more-content {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      gap: 20px; 
+  }
+
+  .read-more-content img {
+      max-width: 100%; 
+      height: auto;
+  }
+
+  /* billeder bagomsiden */
+  .img {
+    width: 80%;
+    margin-top: -10%;
+  }
+
+  /* knapper foldud siden */
+  .fold_reply {
+   margin-left: 2%;
+   margin-top: 1%;
+  }
+  
+  .fold_btn1 {
+    margin-left: -3%;
+    margin-top: -1%;
+  }
+
+  .reply {
+    display: none; /* Hide the reply content initially */
+    background-color: var(--contrastbackground);
+    margin-bottom: 7%;
+    padding: 30px 0;
+  }
+
+  .fold_in_btn {
+    margin-top: 50px;
+  }
+
+  /* surdej foldud container */
+
+  .surdej5 {
+    object-fit: cover;
+    height: 50vh;
+    width: 35vh;
+    margin-top: -90px;
+}
+/* tekst til surdej foldud */
+
+#p_foldud {
+  text-align: justify;
+margin-right: 20%;
+}
+
+#h2_foldud {
+  font-size: 1.55rem;
+}
+
+#h3_foldud {
+  font-size: 2rem;
+}
+
+#h3_foldud_siden {
+  font-size: 2rem;
+}
+
+.p_foldud_info {
+  text-align: center;
+  margin-right: 50%;
+  margin-left: 20%;
+}
+
+.p_foldud_info_side {
+  text-align:center;
+  margin-right: 11%;
+  margin-left: 55%;
+}
+
+/* billeder til surdej foldud */
+.surdej5 {
+  object-fit: cover;
+  width: 100vh;
+  height: 20vh;
+}
+#fermentering_af_surdej {
+  width: 35%;
+  margin-left: 17%;
+  margin-top: -2%;
+  }
+  
+  #straek_og_fold_surdej {
+  width: 35%;
+  margin-left: 55%;
+  margin-top: -5;
+  }
+  
+  #bages_ved_hoej_varme {
+  width: 35%;
+  margin-left: 17%;
+  margin-top: -2%;
+  }
+
+    /* dingsevand foldud container */
+/* tekst til dingsevand foldud */
+
+#h2_hjemmelavet {
+  margin-top: 15%;
+}
+
+.dingsedrik_titel p {
+  font-size: 1rem;
+}
+
+.dingsedrik_titel {
+  margin-left: 5%;
+}
+
+    #dingsevand_figur {
+      width: 50%;
+      margin-left: 40%;
+      margin-top: -7%;
+      margin-bottom: 5%;
+    }
+    
+    .dingsevand-fotocontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px; 
+    }
+    
+    .dingsevand-fotocontainer img {
+      object-fit: cover;
+      width: 20vh;
+      height: 20vh;
+    }
+    
+    #dingsevand_illustration {
+      width: 50%;
+      height: auto;
+      margin-top: 3%;
+    }
+
+    .smagsvarianter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+
+    .smagsvarianter div {
+        margin-bottom: 10px;
+    }
+
+    /* råvare foldud container */
+    /* tekst til foldud råvare */
+    #h2_foldud_raevare{
+      margin-top: 7%;
+      text-align: center;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .p_foldud_raevare {
+      font-size: 1rem;
+    }
+
+    .p_foldud_raevare_desk {
+      display: none;
+    }
+
+    .p_foldud_raevare_mobil{
+      margin-top: 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+    /* billeder/video til foldud råvare */
+
+    .bagom-raevare{
+      width: 130%;
+      margin-left: -15%;
+    }
+    .oliven_container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px;
+    }
+
+    .platte_container {
+      width: 60%;
+      margin-left: 20%;
+    }
+
+    .oliven_container img {
+        width: 50%; 
+        height: auto;
+    }
+
+    .tekstcontainer_olivenolie {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .instaicon {
+      width: 14%;
+      height: auto;
+      margin-left: 2%;
+    }
+}
+
+@media(min-width: 800px) {
+  .instaicon {
+    width: 5%;
+    height: auto;
+    margin-left: 2%;
+  }
+
+  .insta-container{
+    width: 80%;
+  }
+}
   
   
   /******STYLER MEDIA OVER 1000PX******/ 
