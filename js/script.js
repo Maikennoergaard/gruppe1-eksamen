@@ -114,7 +114,7 @@ function changeTextColor() {
    }
 }
 
-//////////////////// forside video
+//////////////////// forside video (dette gav problemer da der er en autoplay-politik der kræver en interaction for at autoplay)
 document.addEventListener("DOMContentLoaded", function() {
   var video = document.getElementById("forsideVideo");
   video.addEventListener("loadedmetadata", function() {

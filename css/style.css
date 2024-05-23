@@ -187,7 +187,7 @@ nav li:first-child {
 .kigop {
   position: absolute;
   bottom: 0;
-  width: 250px;
+  width: 220px;
   right: 10px;
 }
 
@@ -283,9 +283,8 @@ nav li:first-child {
   } 
 
   #bestilknapmenu:hover {
-    background-color: var(--contrastbackground); /* Change background color on hover */
-    box-shadow: 0 4px 15px #c7352a(0, 0, 0, 0.2); /* Add box shadow on hover */
-    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    background-color: var(--contrastbackground);
+    transform: scale(1.05);
     border-color: var(--red);
   }
 
@@ -593,9 +592,8 @@ nav li:first-child {
     }
 
     .bestilknapforside2:hover {
-      background-color: var(--contrastbackground); /* Change background color on hover */
-      box-shadow: 0 4px 15px #c7352a(0, 0, 0, 0.2); /* Add box shadow on hover */
-      transform: scale(1.05); /* Slightly enlarge the button on hover */
+      background-color: var(--contrastbackground);
+      transform: scale(1.05);
       border-color: var(--red);
     }
 
@@ -1114,7 +1112,7 @@ nav li:first-child {
       margin-bottom: -7%;
       }
 
-      #h3_foldud {
+      .h3_foldud {
       font-size: 3rem;
       color: #c7352a;
       margin-left: 22%;
@@ -1168,7 +1166,6 @@ nav li:first-child {
       #straek_og_fold_surdej {
       width: 20%;
       margin-left: 60%;
-      margin-top: -5;
       }
 
       #bages_ved_hoej_varme {
@@ -1177,10 +1174,9 @@ nav li:first-child {
       margin-top: -2%;
       }
 
-      #laesmere_hover:hover {
-        background-color: var(--gul); /* Change background color on hover */
-        box-shadow: 0 4px 15px #c7352a(0, 0, 0, 0.2); /* Add box shadow on hover */
-        transform: scale(1.05); /* Slightly enlarge the button on hover */
+      .laesmere_hover:hover {
+        background-color: var(--gul); 
+        transform: scale(1.05);
       }
 
   /* dingsevand foldud side */
@@ -1639,11 +1635,11 @@ footer {
       display: none;
     }
 
-    .brødforside {
+    /* .brødforside {
       object-fit: cover;
       height: 600px;
       width: 100%;
-    }
+    } */
 
     #lodretskrift, #lodretskrift2, #lodretskrift3{
       font-size: 300%;
@@ -2039,7 +2035,7 @@ margin-right: 20%;
   font-size: 1.55rem;
 }
 
-#h3_foldud {
+.h3_foldud {
   font-size: 2rem;
 }
 
@@ -2074,7 +2070,6 @@ margin-right: 20%;
   #straek_og_fold_surdej {
   width: 35%;
   margin-left: 55%;
-  margin-top: -5;
   }
   
   #bages_ved_hoej_varme {
@@ -2101,7 +2096,7 @@ margin-right: 20%;
     #dingsevand_figur {
       width: 50%;
       margin-left: 40%;
-      margin-top: -7%;
+      margin-top: 0;
       margin-bottom: 5%;
     }
     
