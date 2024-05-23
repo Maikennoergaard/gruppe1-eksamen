@@ -1284,11 +1284,21 @@ nav li:first-child {
         margin-bottom: 5%;
       }
 
-      .p_foldud_raevare_lang {
+      .p_foldud_raevare_mobil {
         display: none;
       }
 
       .p_foldud_raevare {
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        margin-left: 20%;
+        margin-right: 20%;
+      }
+
+      .p_foldud_raevare_desk {
         margin-top: 5%;
         display: flex;
         justify-content: center;
@@ -1596,7 +1606,7 @@ footer {
     #andimg h3 {
       font-size: 4em;
     }
-    
+    /*  */
     #morewordsmenu{
       margin-top: 200%;
     }
@@ -1606,6 +1616,10 @@ footer {
     }
 
   /******** forside *******/
+   /* dingsefigur og multiwords på forside*/
+   .dingseukop {
+    width: 60%;
+  }
   .multiwords{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1613,35 +1627,30 @@ footer {
     margin-top: 5%;
   }
 
-    #lodretskrift, #lodretskrift2, #lodretskrift3{
-      font-size: 300%;
-    }
+  .firexdingse {
+    margin-top: 25%;
+  }
 
-    #sandwichul, #sodtul, #drikkeul{
-      line-height: 130%;
-    }
+  .baggrunddingse {
+    background-color: #c7352a;
+  }
 
     .broedforside{
       display: none;
-    }
-
-    .firexdingse {
-      margin-top: 25%;
-    }
-
-    .baggrunddingse {
-      background-color: #c7352a;
-    }
-  
-  /* dingsefigur på forside*/
-    .dingseukop {
-      width: 60%;
     }
 
     .brødforside {
       object-fit: cover;
       height: 600px;
       width: 100%;
+    }
+
+    #lodretskrift, #lodretskrift2, #lodretskrift3{
+      font-size: 300%;
+    }
+
+    #sandwichul, #sodtul, #drikkeul{
+      line-height: 130%;
     }
 
   /* Styling af ekstra billeder til forsiden til desktop */
@@ -1968,6 +1977,7 @@ footer {
 
   .mobil_broed {
     display: flex;
+    text-align: center;
   }
 
   .read-more-content {
