@@ -1515,7 +1515,7 @@ footer {
     }
   }
 
-  @media (min-width: 700px) {
+  @media (min-width: 800px) {
 
     #andimg img{
       top: 65%;
