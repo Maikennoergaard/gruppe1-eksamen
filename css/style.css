@@ -1880,8 +1880,7 @@ footer {
     }
 
     /************** Bagom **************/
-
-    /* læs mere knap */
+/* læs mere knap */
   
     #indhold {
       display: block !important;
@@ -1891,7 +1890,7 @@ footer {
   }
 
   }
-    /* bagom siden i media */
+    
     /* **** Styling af første del af bagom - Søren og olivia billede + tekst **** */
     .bagom1 {
       display: grid;
@@ -2001,7 +2000,7 @@ footer {
   }
 
   .reply {
-    display: none; /* Hide the reply content initially */
+    display: none; 
     background-color: var(--contrastbackground);
     margin-bottom: 7%;
     padding: 30px 0;
@@ -2012,15 +2011,14 @@ footer {
   }
 
   /* surdej foldud container */
-
   .surdej5 {
     object-fit: cover;
     height: 50vh;
     width: 35vh;
     margin-top: -90px;
 }
-/* tekst til surdej foldud */
 
+/* tekst til surdej foldud */
 #p_foldud {
   text-align: justify;
 margin-right: 20%;
@@ -2073,7 +2071,7 @@ margin-right: 20%;
   margin-top: -2%;
   }
 
-    /* dingsevand foldud container */
+  /****** dingsevand foldud container ******/
 /* tekst til dingsevand foldud */
 
 #h2_hjemmelavet {
@@ -2125,7 +2123,7 @@ margin-right: 20%;
         margin-bottom: 10px;
     }
 
-    /* råvare foldud container */
+    /***** råvare foldud container *****/
     /* tekst til foldud råvare */
     #h2_foldud_raevare{
       margin-top: 7%;
@@ -2151,8 +2149,8 @@ margin-right: 20%;
       margin-left: 20%;
       margin-right: 20%;
     }
-    /* billeder/video til foldud råvare */
 
+    /* billeder/video til foldud råvare */
     .bagom-raevare{
       width: 130%;
       margin-left: -15%;
@@ -2270,8 +2268,6 @@ margin-right: 20%;
 .rightside{
   width: 50%;
 }
-
-
   }
 
   /******STYLER MEDIA OVER 1500PX******/ 
