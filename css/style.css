@@ -112,7 +112,7 @@ nav ul {
 }
 
 nav li {
-  height: 50px;
+  height: 8vh;
 }
 
 nav a {
@@ -506,7 +506,7 @@ nav li:first-child {
 /********************* Forside ********************/
   /* video forside */
     .forside1 {
-      height: 90vh;
+      height: 92vh;
       position: relative; /* Tilføjer position: relative; til forældreelementet */
     }
 
